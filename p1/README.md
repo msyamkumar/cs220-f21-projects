@@ -31,13 +31,14 @@ download project files, create a Python notebook, run tests, and turn
 in your project.
 
 In subsequent projects, you'll need to very carefully follow [course
-policy](https://www.msyamkumar.com/cs220/s21/syllabus.html) to
+policy](https://www.msyamkumar.com/cs220/f21/syllabus.html) to
 avoid academic misconduct, but for this project, we just want to walk
 everybody through the process.  So feel free to get any kind of help
 from anybody (fellow students or otherwise) for P1. 
 **It is important for you to go through the corresponding lab closely 
-before starting with your project. Therefore, please walk through lab-p1 first 
-and learn some techniques to help you complete p1.**
+before starting with your project. Therefore, please walk through 
+[lab-p1](https://github.com/msyamkumar/cs220-f21-projects/tree/maranashwin-p1/lab-p1) 
+first and learn some techniques to help you complete p1.**
 
 ## Step 1: Download Project Files
 
@@ -272,7 +273,7 @@ partner).
 To hand in the notebook, complete the following steps:
 
 1. Save and run through the tests one last time (after you added your Net ID info). **Remember to follow all of the instructions from Step 4 to run the tests.**
-2. Go to [https://www.msyamkumar.com/cs220/s21/submission.html](https://www.msyamkumar.com/cs220/s21/submission.html)
+2. Go to [https://www.msyamkumar.com/cs220/f21/submission.html](https://www.msyamkumar.com/cs220/f21/submission.html)
 3. Select "Project 1"
 4. Click "Choose File" and find your main.ipynb file
 5. Click "Submit"
