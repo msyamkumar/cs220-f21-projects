@@ -90,7 +90,7 @@ the "Raw" button looks like this:
 **Warning**: Be careful, and verify that your file is saved as "test.py" and not
 "test.txt" or "test.py.txt". To make sure that the file is saved in the 
 correct format, make sure that the file type/format says `PY File` or `All Files`
-when you save it, and *NOT* `Text Document` (or `text` if you using MacOS).
+when you save it, and *NOT* `Text Document` (or `text` if you are using MacOS).
 
 <p align="center"><img src="images/p1-save.png" width="500"></p>
 
