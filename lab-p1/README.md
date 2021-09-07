@@ -282,4 +282,4 @@ Here are a few things to ponder/try about this program:
 2. What happens if you try to cheat?
 3. Can you exit before losing by typing "q"?  What about a capital "Q"?
 
-Congrats on finishing your first CS 220 lab! You do not need to submit anything for the labs. The labs are designed to prepare you for the project and help you engage in the lab sessions run by TAs and peer mentors. It will **not** be graded. Good luck with [P1](https://github.com/msyamkumar/cs220-f21-projects/tree/maranashwin-p1/p1)!
+Congrats on finishing your first CS 220 lab! You do not need to submit anything for the labs. The labs are designed to prepare you for the project and help you engage in the lab sessions run by TAs and peer mentors. It will **not** be graded. Good luck with [P1](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p1)!
