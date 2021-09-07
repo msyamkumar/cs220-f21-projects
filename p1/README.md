@@ -92,7 +92,7 @@ the "Raw" button looks like this:
 correct format, make sure that the file type/format says `PY File` or `All Files`
 when you save it, and *NOT* `Text Document` (or `text` if you using MacOS).
 
-<p align="center"><img src="images/save.png" width="500"></p>
+<p align="center"><img src="images/p1-save.png" width="500"></p>
 
 ## Step 2: Create a Python Notebook
 
