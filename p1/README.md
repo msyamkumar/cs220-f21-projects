@@ -37,7 +37,7 @@ everybody through the process.  So feel free to get any kind of help
 from anybody (fellow students or otherwise) for P1. 
 **It is important for you to go through the corresponding lab closely 
 before starting with your project. Therefore, please walk through 
-[lab-p1](https://github.com/msyamkumar/cs220-f21-projects/tree/maranashwin-p1/lab-p1) 
+[lab-p1](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p1) 
 first and learn some techniques to help you complete p1.**
 
 ## Step 1: Download Project Files
