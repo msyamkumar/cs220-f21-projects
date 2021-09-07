@@ -65,9 +65,9 @@ the "Raw" button looks like this:
 **Warning**: Be careful, and verify that your file is saved as "hello.py" and not
 "hello.txt" or "hello.py.txt". To make sure that the file is saved in the 
 correct format, make sure that the file type/format says `PY File` or `All Files`
-when you save it, and *NOT* as a `Text Document`.
+when you save it, and *NOT* `Text Document` (or `text` if you using MacOS).
 
-<img src="images/windows-save.PNG" width="250">
+<p align="center"><img src="images/save.png" width="500"></p>
 
 ## Run Your First Program
 
