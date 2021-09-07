@@ -62,6 +62,13 @@ the "Raw" button looks like this:
 
 <img src="images/raw.png" width="300">
 
+**Warning**: Be careful, and verify that your file is saved as "hello.py" and not
+"hello.txt" or "hello.py.txt". To make sure that the file is saved in the 
+correct format, make sure that the file type/format says `PY File` or `All Files`
+when you save it, and *NOT* as a `Text Document`.
+
+<img src="images/windows-save.PNG" width="250">
+
 ## Run Your First Program
 
 Now it gets a little tricky.  You need to figure out the path of your
