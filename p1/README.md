@@ -279,7 +279,7 @@ partner).
 
 To hand in the notebook, complete the following steps:
 
-1. Save and run through the tests one last time (after you added your Net ID info). **Remember to follow all of the instructions from Step 4 to run the tests.**
+1. Save and run the tests one last time (after you added your Net ID info). **Remember to follow all of the instructions from Step 4 to save and run the tests.**
 2. Go to [https://www.msyamkumar.com/cs220/f21/submission.html](https://www.msyamkumar.com/cs220/f21/submission.html)
 3. Select "Project 1"
 4. Click "Choose File" and find your main.ipynb file
@@ -287,6 +287,6 @@ To hand in the notebook, complete the following steps:
 6. Check the "Submission Status" below; it is normal to see some "info:" messages, but make sure you correct any "error:" messages
 7. Click "View Submissions" to make sure your submission looks correct
 
-#### Please remember to `Kernel->Restart and Run All` to check for errors, save your notebook, then run the test.py script one more time before submitting the project. 
+#### Please remember to `Kernel->Restart and Run All` to check for errors, save your notebook, then run the test.py script one more time (in that order) before submitting the project. 
 
 Congrats on finishing your first CS 220 project!
