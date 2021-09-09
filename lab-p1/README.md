@@ -8,8 +8,8 @@ practice running six Python programs we give you, including a game!
 We've created videos showing how to do this on
 [Windows](https://www.youtube.com/watch?v=fUohsnkuiKQ&ab_channel=MEENASYAMKUMAR) and
 [Mac](https://www.youtube.com/watch?v=BI4J4-3nWhQ&ab_channel=MEENASYAMKUMAR).
-It is recommended that you watch these videos even if you have already
-installed Python, to verify that you have installed it correctly.
+**If you have already installed Python or Anaconda on your computer, 
+please uninstall and reinstall, following the instructions in these videos.**
 
 Labs are meant to be self guiding, and you may leave when you're finished.
 Be sure to ask a neighbor or flag down a TA/mentor if you have any 
