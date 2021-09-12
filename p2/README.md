@@ -13,14 +13,14 @@ This project will walk you through the concept and the application of:
 - Arithmetic operators, including the *floor division* operator.
 - The `type` function that returns the type of some expression.
 - Logic operators such as `and` and `or`.
-- Comparision operators.
+- Comparison operators.
 
 ## Overview
 
 In this project, you'll learn about types, operators, and boolean
 logic.  To start, create a `p2` directory, and download `main.ipynb`
 and `test.py` to that directory (IMPORTANT: use the same process to
-download that you used for [p1](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p1), 
+download that you used for [p1](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p1#step-1-download-project-files), 
 which involves left-clicking the files
 and then right-clicking the "Raw" button).
 
@@ -93,8 +93,11 @@ terminal, and run the tests.  Make sure you're scoring 15% before
 proceeding to the other questions. (if it appears the test did not 
 change from when you ran your tests in the notebook make sure to SAVE)
 
-#### Please remember to `Kernel->Restart and Run All` to check for errors, save your notebook, then run the test.py script one more time before submitting the project.
+#### Please remember to `Kernel->Restart and Run All` to check for errors, save your notebook, then run the `test.py` script one more time before submitting the project.
 
-Finally, __if you are unable to solve a question and have partial code that is causing an error__ when running test.py, please __comment out the lines in the cell for that question.__ Failing to do so will cause the auto-grader to fail when you submit your file and give you 0 points even if you have some questions correctly answered.
+Finally, __if you are unable to solve a question and have partial code that is causing an error__
+when running test.py, please __comment out the lines in the cell for that question.__
+Failing to do so will cause the auto-grader to fail when you submit your file
+and give you 0 points even if you have some questions correctly answered.
 
-Have fun, and run test.py often to track your progress!
+Have fun, and run `test.py` often to track your progress!
