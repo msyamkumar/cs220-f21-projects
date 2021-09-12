@@ -1,7 +1,7 @@
 # Lab-P2: Python Modes and Programming
 
-In the Wednesday lecture (Sep 15), we learned about three ways to run Python: interactive
-mode, script mode, and notebook "mode" (people outside of 220 won't
+In the Wednesday lecture (Sep 15), we learned about three ways to run Python: 
+interactive mode, script mode, and notebook "mode" (people outside of 220 won't
 use that vocabulary for notebooks, hence the quotes). In this
 lab, you'll practice those three modes. You'll also get practice
 with operators, modular arithmetic and Boolean logic.
@@ -27,8 +27,8 @@ If you need to run the latter, please use `python3` whenever we say `python`
 in the directions this semester.
 
 From the `lab2` directory, do the following.  Run `pwd` in the
-terminal (this is a shell command in both bash and PowerShell). Then
-type `python` and hit ENTER.
+terminal (this is a shell command in both bash, zsh, and PowerShell). 
+Then type `python` and hit `ENTER`.
 
 You should see something roughly like this (details will vary):
 
@@ -41,7 +41,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Those `>>>` symbols are a Python prompt.  This means you can type
 Python code, but your shell commands will not work until you exit
 Python again.  To see this, try typing this Python code:
-`print("hi")`. Then hitting ENTER.  The message `hi` should be
+`print("hi")`. Then hitting `ENTER`.  The message `hi` should be
 printed.
 
 Now try typing `pwd` again and hitting ENTER.  This should give you
@@ -56,10 +56,10 @@ Traceback (most recent call last):
 
 Now let's try exiting Python and going back to the shell prompt.  On
 Mac, you can do this with `CONTROL-D` (hold down the control key, then
-press the D key at the same time).  On Windows, you can use `CONTROL-Z
-ENTER` (hold down the control key, then press the Z key at the same
-time; release both, then press the enter key). You can also exit 
-interactive mode by typing in `exit()` and hitting ENTER.
+press the D key at the same time).  On Windows, you can use `CONTROL-Z ENTER` 
+(hold down the `CONTROL` key, then press the `Z` key at the same time; 
+release both, then press the `ENTER` key). You can also exit 
+interactive mode by typing in `exit()` and hitting `ENTER`.
 
 Now that you've exited, try running both `pwd` and `print("hi")`
 again.  This time, the former should work and that latter should fail
@@ -89,7 +89,7 @@ in the idle editor, but in this case it will create a new empty file
 named `laugh.py` since one doesn't already exist.  Paste the following
 into the editor:
 
-```
+```python
 print("ha " * 10 + "!")
 ```
 
@@ -100,27 +100,29 @@ Now close the shell window (where your program just ran and printed
 "ha ha ..."), and remove the print in your file, so it looks like
 this:
 
-```
+```python
 "ha " * 10 + "!"
 ```
 
-Run run your code again (e.g., with `F5`).  Notice how it doesn't show
+Run your code again (e.g., with `F5`).  Notice how it doesn't show
 any of your output? In interactive mode, prints usually aren't
 necessary, but they are in script mode.
 
 Add back the print, then close any idle windows that are open.  Now
 that you're back in the shell, run the following:
 
-`python laugh.py`
+```
+python laugh.py
+```
 
 Let's try to create a second program:
 
-1. run `idle circle.py`
-2. paste `print((8 / 2) ** 2 * 3.14)`
-3. run the program (either in idle with `F5`, or by exiting idle and running `python circle.py` in the shell)
+1. Run `idle circle.py`
+2. Paste `print((8 / 2) ** 2 * 3.14)`
+3. Run the program (either in idle with `F5`, or by exiting idle and running `python circle.py` in the shell)
 
-The program computes the area of a circle.  *Can you figure out what
-the diameter of that circle is by reading the code?*
+The program computes the area of a circle.
+*Can you figure out what the diameter of that circle is by reading the code?*
 
 ### Notebook Mode
 
@@ -129,8 +131,8 @@ Now, you'll get practice downloading and running existing notebooks.
 For this part, download the `bool.ipynb`, `ops.ipynb`, and `mod.ipynb`
 files to your `lab2` folder.
 
-**IMPORTANT**: use the GitHub download
-procedure we've shown you in [lab-p1](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p1)
+**IMPORTANT**: Use the GitHub download
+procedure we've shown you in [lab-p1](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p1#download-your-first-program)
 involving right-clicking on the `Raw` button. Verify that your file is saved 
 as a `.ipynb` file and not as a `.txt` file. If not, take a look at point 7 at
 the Piazza [FAQ Page](https://piazza.com/class/ktaevwe7xx771?cid=9) to see
@@ -140,7 +142,7 @@ In the terminal (which should still have `lab2` as the current working
 directory), run `jupyter notebook`.  You should see something like the
 following:
 
-<img src="images/notebooks.png" width="1000">
+<img src="images/notebooks.png" width="1000" alt="The file tab opened in Jupyter listing the bool.ipynb, ops.ipynb, and mod.ipynb files">
 
 You can now click on any of the three notebooks you've downloaded to
 view the contents.  The first thing you'll want to do after opening it
@@ -152,17 +154,17 @@ The exercises you should do with each notebook are described below.
 Open and run the `bool.ipynb` notebook.  There will be six cells, with
 outputs `True`, `False`, `False`, `True`, `False`, and `True`.  Take
 moment to review each cell and think about why the output is either
-True or False.  Review the lecture slides or ask your TA if any of
+`True` or `False`.  Review the lecture slides or ask your TA if any of
 these are surprising to you.
 
 There are different ways to get `True` or `False` in Python.  One way
 is to directly type those words explicitly, as we already have.
 
 The more common way is to use comparison operators to make claims that
-are either True or False.  For example `1+1 == 2` is True, whereas
-`-2 > 1` is False.
+are either True or False.  For example `1+1 == 2` is `True`, whereas
+`-2 > 1` is `False`.
 
-Your job is to edit the notebook and replace each True or False with a
+Your job is to edit the notebook and replace each `True` or `False` with a
 Python expression (of your own choosing) that has the same truth
 value.  For example, the last expression says `True or False`, so I
 might edit that to instead be `1+1 == 2 or -2 > 1`.  You should get
@@ -171,8 +173,8 @@ least once: `==`, `!=`, `<`, `<=`, `>`, and `>=`.
 
 After each change, rerun the cell and make sure that your modification
 didn't change the result.  For example, that last cell was originally
-`True`, and if we change the code to `1+1
-== 2 or -2 > 1` and rerun, we should still get the same output.
+`True`, and if we change the code to `1+1 == 2 or -2 > 1` and rerun, 
+we should still get the same output.
 
 ## Order of Operations
 
@@ -211,12 +213,12 @@ goes from 0 to 11 o'clock).
 Try writing some expressions to answer the following questions
 regarding a CS clock:
 
-* what time will it be 6 hours after 9 o'clock? (run `(9 + 6) % 12` in a cell to find the answer, which is 3 o'clock)
-* what time was 2 hours before 1 o'clock? (run `(1 - 2) % 12` in a cell to find the answer, which is 11 o'clock)
-* what time was 4 hours before 2 o'clock?
-* what will it be 12 hours after 6 o'clock?
-* what will it be 13 hours after 6 o'clock?
-* what will it be 24 hours after 6 o'clock?
-* what will it be 25 hours after 6 o'clock?
+* What time will it be 6 hours after 9 o'clock? (run `(9 + 6) % 12` in a cell to find the answer, which is 3 o'clock)
+* What time was 2 hours before 1 o'clock? (run `(1 - 2) % 12` in a cell to find the answer, which is 11 o'clock)
+* What time was 4 hours before 2 o'clock?
+* What will it be 12 hours after 6 o'clock?
+* What will it be 13 hours after 6 o'clock?
+* What will it be 24 hours after 6 o'clock?
+* What will it be 25 hours after 6 o'clock?
 
 You are now ready to take on [P2](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p2)! Good luck!
