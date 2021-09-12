@@ -41,7 +41,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Those `>>>` symbols are a Python prompt.  This means you can type
 Python code, but your shell commands will not work until you exit
 Python again.  To see this, try typing this Python code:
-`print("hi")`. Then hitting `ENTER`.  The message `hi` should be
+`print("hi")`, then hitting `ENTER`.  The message `hi` should be
 printed.
 
 Now try typing `pwd` again and hitting ENTER.  This should give you
