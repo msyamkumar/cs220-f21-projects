@@ -86,10 +86,12 @@ Re-enter interactive mode and try running a few Python expressions:
 From shell mode (make sure you've exited Python from before!), type
 `idle laugh.py`.  This will normally open up a file named `laugh.py`
 in the idle editor, but in this case it will create a new empty file
-named `laugh.py` since one doesn't already exist. 
+named `laugh.py` since one doesn't already exist.
 
-**Warning**: If you are using MacOS 10.6 or later, this command
-may not work. In that case, directly open IDLE from `Finder` 
+If you are using MacOS, try the command `idle3 laugh.py`
+
+**Warning**: If you are using MacOS and `idle3 laugh.py` command did
+not work, then directly open IDLE from `Finder` 
 and save the new file as `laugh.py`.
 
 Paste the following
