@@ -125,7 +125,7 @@ python laugh.py
 
 Let's try to create a second program:
 
-1. Run `idle circle.py`
+1. Run `idle circle.py` (`idle3 circle.py on MacOS)
 2. Paste `print((8 / 2) ** 2 * 3.14)`
 3. Run the program (either in idle with `F5`, or by exiting idle and running `python circle.py` in the shell)
 
@@ -139,7 +139,7 @@ Now, you'll get practice downloading and running existing notebooks.
 For this part, download the `bool.ipynb`, `ops.ipynb`, and `mod.ipynb`
 files to your `lab2` folder.
 
-**IMPORTANT**: Use the GitHub download
+**IMPORTANT**: Use Google Chrome browser and the GitHub download
 procedure we've shown you in [lab-p1](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p1#download-your-first-program)
 involving right-clicking on the `Raw` button. Verify that your file is saved 
 as a `.ipynb` file and not as a `.txt` file. If not, take a look at point 7 at
