@@ -13,9 +13,9 @@ None yet.
 
 For many projects this semester, we'll provide you with a *module* (a
 collection of functions) named `project`, in a file named
-`project.py`.  This module will provide functions that will help you
-complete the project.  Today, we'll introduce the `project.py` file
-you'll use for P3.
+`project.py`. This module will provide functions that will help you
+complete the project. Today, we'll introduce the `project.py` file for
+[p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p3).
 
 When using an unfamiliar module, the first thing you should do is
 study the module's *API*.  API stands for "Application Programming
@@ -40,10 +40,10 @@ Summary of new terms:
 ## Note on Academic Misconduct
 
 You may do these lab exercises with anybody you like.  But be careful!
-It's very natural to start working on P3 immediately after completing
-the lab.  If you start working with somebody on P3 (after the lab),
+It's very natural to start working on p3 immediately after completing
+the lab.  If you start working with somebody on p3 (after the lab),
 that person must be your project partner until the next project; you
-are not allowed to start working on P3 with one person during lab,
+are not allowed to start working on p3 with one person during lab,
 then finish the project with a different partner.  Now may be a good
 time to review [our course
 policies](https://www.msyamkumar.com/cs220/f21/syllabus.html).
@@ -51,8 +51,7 @@ policies](https://www.msyamkumar.com/cs220/f21/syllabus.html).
 ## Setup
 
 Create a `lab3` directory and download `lab.csv` above.  Also download
-these files from the [lab page](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p3)
-to the `lab3` directory:
+these files from the lab page to the `lab3` directory:
 
 * `energy.csv`
 * `project.py`
@@ -245,7 +244,7 @@ You'll get an error:
 ```python
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "~\Documents\GitHub\cs220-f21-projectDesign\lab-p3\project.py", line 36, in dump
+  File "~\Documents\ms\cs220\lab-p3\project.py", line 36, in dump
     raise Exception("you did not call init first")
 Exception: you did not call init first
 ```
@@ -375,9 +374,9 @@ kinds of errors produced:
 
 ## Project 3
 
-Great, now you're ready to start [P3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p3)!  All the things you've been
+Great, now you're ready to start [p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p3)!  All the things you've been
 doing here in interactive mode will work in your notebook as well.
-Remember to only work with at most one partner on P3 from this point
+Remember to only work with at most one partner on p3 from this point
 on.  Have fun!
 
 ## Reference
