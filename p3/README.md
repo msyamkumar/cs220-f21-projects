@@ -207,7 +207,7 @@ by the US electric power sector from the given energy source
 across the six years in the datatset.
 
 Hint: start by copy/pasting `energy_min` and renaming your copy to
-`energy_avg`.  Instead of computing the maximum of `y15`, `y16`, etc.,
+`energy_avg`.  Instead of computing the minimum of `y15`, `y16`, etc.,
 compute the average of these by adding, then dividing by six.
 
 ### #Q8: How much Solar Energy was consumed by the US electric power sector on average between 2015 and 2020?
