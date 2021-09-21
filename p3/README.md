@@ -384,7 +384,7 @@ estimate when this crosses the threshold 0.
 You can start with the following code snippet:
 
 ```python
-def find_overtake_year(energy1, energy2)::
+def find_overtake_year(energy1, energy2):
     pass
     # TODO: compute the average change in consumption for both energy sources from 2015 to 2020.
     # TODO: assume both energy consumptions keep changing at the same rate.
