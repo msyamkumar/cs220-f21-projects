@@ -1,6 +1,6 @@
 # Project 3: Renewable energy consumption by the US Electric Power Sector
 
-## Clarifications/Corrections
+### Corrections/Clarifications
 
 None yet.
 
