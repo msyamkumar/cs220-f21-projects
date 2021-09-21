@@ -106,6 +106,13 @@ creating the function we ask you to write, we'll **manually deduct** points from
 your `test.py` score when recording your final grade, even if the way
 you did it produced the correct answer.
 
+## Incremental Coding and Testing
+You should always strive to do incremental coding. Incremental coding enables you to avoid
+challenging bugs. What exactly is incremental coding? Always write a few lines of code and then test
+those lines of code, before proceeding to write further code. We also recommend you to do incremental
+testing: solve a question and run auto-grader script `test.py`, to verify that you get a PASS for that
+particular question.
+
 ## Questions and Functions
 
 ### #Q1: What is the index of Biomass Energy?
