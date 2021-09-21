@@ -102,7 +102,7 @@ points from your `test.py` score during code review.
 
 For some of the questions, we'll ask you to write (then use) a
 function to compute the answer.  If you compute the answer **without**
-creating the function we ask you to, we'll **manually deduct** points from
+creating the function we ask you to write, we'll **manually deduct** points from
 your `test.py` score when recording your final grade, even if the way
 you did it produced the correct answer.
 
