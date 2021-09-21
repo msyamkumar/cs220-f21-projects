@@ -59,6 +59,10 @@ these files from the lab page to the `lab3` directory:
 Open a terminal and navigate to your `lab3` directory.  Run `ls` to
 make sure your three files are available.
 
+Note: If you see a `.txt` extension instead of `.csv` extension, recall
+that you can execute `mv energy.txt energy.csv`. Move command helps you
+rename source file (first argument) to destination file (second argument).
+
 We'll be doing these exercises in interactive mode, so type `python`
 (or `python3`, if that's what you need to do on your laptop), and hit
 ENTER.
