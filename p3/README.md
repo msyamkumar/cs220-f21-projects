@@ -110,8 +110,8 @@ you did it produced the correct answer.
 You should always strive to do incremental coding. Incremental coding enables you to avoid
 challenging bugs. What exactly is incremental coding? Always write a few lines of code and then test
 those lines of code, before proceeding to write further code. We also recommend you to do incremental
-testing: solve a question and run auto-grader script `test.py`, to verify that you get a PASS for that
-particular question.
+testing: solve a question and run auto-grader script `test.py`, to verify that you get a PASS for that 
+particular question, before proceeding to the next.
 
 ## Questions and Functions
 
