@@ -17,7 +17,7 @@ In this project, you will walk through how to
 * Practice writing functions
 * Practice doing some basic statistical analysis on the dataset
 
-**Please go through [lab-p3](https://github.com/msyamkumar/cs220-f21-projectDesign/tree/master/lab-p3) 
+**Please go through [lab-p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p3) 
 before working on this project.** The lab 
 introduces some useful techniques necessary 
 for this project.
@@ -57,7 +57,7 @@ The first cell should contain and only contain information like this:
 ```
 
 We won't explain how to use the `project` module here (the code is in the
-`project.py` file).  Refer to [lab-p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p3) 
+`project.py` file).  Refer to [lab-p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p3) 
 to understand the functions in `project.py` and use those. 
 Feel free to take a look at the `project.py` code if you are 
 curious about how it works.
