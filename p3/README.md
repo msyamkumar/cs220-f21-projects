@@ -321,6 +321,9 @@ In order to round up the numbers, you may use the function
 You can also take a look at [this example](https://www.geeksforgeeks.org/python-math-ceil-function/). 
 Before using the function, remember to import `math` module.
 
+**It is a good practice to have all import statements as the initial few lines of code. Go back to
+the input cell where you imported project and add the below import statement.**
+
 ```python
 import math
 ``` 
