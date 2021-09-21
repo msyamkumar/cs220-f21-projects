@@ -263,7 +263,7 @@ in energy consumption per year, for these energy sources.
 
 This function should return the average increase in consumption (could be
 negative if there's a decrease) over the period from `start_year` to
-`end_year` for the given `energy` source.
+`end_year` for the given `energy` source (example `energy` source: "Solar Energy").
 
 You can start with the following code snippet:
 
