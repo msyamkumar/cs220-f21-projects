@@ -1,8 +1,8 @@
 # Lab 3: Learning an API
 
-## Corrections
+### Corrections/Clarifications
 
-None yet.
+None yet
 
 **Find any issues?** Report to us: 
 
