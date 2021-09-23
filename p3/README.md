@@ -2,7 +2,7 @@
 
 ### Corrections/Clarifications
 
-None yet.
+1. **(9/23/2021 - 10:45am)** Q18 reworded for clarity.
 
 **Find any issues?** Report to us: 
 
@@ -66,7 +66,7 @@ This project consists of writing code to answer 20 questions.  If
 you're answering a particular question in a cell in your notebook, you
 need to put a comment in the cell so we know what you're answering.
 For example, if you're answering question 13, the first line of your
-cell should contain `#q13`.
+cell should contain `#q13` (or `#Q13`).
 
 ## Dataset
 
@@ -393,7 +393,7 @@ def find_overtake_year(energy1, energy2):
     # TODO: use math.ceil() to round it up.
 ``` 
 
-### #Q18: In which year will the consumption of Biomass Energy by the US electric power sector overtake Wood Energy?
+### #Q18: In which year will the consumption of Wood Energy by the US electric power sector overtake Biomass Energy?
 
 
 ### #Q19: In which year will the consumption of Solar Energy by the US electric power sector overtake Conventional Hydroelectric Power?
