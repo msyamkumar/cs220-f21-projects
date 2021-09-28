@@ -16,7 +16,7 @@ In this project, you will demonstrate how to
   * Write functions using parameters, return values, and conditional logic
   * Use good coding practices as outlined in Lab P4
 
-Please go through [lab-p4](https://github.com/msyamkumar/cs220-f21-projectDesign/tree/master/lab-p4) before working on this project. The lab introduces some useful techniques related to this project.
+Please go through [lab-p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p4) before working on this project. The lab introduces some useful techniques related to this project.
 
 ## Overview
 
@@ -24,11 +24,11 @@ For this project, you'll be using the data from `pokemon_stats.csv` and `type_ef
 
 This project will focus on conditional statements. To start, download `project.py`, `test.py`, `type_effectiveness_stats.csv` and `pokemon_stats.csv`. You'll do your work in a Jupyter Notebook, producing a `main.ipynb` file. You'll test as usual by running `python test.py` to test your `main.ipynb` file.
 
-We won't explain how to use the project module here (the code in the `project.py` file). The lab this week is designed to teach you how it works. So, before starting p4, take a look at [lab-p4](https://github.com/msyamkumar/cs220-f21-projectDesign/tree/master/lab-p4).
+We won't explain how to use the project module here (the code in the `project.py` file). The lab this week is designed to teach you how it works. So, before starting p4, take a look at [lab-p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p4).
 
-This project consists of writing code to answer 20 questions. If you're answering a particular question in a cell in your notebook, you need to put a comment in the cell so we know what you're answering. For example, if you're answering question 13, the first line of your cell should contain `#q13`.
+This project consists of writing code to answer 20 questions. If you're answering a particular question in a cell in your notebook, you need to put a comment in the cell so we know what you're answering. For example, if you're answering question 13, the first line of your cell should start with `#q13` or `#Q13`.
 
-In this project, you will have to write several functions and keep adding more details to them according to the instructions. When you are adding more things in your functions, we want you to follow the Good Coding Style for Functions described in [lab-p4](https://github.com/msyamkumar/cs220-f21-projectDesign/tree/master/lab-p4). Therefore, you should only keep the latest version of your functions in your notebook file. For example, in p4 you are asked to write 6 functions(`damage`, `type_bonus`, `effective_damage`, `num_hits`, `battle`, and `two_on_two_battle`), so there should only be one version of each of these 6 functions in your submitted notebook file.
+In this project, you will have to write several functions and keep adding more details to them according to the instructions. When you are adding more things in your functions, we want you to follow the Good Coding Style for Functions described in [lab-p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p4). Therefore, you should only keep the latest version of your functions in your notebook file. For example, in p4 you are asked to write 6 functions(`damage`, `type_bonus`, `effective_damage`, `num_hits`, `battle`, and `two_on_two_battle`), so there should only be one version of each of these 6 functions in your submitted notebook file.
 
 The first cell should contain this:
 
@@ -290,7 +290,7 @@ The winning Pokémon from each team battle one last time, and the victor of this
 
 Again, if the battle results in a `"Draw"` or in either Pokémon running away, your function should return `"No result"`.
 
-Create a function `two_on_two_battle` and use it to answer the next four questions. We recommend that you build this up slowly (just like we did with `battle`). Don't try to write the entire function at once. Break it down, and implement the first round of the team battle first, and then proceed to the second round.
+Create a function `two_on_two_battle` and use it to answer the next four questions. We recommend that you build this up slowly (just like we did with `battle`). Don't try to write the entire function at once. Break it down, and implement the first round of the team battle first, and then proceed to the second round. You may use any of the helper functions we have created thus far, and you may create more helper functions if you feel they are necessary.
 
 ```python3
 def two_on_two_battle(pkmn1, pkmn2, pkmn3, pkmn4):
