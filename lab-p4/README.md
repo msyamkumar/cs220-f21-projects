@@ -48,8 +48,7 @@ NAME
 
 FUNCTIONS
     __init__()
-        This function loads the data from 'pokemon_stats.csv' and 'type_effectiveness_stats.csv'. This 
-        function runs automatically, when the module is imported
+        Automatically loads the data from 'pokemon_stats.csv' and 'type_effectiveness_stats.csv' when this module is imported.
     
     get_attack(pkmn)
         get_attack(pkmn) returns the Attack of the Pokémon with the name 'pkmn'
