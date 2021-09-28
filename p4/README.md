@@ -40,8 +40,8 @@ The first cell should contain this:
 ```
 **Note that**:
 * You are only allowed to work with your named partner,
-* You must name the person you worked with, and
-* Only one of you should submit your code.
+* you must name the person you worked with (by mentioning partner netid in the above partner field), and
+* **only one of you should submit your code.**
 
 ## Questions and Functions
 
