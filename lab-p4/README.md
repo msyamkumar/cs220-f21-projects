@@ -36,7 +36,7 @@ All Pokémon creatures and their moves are assigned certain types. Each type has
 
 If you are feeling brave, take a look at [`gen_csv.ipynb`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p4/gen_csv.ipynb) to see how these two files (`pokemon_stats.csv` and  `type_effectiveness_stats.csv`)  were generated. Don't worry if it doesn't make much sense at this point. By the end of CS220, you will be able to understand everything that is happening there. For now, you can try to figure out what is happening in each of the cells.
 
-`project.py` is designed to give you access to the data in `pokemon_stats.csv` and `type_effectiveness_stats.csv`. First, we need to check the `project.py` API just like we did in [lab-p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p3). In lab-p3, we saw how to use `dir` and `.__doc__` to learn the API. This time, let us use how to use the `help` function. Enter the Python Interactive Mode and type:
+`project.py` is designed to give you access to the data in `pokemon_stats.csv` and `type_effectiveness_stats.csv`. First, we need to check the `project.py` API just like we did in [lab-p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p3). In lab-p3, we saw how to use `dir` and `.__doc__` to learn the API. This time, let us learn how to use the `help` function. Enter the Python Interactive Mode and type:
 
 ```python
 >>> import project
