@@ -310,7 +310,10 @@ def two_on_two_battle(pkmn1, pkmn2, pkmn3, pkmn4):
 
 ### #Q20: What is the output of two_on_two_battle('Flygon', 'Sceptile', 'Garchomp', 'Torterra')?
 
-That will be all for now. If you are interested, you can make your battle functions as complicated as you want. You can even try a 3 on 3 battle to test your coding prowess thus far! We look forward to seeing the other fun functions you create!
+That will be all for now. 
+If you are interested, you can make your battle functions as complicated as you want. 
+- You can prevent a battle between two Pokémon from two different regions (battle function simply could say `'Cannot battle'`). But wait, if either of those Pokémon have `Flying` type, then they should still be able to battle each other.
+- You can try a 3 on 3 battle to test your coding prowess thus far! We look forward to seeing the other fun functions you create!
 
 ---
 **WARNING: Please remember to Kernel->Restart and Run All to check for errors, save your notebook, then run the test.py script one more time before submitting the project. To keep your code concise, please remove your own testing code that does not influence the correctness of answers. Finally, if you are unable to solve a question and have partial code that is causing an error when running test.py, please comment out the lines in the cell for that question before submitting your file. Failing to do so will cause the auto-grader to fail when you submit your file, giving you 0 points even if you have some questions correctly answered.**
