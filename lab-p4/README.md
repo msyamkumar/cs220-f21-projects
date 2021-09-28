@@ -211,6 +211,7 @@ def same_types(pkmn1, pkmn2):
     return False
 ```
 
+Do not duplicate the original function. Instead, modify the original directly and rerun the cell to update the definition.
 Replace the `???` with appropriate variables.
 
 Finally, let us take a look at type effectiveness. In p4, you will have to compare the strengths of different types against each other. The `get_type_effectiveness` function in `project.py` will be useful for us here. Given two types `type1` and `type2`, we can use that function to find the effectiveness of `type1` against `type2`, and also, the effectiveness of `type2` against `type1`. So, we can compare the effectiveness of the two types against each other, to determine which is stronger. Try to replace the `???` in the following function:
