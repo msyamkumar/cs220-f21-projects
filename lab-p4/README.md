@@ -203,7 +203,6 @@ def same_types(pkmn1, pkmn2):
     if project.get_type1(pkmn1) == project.get_type1(pkmn2):
         if project.get_type2(pkmn1) == project.get_type2(pkmn2):
             return True
-
     elif project.get_type1(???) == project.get_type2(???):
         if project.get_type2(???) == project.get_type1(???):
             return True
