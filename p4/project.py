@@ -2,7 +2,7 @@ __pokemon__= {}
 __effectiveness__ = {}
 
 def __init__():
-    """This function loads the data from 'pokemon_stats.csv' and 'type_effectiveness_stats.csv'. This function runs automatically, when the module is imported"""
+    """Automatically loads the data from 'pokemon_stats.csv' and 'type_effectiveness_stats.csv' when this module is imported."""
     import csv
     f = open('pokemon_stats.csv', encoding='utf-8')
     raw_pkmn_data = list(csv.reader(f))
