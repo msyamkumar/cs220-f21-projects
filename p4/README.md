@@ -232,7 +232,7 @@ Use `num_hits` to answer the next two questions.
 ### #Q9: How many hits can the defending pokemon Snivy take from Pikachu (attacker)?
 
 ---
-With the tools we have created so far, we can now finally start creating our battle simulator! Copy/paste the following code in a new cell of your notebook and fill in the details.
+With the functions we have created so far, we can now finally start creating our battle simulator! Copy/paste the following code in a new cell of your notebook and fill in the details.
 
 ```python3
 def battle(pkmn1, pkmn2):
