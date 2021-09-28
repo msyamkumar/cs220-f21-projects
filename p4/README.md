@@ -195,10 +195,10 @@ We now write a function `effective_damage` to compute the actual damage that an 
 ```python3
 def effective_damage(attacker, defender):
     pass
-    #TODO: compute the bonus of attacker's type(s) against defender
     #TODO: check if attacker has two types
+    #TODO: compute the bonus of attacker's type(s) against defender
     #TODO: find the attack_type with the higher bonus
-    #TODO: compute the damage caused by attack and return it
+    #TODO: compute the damage caused by attack, considering the higher bonus and return it
 ```
 
 Use the `effective_damage` function to answer the next three questions.
