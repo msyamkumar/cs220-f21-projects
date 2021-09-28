@@ -230,4 +230,4 @@ def stronger_type(type1, type2):
 ## Good Coding Style for Functions
 When we are trying to design a function, we want to make sure that only the latest version for that function exists in our code. For example, in the previous section, we introduced an initial version of `same_types(pkmn1, pkmn2)`, where the conditional expressions needed some modifications. Do not duplicate the original function. Instead, modify the original directly and rerun the cell to update the definition. This way, there won't be multiple `same_types(pkmn1, pkmn2)` functions and that makes it easier to maintain your code.
 
-You can now get started with [p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p4). You can use any helper function that you have created here in the project. Good luck and have fun!
+You can now get started with [p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p4). **You can use any helper function that you have created here in project p4.** Good luck and have fun!
