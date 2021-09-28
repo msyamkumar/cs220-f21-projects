@@ -311,6 +311,7 @@ def two_on_two_battle(pkmn1, pkmn2, pkmn3, pkmn4):
 ### #Q20: What is the output of two_on_two_battle('Flygon', 'Sceptile', 'Garchomp', 'Torterra')?
 
 That will be all for now. 
+
 If you are interested, you can make your battle functions as complicated as you want. 
 - You can prevent a battle between two Pokémon from two different regions (battle function simply could say `'Cannot battle'`). But wait, if either of those Pokémon have `Flying` type, then they should still be able to battle each other.
 - You can try a 3 on 3 battle to test your coding prowess thus far! We look forward to seeing the other fun functions you create!
