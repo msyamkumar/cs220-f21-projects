@@ -169,7 +169,7 @@ Please find the function which is used to get the attack of a Pokémon provided 
 
 ## More Advanced Conditional Statements
 
-So far, we have only used if statements to compare two numbers. Let us do something more fancy now. As you might have seen in the `type_effectiveness_stats.csv` file, a Pokémon might have one or more types., a Pokémon might have one or more types. For instance, Pikachu has just one type: Electric, whereas Charizard has two: Fire and Flying. Copy/paste the following code in a new cell.
+So far, we have only used if statements to compare two numbers. Let us do something more fancy now. As you might have seen in the `pokemon_stats.csv` file, a Pokémon might have one or more types. For instance, Pikachu has just one type: Electric, whereas Charizard has two: Fire and Flying. Copy/paste the following code in a new cell.
 
 ```python
 def get_num_types(pkmn):
