@@ -156,7 +156,7 @@ def compare_hp(pkmn1, pkmn2):
         return ???
 ```
 
-You will have to replace the `???` with the appropriate variables. Such a function that performs a small task and can be used by other functions to perform more complicated tasks is called a 'helper function'. We will be creating a lot more helper functions in p4. In the meantime, try this on your own:
+You will have to replace the `???` with the appropriate variables. Such a function that performs a small task and can be used by other functions to perform more complicated tasks is called a 'helper function'. We will be creating a lot more helper functions in p4. Make sure to test each helper function by invoking the function. In the meantime, try this on your own:
 
 ```python
 def compare_attack(pkmn1, pkmn2):
