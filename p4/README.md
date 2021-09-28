@@ -315,6 +315,7 @@ That will be all for now.
 If you are interested, you can make your battle functions as complicated as you want. Here are some suggestions:
 - You can prevent a battle between two Pokémon from two different regions (battle function simply could say `'Cannot battle'`). But wait, if either of those Pokémon have `Flying` type, then they should still be able to battle each other.
 - You can try a 3 on 3 battle
+
 We look forward to seeing the other fun functions you create!
 
 ---
