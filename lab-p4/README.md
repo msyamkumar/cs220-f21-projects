@@ -13,7 +13,7 @@ None yet
 
 ## Learning the API
 
-First click [`project.py`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/lab-p4/project.py), [`pokemon_stats.csv`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/lab-p4/pokemon_stats.csv), and [`type_effectiveness_stats.csv`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/lab-p4/type_effectiveness_stats.csv) and download them to a `lab4` directory. If you found your `.csv` files are downloaded as `.txt` files (e.g. `pokemon_stats.txt` instead of `pokemon_stats.csv`), run `mv pokemon_stats.txt pokemon_stats.csv` from your Powershell/Terminal to change the type of the file into `.csv` file manually. Here `mv` is a shell command to rename or move files. All the data that we need for p4 is stored in `pokemon_stats.csv` and `type_effectiveness_stats.csv`. 
+First click [`project.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p4/project.py), [`pokemon_stats.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p4/pokemon_stats.csv), and [`type_effectiveness_stats.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p4/type_effectiveness_stats.csv) and download them to a `lab4` directory. If you found your `.csv` files are downloaded as `.txt` files (e.g. `pokemon_stats.txt` instead of `pokemon_stats.csv`), run `mv pokemon_stats.txt pokemon_stats.csv` from your Powershell/Terminal to change the type of the file into `.csv` file manually. Here `mv` is a shell command to rename or move files. All the data that we need for p4 is stored in `pokemon_stats.csv` and `type_effectiveness_stats.csv`. 
 
 Open `pokemon_stats.csv` with Microsoft Excel or any other Spreadsheet software first, and take a look at it. You will see a list of Pokémon along with certain statistics for each of those Pokémon.
 
@@ -34,9 +34,9 @@ Next, open `type_effectiveness_stats.csv` with Microsoft Excel or any other Spre
 
 All Pokémon creatures and their moves are assigned certain types. Each type has several strengths and weaknesses against other Pokémon. In battle, you should use Pokémon and moves that have a type advantage over their opponent; doing so will cause much more damage than otherwise. There are 18 types in this table. Taking the second row (Fire) and the third column (Water) as an example, we see that Water type attack has an effeciveness of 2.0 against Fire type defense.
 
-If you are feeling brave, take a look at [`gen_csv.ipynb`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p4/gen_csv.ipynb) to see how these two files (`pokemon_stats.csv` and  `type_effectiveness_stats.csv`)  were generated. Don't worry if it doesn't make much sense at this point. By the end of CS220, you will be able to understand everything that is happening there. For now, you can try to figure out what is happening in each of the cells.
+If you are feeling brave, take a look at [`gen_csv.ipynb`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p4/gen_csv.ipynb) to see how these two files (`pokemon_stats.csv` and  `type_effectiveness_stats.csv`)  were generated. Don't worry if it doesn't make much sense at this point. By the end of CS220, you will be able to understand everything that is happening there. For now, you can try to figure out what is happening in each of the cells.
 
-`project.py` is designed to give you access to the data in `pokemon_stats.csv` and `type_effectiveness_stats.csv`. First, we need to check the `project.py` API just like we did in p3. In p3, we saw how to use `dir` and `.__doc__` to learn the API. This time, let us use how to use the `help` function. Enter the Python Interactive Mode and type:
+`project.py` is designed to give you access to the data in `pokemon_stats.csv` and `type_effectiveness_stats.csv`. First, we need to check the `project.py` API just like we did in [lab-p3](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p3). In lab-p3, we saw how to use `dir` and `.__doc__` to learn the API. This time, let us use how to use the `help` function. Enter the Python Interactive Mode and type:
 
 ```python
 >>> import project
@@ -228,4 +228,4 @@ def stronger_type(type1, type2):
 ## Good Coding Style for Functions
 When we are trying to design a function, we want to make sure that only the latest version for that function exists in our code. For example, in the previous section, we introduced an initial version of `same_types(pkmn1, pkmn2)`, where the conditional expressions needed some modifications. Instead of copying and pasting the original function to get a new function, what we could have modified the function directly and rerun it. In this way, there won't be multiple `same_types(pkmn1, pkmn2)` functions and that makes it easier to maintain your code.
 
-You can now get started with p4. You can use any helper function that you have created here in p4. Good luck and have fun!
+You can now get started with [p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p4). You can use any helper function that you have created here in the project. Good luck and have fun!
