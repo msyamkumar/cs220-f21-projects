@@ -2,6 +2,8 @@
 
 ### Corrections and Clarifications
 
+1. **(9/30/2021 - 4:45pm)** typo in description of `two_on_two_battle` fixed
+
 Find any issues? Report to us:
 
   * Brian Huang [thuang273@wisc.edu](mailto:thuang273@wisc.edu)
@@ -278,7 +280,7 @@ The essence of the Pokémon anime comes in the form of beautifully animated team
 
 The function `two_on_two_battle(pkmn1, pkmn2, pkmn3, pkmn4)` takes 4 Pokémon. Pokémon 1 and 2 are in Team A while Pokémon 3 and 4 are in Team B.
 
-In the **first round**, Pokémon 1 and 3 battle each other and Pokémon 2 and 4 battle each other. Your function should use the `battle(pkmn1,pkmn2)` function to evaluate the result of each battle.
+In the **first round**, Pokémon 1 and 3 battle each other and Pokémon 2 and 4 battle each other. Your function should use the `battle(pkmn1, pkmn3)` function to evaluate the result of each battle.
 
 If either battle results in a `"Draw"` or in either Pokémon running away, your function should return `"No result"`.
 
