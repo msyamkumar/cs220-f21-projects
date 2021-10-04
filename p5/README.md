@@ -1,4 +1,4 @@
-# Project 5: Hurricane Study
+# Project 5: Hurricanes and Loops
 
 
 ## Corrections and clarifications
@@ -17,9 +17,9 @@ In this project, you will demonstrate how to
 * Write fundamental loop structures
 * Learn basic string manipulations 
 * Creating your own helper functions as outlined in 
-  [lab-p5](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p5)
+  [lab-p5](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p5)
 
-**Please go through [lab-p5](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p5) 
+**Please go through [lab-p5](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p5) 
 before working on this project.** 
 The lab introduces useful techniques related to this project.
 
@@ -42,7 +42,7 @@ By the end of this semester, we'll teach you to extract data
 from websites like Wikipedia for yourself.
 
 Before you start to work on p5, 
-please complete [lab-p5](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p5) first.
+please complete [lab-p5](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p5) first.
 
 To start, download `project.py`, `test.py` and `hurricanes.csv`. 
 You'll do your work in Jupyter Notebooks this week, 
@@ -74,15 +74,15 @@ that you need to solve a particular problem.
 
 *Please note*, for questions asking you
 to get a value at a particular **index**,
-you should not confuse it with the **actual** location
+you should not confuse it with the actual **location**
 of that value in the dataset. 
 Indexing in python begins from 0.
 
 For example, consider this excerpt from `hurricanes.csv`:
 
-<img src="table.png" width="240" alt="Hurricanes outlined with position and name: 1: Baker, 2: Camille, 3: Eloise, 4: Frederic, 5: Elena">
+<img src="images/table.png" width="240" alt="Hurricanes outlined with position and name: 1: Baker, 2: Camille, 3: Eloise, 4: Frederic, 5: Elena">
 
-The **index** for the Hurricane Eloise is 2 but its **actual** location is 3.
+The **index** for the Hurricane Eloise is 2 but its actual **location** is 3.
 Therefore, you must follow this convention for all the questions
 asking for the value at a particular index.
 
