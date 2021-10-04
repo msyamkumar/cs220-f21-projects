@@ -7,8 +7,6 @@ with using functions in `project.py` for p5.
 You will also learn basic methods to manipulate strings
 that will be helpful in solving p5.
 
-Remember to **enjoy** this exploration into data programming!
-
 ## Corrections and clarifications
 
 None yet. 
@@ -28,12 +26,12 @@ This data is a summary of statistics pulled from the
 [List of United States hurricanes](https://en.wikipedia.org/wiki/List_of_United_States_hurricanes) 
 on Wikipedia.
 
-Look through the dataset for a recent hurricane, such as hurricane Delta,
+Look through the dataset for a recent hurricane, such as hurricane Delta (at index 66),
 and briefly familiarize yourself with some of the numbers.
 The data shows name, the date of formation, the date of dissipation, 
 max wind speed (in MPH), damage (in US dollars), and deaths. 
 Note that the death stats are usually direct deaths, 
-meaning they don't count deaths that occur after the storm due to, say,
+meaning they don't count deaths that occur after the storm due to, say
 infrastructure damage to hospitals.
 
 Often, we'll organize data by assigning numbers (called indexes)
@@ -67,7 +65,7 @@ For example, run this to learn about `count`:
 help(project.count)
 ```
 
-or run the following to just see the function's documentation:
+or alternatively, you could run the following to just see the function's documentation:
 
 ```python
 print(project.count.__doc__)
@@ -255,7 +253,7 @@ print(project.get_formed(0)[-4:])
 
 ### Creating some helper functions
 
-We will now finish three functions that will be useful
+We will now create three functions that will be useful
 for dealing with dates in p5.
 Copy/paste the following code into your notebook and finish the TODOs:
 
@@ -289,7 +287,7 @@ Paste the following function within your notebook, and call it:
 import datetime
 
 def get_number_of_days(start_date, end_date):
-    """Gets the number of days between the start_date and end_date"""
+    """Gets the number of days between the start_date (in 'mm/dd/yyyy' format) and end_date (in 'mm/dd/yyyy' format)"""
     day1 = datetime.datetime.strptime(start_date, '%m/%d/%Y') # The second argument is a format string to tell the function how to process the date string
     day2 = datetime.datetime.strptime(end_date, '%m/%d/%Y')
     delta = day2 - day1
@@ -298,20 +296,30 @@ def get_number_of_days(start_date, end_date):
 
 The above code allows you to find the number of days between two dates. 
 It might be trivial to find the day difference between 08/01/2021 and 08/12/2021. 
-But, how about 04/20/2021 and 08/12/2021? 
-The `datetime` module can automatically calculate this for us with just 2 steps:
+But, how about 04/20/2021 and 08/12/2021? With th function above, you can call:
+
+```python
+get_number_of_days('04/20/2021', '08/12/2021')
+```
+
+The function `get_number_of_days` uses the `datetime` module 
+to calculate this for us with just 2 steps:
 
 1. Convert the date strings into the datetime format
-   that the module can process and manipulate 
-   (`day1 = datetime.datetime.strptime(start_date, '%m/%d/%Y')`)
+   that the module can process and manipulate
+   (`datetime.datetime.strptime`).
 
-2. After converting the two dates we want to find the difference, 
-   we can directly subtract them in the datetime format (`day2 - day1`).
+2. Directly subtract them
+   in the datetime format (`day2 - day1`), 
+   and return the number of days (`delta.days`).
 
 The `datetime` module can do a lot more
 manipulation and computations with date formats. 
 However, for this lab and project, 
-you just need to know the ones we discussed above.
+you just need to know the ones we have discussed above.
 
+---
+
+You are now ready to take on [p5](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p5)!
 Remember to only work with at most one partner on p5 from this point on. 
 Have fun!
