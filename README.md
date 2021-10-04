@@ -1,1 +1,1 @@
-# CS 220 - Fall 2021 Projects
+# CS 220 Fall 2021 Projects
