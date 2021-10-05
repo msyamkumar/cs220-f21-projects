@@ -1,4 +1,4 @@
-# Project 5: Hurricanes and Loops
+# Project 5: Hurricanes Study using Loops
 
 
 ## Corrections and clarifications
