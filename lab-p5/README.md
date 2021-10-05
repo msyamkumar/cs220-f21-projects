@@ -26,7 +26,7 @@ This data is a summary of statistics pulled from the
 [List of United States hurricanes](https://en.wikipedia.org/wiki/List_of_United_States_hurricanes) 
 on Wikipedia.
 
-Look through the dataset for a recent hurricane, such as hurricane Delta (at index 68),
+Look through the dataset for a recent hurricane, such as hurricane Delta (at index 66),
 and briefly familiarize yourself with some of the numbers.
 The data shows name, the date of formation, the date of dissipation, 
 max wind speed (in MPH), damage (in US dollars), and deaths. 
