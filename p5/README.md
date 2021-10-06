@@ -237,7 +237,7 @@ def get_decade_total(start_of_decade):
     for year in range(???):
         total_hurricane_year = get_year_total(year)
         # TODO: finish this code
-    return total_hurricade_decade
+    return total_hurricane_decade
 ```
 
 ### #Q17: Which decade in the 20th century suffered the most number of hurricanes?
