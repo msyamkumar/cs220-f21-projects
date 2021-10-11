@@ -3,7 +3,7 @@
 In this lab, you will practice accessing CSVs, sorting, and using sets.
 
 To start, familiarize yourself with the dataset for p6 here:
-[airbnb.csv](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p6/airbnb.csv).
+[airbnb.csv](https://github.com/msyamkumar/cs220-f21-projects/blob/main/lab-p6/airbnb.csv).
 Download the `airbnb.csv` to a new `lab6` directory, and start a new
 notebook in that directory for this lab.
 
@@ -351,4 +351,4 @@ Here's how the lab relates to p6:
 3. Converting a list to a set and then back to a list
    will remove duplicates from your list
 
-Good luck with p6!
+Good luck with [p6](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p6)!
