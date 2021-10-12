@@ -216,18 +216,18 @@ def availability_per_host_name(host_name, neighborhood_group=None):
     # TODO: return your list of availabilities
 ```
 
-### #Q10: What is the difference between the most and least availability among all rooms whose host name is "Helena" (`host_name == "Helena"`)?
+### #Q10: What are the different availabilities of all rooms in the neighborhood group "Brooklyn" whose host name is "Stanley"?
 
-**Note:** Your answer should be in the form of an integer.
+**Note:** You should remove duplicate availabilities
+and the list should be in descending order.
 
 **Important:** You should use your previously written 
 `availability_per_host_name` function to implement this logic.
 
 
-### #Q11: What are the different availabilities of all rooms in the neighborhood group "Brooklyn" whose host name is "Stanley"?
+### #Q11: What is the difference between the most and least availability among all rooms whose host name is "Helena" (`host_name == "Helena"`)?
 
-**Note:** You should remove duplicate availabilities
-and the list should be in descending order.
+**Note:** Your answer should be in the form of an integer.
 
 **Important:** You should use your previously written 
 `availability_per_host_name` function to implement this logic.
