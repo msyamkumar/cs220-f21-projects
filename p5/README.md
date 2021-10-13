@@ -205,6 +205,8 @@ your arguments.
 
 **Note:** Your answer should be in the form of an integer.
 
+---
+
 ### #Q14: What is the speed of the fastest hurricane which resulted in 0 deaths?
 
 Just like other questions, you **cannot** hard code your answer. 
