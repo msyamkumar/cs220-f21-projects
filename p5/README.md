@@ -3,7 +3,7 @@
 
 ## Corrections and clarifications
 
-None yet.
+* (10/13/2021 - 9:00 am): Extra hints for Q5 and Q20.
 
 **Find any issues?** Report to us: 
 
@@ -102,6 +102,10 @@ Write your code such that it counts all potential variants
 (e.g., "Omar", "OMAR", "oMaR", etc.).
 
 ### #Q5: What is the slowest MPH a hurricane has ever gone?
+
+**Hint:** Take a look at the section on finding the minimum from [lab-p5](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p5#5-finding-a-maximum-or-minimum).
+Here, instead of minimizing over the function `f`, you will have to minimize
+over the function `project.get_mph`.
 
 ### #Q6: How much faster was the fastest hurricane compared to the slowest hurricane in the dataset?
 
@@ -267,7 +271,9 @@ have to worry about duplicates.
 **Hint:** Look for functions you wrote earlier than can help you here.
 
 **Extra hint:** Remember that `get_number_of_days(start_date, end_date)` will be negative
-if `start_date` occurs after `end_date`.
+if `start_date` occurs after `end_date`. Therefore, your job is to identify the index `idx`
+for which `get_number_of_days(project.get_dissipated(idx), deadliest_formation_date)` takes
+the smallest **positive** value.
 
 ---
 
