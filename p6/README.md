@@ -2,7 +2,7 @@
 
 ## Corrections/ Clarifications
 
-None yet.
+* (10/14/2021 - 8:20 pm): Added code snippet for Q1 
 
 **Find any issues?** Report to us:
 
@@ -72,6 +72,16 @@ the different neighborhood groups (`neighborhood_group`).
 
 **Important**: The order doesn't matter
 but make sure that your answer doesn't contain duplicate entries.
+
+Here's a code snippet for you to start with:
+
+```python
+neighborhood_groups = []
+for idx in range(???):
+    neighborhood_groups.append(cell(???, ???))
+    
+#TODO: remove duplicates from `neighborhood_groups`
+```
 
 Now is a good time to run the tests with `python test.py`. 
 If you did Q1 correctly, it should look like this:
