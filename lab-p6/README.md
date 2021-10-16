@@ -51,24 +51,24 @@ when you start the project.
 The `airbnb.csv` file has data about nearly 50,000 listings on Airbnb
 from New York City, NY from the year 2019. Each row in the file 
 contains data about a single listing. The columns contain the 
-following data about each listing:
+following data about each listing (along with the correct data type to represent it):
 
-* `room_id` - The ID of the room listing
-* `name` - The name of the room listing
-* `host_id` - The ID of the host for the room listing
-* `host_name` - The name of the host for the room listing
-* `neighborhood_group` - The group of neighborhoods the room is in
-* `neighborhood` - The neighborhood the room is in
-* `latitude` - The latitude where the room is located
-* `longitude` - The longitude where the room is located
-* `room_type` - The type of room
-* `price` - The price per night for the room in US dollars
-* `minimum_nights` - The minimum amount of nights the room can be booked for
-* `number_of_reviews` - The total number of reviews the room has received
-* `last_review` - The date of the most recent review in the form `yyyy-mm-dd` 
-* `reviews_per_month` - How many reviews per month the room receives
-* `calculated_host_listings_count` - How many listings the host of the room has
-* `availability_365` - How many days per year the listing is available for
+* `room_id` - The ID of the room listing (`str`)
+* `name` - The name of the room listing (`str`)
+* `host_id` - The ID of the host for the room listing (`str`)
+* `host_name` - The name of the host for the room listing (`str`)
+* `neighborhood_group` - The group of neighborhoods the room is in (`str`)
+* `neighborhood` - The neighborhood the room is in (`str`)
+* `latitude` - The latitude where the room is located (`float`)
+* `longitude` - The longitude where the room is located (`float`)
+* `room_type` - The type of room (`str`)
+* `price` - The price per night for the room in US dollars (`int`)
+* `minimum_nights` - The minimum amount of nights the room can be booked for (`int`)
+* `number_of_reviews` - The total number of reviews the room has received (`int`)
+* `last_review` - The date of the most recent review in the form `yyyy-mm-dd` (`str`)
+* `reviews_per_month` - How many reviews per month the room receives (`float`)
+* `calculated_host_listings_count` - How many listings the host of the room has (`int`)
+* `availability_365` - How many days per year the listing is available for (`int`)
 
 **Note:** Keep in mind while writing your project,
 some entries may be missing data for specific columns. Sadly, data in real life
