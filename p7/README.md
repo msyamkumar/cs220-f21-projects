@@ -21,7 +21,7 @@ None yet.
 
 ## Intro
 
-Let's track COVID-19 vaccination, Python style!  In this project, you will get more practice with lists and start using dictionaries. Start by downloading `test.py` and `vaccinations.csv` (which was adapted from [this dataset](https://ourworldindata.org/covid-vaccinations)). This dataset is too large to preview on GitHub (>55K rows), but you can view the [raw version](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p7/covid19.csv) or using a program such as [Excel](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p7/excel.md). For this project, you'll create a new `main.ipynb` and answer questions in the usual format. **Please go through the [lab-p7](https://github.com/msyamkumar/cs220-s21-projects/tree/master/lab-p7) before working on this project.** The lab will introduce some useful techniques related to this project.
+Let's track COVID-19 vaccination, Python style!  In this project, you will get more practice with lists and start using dictionaries. Start by downloading `test.py` and `vaccinations.csv` (which was adapted from [this dataset](https://ourworldindata.org/covid-vaccinations)). This dataset is too large to preview on GitHub (>55K rows), but you can view the [raw version](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p7/raw_data.csv) or using a program such as [Excel](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p7/excel.md). For this project, you'll create a new `main.ipynb` and answer questions in the usual format. **Please go through the [lab-p7](https://github.com/msyamkumar/cs220-s21-projects/tree/master/lab-p7) before working on this project.** The lab will introduce some useful techniques related to this project.
 
 ### Coding style requirements
 
@@ -172,13 +172,13 @@ Now, let us get to some of the other columns in this dataset. For now, let us fo
 
 We will now create a function `fully_vaccinated_by` to deal with the missing data in the `people_fully_vaccinated` column. Whenever the `people_fully_vaccinated` data is missing on a certain date, we will use the most recent data from before that date.  If no prior data is available on or before a certain date, we will say the value is `None`.
 
-<img src="images/argentina.PNG" width="600">
+<img src="images/argentina.png" width="600">
 
 For example, for Argentina, the data is missing on 10/12/2021. So, we use the data from 10/11/2021, which is the most recent day before 10/12/2021, for which we have the data. 
 
 For other countries such as Bermuda, the data is only available on 10/15/2021. In this case, for the day 10/16/2021, we will use the data from the previous day. However, for other dates such as 10/14/2021, we cannot give an answer since we have no prior data. In this case, we will have to set the value to `None`.
 
-<img src="images/bermuda.PNG" width="600">
+<img src="images/bermuda.png" width="600">
 
 Note that this function is a **requirement**, and you will **lose points** if you do not implement this function.
 
