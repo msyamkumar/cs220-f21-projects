@@ -60,23 +60,31 @@ def process_csv(filename):
     return example_data
 ```
 
-Extract the `header` and `covid_data` from `vaccinations.csv` using this function. Consider peeking at the first few rows of the dataset!
+Use this function to read the data from `vaccinations.csv`.
+Extract the `header` and `covid_data`. Recall that indexing helps you extract the first inner list as header and slicing would help you extract the data rows (remaining inner lists).
+Consider peeking at the first few rows of the dataset!
 
 If you look closely, our program interprets the missing values as '' characters.
-It's up to you to write any functions that will make it more convenient to access this data. 
+Recall that you learnt how to write a cell function in (lab-p6)[https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p6]. Write a similar cell function to handle missing values and typecast values based on column names.
 
 ## Let's Start!
 
-**Warning:** Do **not** hardcode the column indices anywhere in your code. You will **lose points** during code review if you do so. Instead, use `.index()` as you did in p6. Better yet, create a `cell` function that can also typecast based on the column name, as in p6.
+**Warning:** Do **not** hardcode the column indices anywhere in your code. You will **lose points** during code review if you do so. Instead, use `.index()` as you did in p6.
 
 
 ### #Q1: What dates are mentioned in the dataset?
+1. Create an empty list to track dates
+2. Iterate:
+	- use cell function to retrieve date
+	- to use cell function, should you iterate over values or indices?
+	- add date to the list
+3. Which data structure can you use to eliminate duplicates?
 
 **Note:** Your answer should be a **list** of the unique dates in the dataset. The list does not have to be sorted.
 
-
 ### #Q2: What countries are listed in the dataset?
-
+1. Repeat steps 1 to 3 from Q1 with modification
+2. Sort the list using appropriate function / method.
 **Note:** Your answer should be a **list** of the countries in the dataset. The list should be sorted in alphabetical order.
 
 
