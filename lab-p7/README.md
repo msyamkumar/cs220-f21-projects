@@ -18,11 +18,16 @@ do you think will occur the most often?*
 ```python
 # counting characters in a string
 PI = "three, dot, one, four, one, five, nine, two, six, five, three, five, nine"
-counts = {}
+counts = {} # key: English alphabet (ex: "e"), value: count of occurrence of alphabet in string PI (ex: 11)
 for char in ????:
     if not char in counts:
+	# you are encountering a new alphabet
+	# so you should add a new key-value pair to your counts dictionary
+	# first encounter of alphabet => corresponding count should be 1
         counts[????] = ????
     else:
+	# you have already encountered this alphabet
+	# so how should you update corresponding count?
         ????[char] += ????
 counts
 ```
@@ -41,7 +46,7 @@ Fill in the blanks such that counts becomes a dictionary where each key is a wor
 ```python
 # counting words in a string
 PI = "three, dot, one, four, one, five, nine, two, six, five, three, five, nine"
-counts = {}
+counts = {} #key: word (ex: "three"), value: count of occurrence (ex: 2)
 for word in PI.????(????):
     if ????:
         ????
@@ -67,7 +72,7 @@ Fill in the blanks to create a dictionary that maps the English words in list `k
 # dict from list of keys and values
 keys = ["two", "zero"]
 vals = ["dos", "cero"]
-english_to_spanish = ???? # empty dictionary
+english_to_spanish = ???? # empty dictionary #key: English word, value: Spanish word
 for i in range(len(????)):
     english_to_spanish[keys[????]] = ????
 english_to_spanish
