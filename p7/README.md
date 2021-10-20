@@ -106,11 +106,11 @@ Here is a code snippet for you to start with:
 ```python
 populations = {} #key: country name, value: popluation
 
-for i in range(???):
+for row_idx in range(???):
     country = ???
     population = ???
     if country not in populations:
-        populations[country] = None
+        populations[country] = None # Initial place holder for country, we will replace this using next condition
     if ???: # TODO: check that the population data is not missing
         populations[???] = ??? # TODO: add the key-value pair to the dict
 ```
@@ -120,9 +120,17 @@ for i in range(???):
 
 Now, let us focus on the `daily_vaccinations` column. We now have to decide how to deal with the missing data in this column. We have several choices ahead of us. For instance, we could perform linear interpolation using the available data to estimate the `daily_vaccinations` when the data is missing. However, given the nature of the dataset, let us err on the side of caution. If the `daily_vaccinations` data is missing for a certain date, **we will ignore that date**. In effect, we make the conservative estimate that the number of vaccinations on that date is 0.
 
-### #Q4: For how many countries do we have the daily vaccination data of '10/12/2021'?
+### #Q4: How many countries have daily vaccination date for the date '10/12/2021'?
 
 **Note:** Your answer should be an **int**.
+
+1. Create an empty list to track country names
+2. Iterate over the data
+	- use cell function calls to retrieve relevant column information
+	- check for date match
+	- if vaccination data is not missing, add country to the list
+3. Get unique country names - what data structure will be useful here?
+4. How can you find the count of unique country names? 
 
 ### Function suggestion:
 
