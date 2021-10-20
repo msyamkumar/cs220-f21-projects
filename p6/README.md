@@ -148,6 +148,7 @@ def find_room_names(contained):
 
 **Note:** All words are case insensitive. Your answer should be in the form of a Python list.
 
+**Important:** You should use the `find_room_names` function to implement this logic.
 
 ### #Q5: Find the room names containing "cinema" or "film"
 
