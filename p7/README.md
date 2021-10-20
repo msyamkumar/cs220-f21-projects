@@ -65,7 +65,7 @@ Extract the `header` and `covid_data`. Recall that indexing helps you extract th
 Consider peeking at the first few rows of the dataset!
 
 If you look closely, our program interprets the missing values as '' characters.
-Recall that you learnt how to write a cell function in (lab-p6)[https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p6]. Write a similar cell function to handle missing values and typecast values based on column names.
+Recall that you learnt how to write a cell function in [lab-p6](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p6). Write a similar cell function to handle missing values and typecast values based on column names.
 
 ## Let's Start!
 
