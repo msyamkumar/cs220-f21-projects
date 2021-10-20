@@ -128,7 +128,7 @@ You can find the value "SoHo" in the `neighborhood` column.
 
 ### Function Suggestion:
 
-We suggest you complete a function something like the following to answer the 
+We require you to complete a function like the following to answer the 
 next several questions (this is a requirement, and you will **lose points** if
 you do not implement this function):
 
@@ -148,6 +148,7 @@ def find_room_names(contained):
 
 **Note:** All words are case insensitive. Your answer should be in the form of a Python list.
 
+**Important:** You should use the `find_room_names` function to implement this logic.
 
 ### #Q5: Find the room names containing "cinema" or "film"
 
@@ -206,7 +207,7 @@ as indicated by a value of `None`.
 
 ### Function Suggestion:
 
-We suggest you complete a function something like the following to answer the 
+We require you to complete a function like the following to answer the 
 next several questions (this is a requirement, and you will **lose points** if
 you do not implement this function):
 
@@ -217,6 +218,9 @@ and within in the specified `neighborhood_group`.
 
 **Note:** Checking for a matching host name should be case insensitive. You should
 ignore rooms for which `availability_365` data is missing.
+
+**Note:** If `neighborhood_group` is `None` you should consider rooms
+within every neighborhood group.
 
 ```python
 def availability_per_host_name(host_name, neighborhood_group=None):
@@ -246,7 +250,7 @@ and the list should be in descending order.
 
 ### Function Suggestion:
 
-We suggest you complete a function something like the following to answer the 
+We require you to complete a function like the following to answer the 
 next several questions (this is a requirement, and you will **lose points** if
 you do not implement this function):
 
@@ -313,11 +317,14 @@ points for not implementing a function here, but it is highly recommended that y
 
 **Hint:** First make a list of all the neighborhoods in Queens, and find which of these neighborhoods has the highest average ratio.
 
+**Hint:** If the program is taking too long to execute, 
+make sure you're not running the logic on duplicate neighborhoods. 
+
 ---
 
 ### Function Suggestion:
 
-We suggest you complete a function to answer the 
+We require you to complete a function to answer the 
 next two questions (this is a requirement, and you will **lose points** if
 you do not implement this function):
 
