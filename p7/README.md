@@ -73,6 +73,9 @@ Recall that you learnt how to write a cell function in (lab-p6)[https://github.c
 
 
 ### #Q1: What dates are mentioned in the dataset?
+
+**Note:** Your answer should be a **list** of the unique dates in the dataset. The list does not have to be sorted.
+
 1. Create an empty list to track dates
 2. Iterate:
 	- use cell function to retrieve date
@@ -80,13 +83,11 @@ Recall that you learnt how to write a cell function in (lab-p6)[https://github.c
 	- add date to the list
 3. Which data structure can you use to eliminate duplicates?
 
-**Note:** Your answer should be a **list** of the unique dates in the dataset. The list does not have to be sorted.
-
 ### #Q2: What countries are listed in the dataset?
-1. Repeat steps 1 to 3 from Q1 with modification
-2. Sort the list using appropriate function / method.
 **Note:** Your answer should be a **list** of the countries in the dataset. The list should be sorted in alphabetical order.
 
+1. Repeat steps 1 to 3 from Q1 with modification
+2. Sort the list using appropriate function / method.
 
 ---
 
