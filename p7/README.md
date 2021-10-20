@@ -2,7 +2,7 @@
 
 ## Corrections/ Clarifications
 
-None yet.
+ * **(10/20/2021 - 10:30am)**: Q17 and Q18 reworded. References to 'single dose' replaced with the term 'partly vaccinated'.
 
 **Find any issues?** Report to us, 
 
@@ -309,14 +309,14 @@ The lists `dates` and `countries` can be found from your answers to Q1 and Q2 re
 Now let us do something more interesting with our data!
 
 
-### #Q17: What is the estimated ratio of people who have received exactly one dose to people who have received two doses in each country, as of '10/16/2021'?
+### #Q17: What is the estimated ratio of people who have been partly vaccinated to people who have been fully vaccinated in each country, as of '10/16/2021'?
 
 **Note:** Your answer should be a **dict** mapping each country to the ratio. If the ratio cannot be computed for some country due to missing data, the value of that country should be `None`. It is recommended that you use the data structure `vaccination_stats` to extract all the data you need for this question.
 
-**Hint:** The `people_fully_vaccinated` column contains data about the number of people who have received two doses. The `people_vaccinated` column contains data about the number of people who have received **at least** one dose (i.e. either one or two doses) of the vaccine.
+**Hint:** The `people_fully_vaccinated` column contains data about the number of people who have been fully vaccinated. The `people_vaccinated` column contains the sum of the number of people who have been fully vaccinated, and the number of people who are partially vaccinated.
 
 
-### #Q18: Which country has the lowest estimated ratio of people who have received exactly one dose to people who have received two doses, as of '10/16/2021'?
+### #Q18: Which country has the lowest estimated ratio of people who are partly vaccinated to people who are fully vaccinated, as of '10/16/2021'?
 
 
 ### #Q19: Which country is estimated to have administered the most vaccines per capita, as of '10/14/2021'?
