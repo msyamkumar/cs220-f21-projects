@@ -104,7 +104,7 @@ Notice that population data is present only on (at most) one row for each countr
 Here is a code snippet for you to start with:
 
 ```python
-populations = {}
+populations = {} #key: country name, value: popluation
 
 for i in range(???):
     country = ???
