@@ -132,6 +132,8 @@ Now, let us focus on the `daily_vaccinations` column. We now have to decide how 
 3. Get unique country names - what data structure will be useful here?
 4. How can you find the count of unique country names? 
 
+---
+
 ### Function suggestion:
 
 We will now create a function `daily_vaccinations_on` to deal with the missing data in the `daily_vaccinations` column. Note that when the data is missing for a certain date, we want the value to be `None`.
@@ -184,6 +186,7 @@ Now, let us get to some of the other columns in this dataset. For now, let us fo
 
 **Warning:** Note that for some countries, data is missing for a few days in the middle of the week. For example, for Argentina, the data is available on 10/11/2021, and is missing for the next day, but is again available from 10/13/2021 to 10/16/2021. In this case, the value of the key `'Argentina'` should be `'10/16/2021'`, since that is the last day for which data is available.
 
+---
 
 ### Function suggestion:
 
