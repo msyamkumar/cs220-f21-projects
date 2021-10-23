@@ -3,6 +3,7 @@
 ## Corrections/ Clarifications
 
  * **(10/20/2021 - 10:30am)**: Q17 and Q18 reworded. References to 'single dose' replaced with the term 'partly vaccinated'.
+ * **(10/23/2021 - 5:00pm)**: Added clarifying note for Q18.
 
 **Find any issues?** Report to us, 
 
@@ -320,6 +321,8 @@ Now let us do something more interesting with our data!
 
 
 ### #Q18: Which country has the lowest estimated ratio of people who are partly vaccinated to people who are fully vaccinated, as of '10/16/2021'?
+
+**Note:** If there are any ties, your answer should be the country whose name appears first in the alphabetical order.
 
 
 ### #Q19: Which country is estimated to have administered the most vaccines per capita, as of '10/14/2021'?
