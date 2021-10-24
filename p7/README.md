@@ -264,12 +264,12 @@ You can start with this code snippet if you want:
 ```python
 vaccination_stats = {}
 
-populations = ??? # a dict mapping each country to population of country
+populations = ??? # a dict mapping each country to the population of that country...you made this in Q3
 for date in dates:
     daily_vax_dict = ??? # a dict mapping each country to number of daily_vaccinations on date
-    total_vax_dict = ??? # a dict mapping each country to (interpolated) number of total_vaccinations on date
-    people_vax_dict = ??? # a dict mapping each country to (interpolated) number of people_vaccinated on date
-    fully_vax_dict = ??? # a dict mapping each country to (interpolated) number of people_fully_vaccinated on date
+    total_vax_dict = ??? # a dict mapping each country to (most recent) number of total_vaccinations on date
+    people_vax_dict = ??? # a dict mapping each country to (most recent) number of people_vaccinated on date
+    fully_vax_dict = ??? # a dict mapping each country to (most recent) number of people_fully_vaccinated on date
     for country in countries:
         if country not in vaccination_stats:
             vaccination_stats[country] = {}
