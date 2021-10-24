@@ -4,6 +4,7 @@
 
  * **(10/20/2021 - 10:30am)**: Q17 and Q18 reworded. References to 'single dose' replaced with the term 'partly vaccinated'.
  * **(10/23/2021 - 5:00pm)**: Added clarifying note for Q18.
+ * **(10/24/2021 - 4:15pm)**: Reworded suggestions for how to solve Q12
 
 **Find any issues?** Report to us, 
 
@@ -237,13 +238,14 @@ def fully_vaccinated_by(date):
 
 ----
 
-### Data Structure suggestion:
+### Dictionary of Dictionaries:
 
-Just like with `people_fully_vaccinated`, we can interpolate the other cumulative columns of the dataset, such as `total_vaccinations` and `people_vaccinated`. In fact, if you want, you may create a function `cumulative_interpolation(column_name, date)` which can interpolate for any of these columns.
+One big issue with the data we have gathered so far is how poorly it is orgainzed. For example, to get the real value of the `people_fully_vaccinated` column on a certain date, we are forced to call `fully_vaccinated_by`, and extract the data from there. In data science, a lot of questions can be answered with short lines of code, if we first organize our data in an easily accessible data structure. We will now try to do exactly that. 
 
-However, we also have other issues to deal with. One big issue with the data we have gathered so far is how poorly it is orgainzed. For example, to query the real value of the `people_fully_vaccinated` column on a certain date, we are forced to call `fully_vaccinated_by`, and extract the data from there. In data science, a lot of questions can be answered with short lines of code, if we first organize our data in an easily accessible data structure. We will now try to do exactly that. Note that this data structure is a **requirement**, and you will **lose points** if you do not implement this data structure.
+We will create a **dictionary of dictionaries** called `vaccination_stats` to store our data. Note that this data structure is a **requirement**, and you will **lose points** if you do not implement this data structure. The keys of this dictionary will be the various countries in the dataset (which you found in Q2), and the value corresponding to each key will be another dictionary. As for the inner dictionary, the keys will be the different dates (which you found in Q1), and the value will be a dictionary representing all the statistics of that country on that date. 
 
-We will create a **dictionary of dictionaries** called `vaccination_stats` to store our data. The keys of this dictionary will be the various countries in the dataset (which you found in Q2), and the value corresponding to each key will be another dictionary. As for this inner dictionary, the keys will be the different dates (which you found in Q1), and the value will be a dictionary representing all the statistics of that country from that date. These statistics should be found by interpolation (you may use `cumulative_interpolation` if you have implemented it), and it should look like this:
+
+To reiterate, `vaccination_stats` should be a dictionary where the keys are country names. The values should be dictionaries with the keys being the different dates. The values of these keys should be dictionaries like the one below.
 
 ```python
 >>> vaccination_stats['Albania']['10/12/2021']
@@ -257,29 +259,30 @@ We will create a **dictionary of dictionaries** called `vaccination_stats` to st
 
 ```
 
-To reiterate, `vaccination_stats` should be a dictionary where the keys are country names. The values should be dictionaries with the keys being the different dates. The values of these keys should be dictionaries like the one above.
-
 You can start with this code snippet if you want:
 
 ```python
 vaccination_stats = {}
 
-populations = ??? # a dict mapping each country to population of country
-for date in dates:
+for date in dates: 
     daily_vax_dict = ??? # a dict mapping each country to number of daily_vaccinations on date
-    total_vax_dict = ??? # a dict mapping each country to (interpolated) number of total_vaccinations on date
-    people_vax_dict = ??? # a dict mapping each country to (interpolated) number of people_vaccinated on date
-    fully_vax_dict = ??? # a dict mapping each country to (interpolated) number of people_fully_vaccinated on date
+    total_vax_dict = ??? # a dict mapping each country to the most recent number of total_vaccinations on date
+    people_vax_dict = ??? # a dict mapping each country to the most recent number of people_vaccinated on date
+    fully_vax_dict = ??? # a dict mapping each country to most recent number of people_fully_vaccinated on date
     for country in countries:
         if country not in vaccination_stats:
             vaccination_stats[country] = {}
         vaccination_stats[country][date] = {}
         vaccination_stats[country][date]['country'] = country
         vaccination_stats[country][date]['date'] = date
-        # TODO: fill in the rest of the dict
+        # TODO: fill in the rest of the dict to match the example above
 ```
 
 The lists `dates` and `countries` can be found from your answers to Q1 and Q2 respectively.
+
+The vaccination data, such as `people_vax_dict`, can be found by using the same logic you used in the function `fully_vaccinated_by.` You may want to consider generalizing that algorithm into its own function, which might be called  `most_recent_total(column_name, date)`. Writing this function is optional but will reduce duplicated code.
+
+The population for each country can be found from your answer to Q3.
 
 ---
 
