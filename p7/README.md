@@ -237,13 +237,11 @@ def fully_vaccinated_by(date):
 
 ----
 
-### Data Structure suggestion:
+### A Dictionary of Dictionaries:
 
-Just like with `people_fully_vaccinated`, we can interpolate the other cumulative columns of the dataset, such as `total_vaccinations` and `people_vaccinated`. In fact, if you want, you may create a function `cumulative_interpolation(column_name, date)` which can interpolate for any of these columns.
+One big issue with the data we have gathered so far is how poorly it is orgainzed. For example, to query the real value of the `people_fully_vaccinated` column on a certain date, we are forced to call `fully_vaccinated_by`, and extract the data from there. In data science, a lot of questions can be answered with short lines of code, if we first organize our data in an easily accessible data structure. We will now try to do exactly that. Note that this data structure is a **requirement**, and you will **lose points** if you do not implement this data structure.
 
-However, we also have other issues to deal with. One big issue with the data we have gathered so far is how poorly it is orgainzed. For example, to query the real value of the `people_fully_vaccinated` column on a certain date, we are forced to call `fully_vaccinated_by`, and extract the data from there. In data science, a lot of questions can be answered with short lines of code, if we first organize our data in an easily accessible data structure. We will now try to do exactly that. Note that this data structure is a **requirement**, and you will **lose points** if you do not implement this data structure.
-
-We will create a **dictionary of dictionaries** called `vaccination_stats` to store our data. The keys of this dictionary will be the various countries in the dataset (which you found in Q2), and the value corresponding to each key will be another dictionary. As for this inner dictionary, the keys will be the different dates (which you found in Q1), and the value will be a dictionary representing all the statistics of that country from that date. These statistics should be found by interpolation (you may use `cumulative_interpolation` if you have implemented it), and it should look like this:
+We will create a **dictionary of dictionaries** called `vaccination_stats` to store our data. The keys of this dictionary will be the various countries in the dataset (which you found in Q2), and the value corresponding to each key will be another dictionary. As for this inner dictionary, the keys will be the different dates (which you found in Q1), and the value will be a dictionary representing all the statistics of that country from that date. These statistics should be found by using the same algorithm you used in Q9, and it should look like this:
 
 ```python
 >>> vaccination_stats['Albania']['10/12/2021']
@@ -280,6 +278,8 @@ for date in dates:
 ```
 
 The lists `dates` and `countries` can be found from your answers to Q1 and Q2 respectively.
+
+The function you wrote in Q9, `fully_vaccinated_by` can be generalized for other cumulative statistics, such as `total_vaccinations` and `people_vaccinated`.  
 
 ---
 
