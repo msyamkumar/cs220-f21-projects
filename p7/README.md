@@ -5,7 +5,7 @@
  * **(10/20/2021 - 10:30am)**: Q17 and Q18 reworded. References to 'single dose' replaced with the term 'partly vaccinated'.
  * **(10/23/2021 - 5:00pm)**: Added clarifying note for Q18.
  * **(10/24/2021 - 4:15pm)**: Reworded suggestions for how to solve Q12
- * **(10/25/2021 - 2:50pm)**: Rewrote sample code for Q5 to clarify, added hints to Q6
+ * **(10/25/2021 - 3:10pm)**: Rewrote sample code for Q5 and Q10 to clarify, added hints to Q6
 
 **Find any issues?** Report to us, 
 
@@ -217,17 +217,17 @@ For other countries such as Bermuda, the data is only available on 10/15/2021. I
 Note that this function is a **requirement**, and you will **lose points** if you do not implement this function.
 
 ```python
-def fully_vaccinated_by(date):
+def fully_vaccinated_by(given_date):
     '''return a dictionary mapping each country to the most recent number of people fully vaccinated by the given date; if no data is available, the value is None.'''
     fully_vax_dict = ???
     for i in range(???):
-        country_i = ???
-        date_i = ???
-        fully_vax_i = ???
+        country = ???
+        date = ???
+        fully_vax = ???
         if country_i not in fully_vax_dict:
             fully_vax_dict[???] = ???
         if ???:
-            fully_vax_dict[country_i] = fully_vax_i
+            fully_vax_dict[country] = fully_vax
     return ???
 ```
 
