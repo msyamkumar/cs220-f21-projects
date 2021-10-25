@@ -218,20 +218,23 @@ Note that this function is a **requirement**, and you will **lose points** if yo
 
 ```python
 def fully_vaccinated_by(given_date):
-    '''return a dictionary mapping each country to the most recent number of people fully vaccinated by the given date; if no data is available, the value is None.'''
+    '''return a dictionary mapping each country to the most recent number of people 
+    fully vaccinated by the given date; if no data is available, the value is None.'''
     fully_vax_dict = ???
     for i in range(???):
         country = ???
         date = ???
         fully_vax = ???
-        if country_i not in fully_vax_dict:
+        if country not in fully_vax_dict:
             fully_vax_dict[???] = ???
-        if ???:
+	if fully_vax is the empty string:
+	    ???
+        if date is on or before given_date
             fully_vax_dict[country] = fully_vax
     return ???
 ```
 
-**Hint:** In order to check if any particular date is before or after another date, recall that you can use `get_number_of_days` from p5. `get_number_of_days(date1, date2)` will be negative, if `date1` is after `date2`. Of course, you may do this through other means if you wish. (You are allowed to import the `datetime` module).
+**Hint:** In order to check if any particular date is before another date, recall that you can use `get_number_of_days` from p5. `get_number_of_days(date1, date2)` will be positive, if `date1` is before `date2`. Of course, you may do this through other means if you wish. (You are allowed to import the `datetime` module).
 
 **Extra Hint:** Notice that the dates are arranged in chronological order for each country in the dataset.
 
