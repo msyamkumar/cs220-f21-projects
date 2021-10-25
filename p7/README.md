@@ -5,6 +5,7 @@
  * **(10/20/2021 - 10:30am)**: Q17 and Q18 reworded. References to 'single dose' replaced with the term 'partly vaccinated'.
  * **(10/23/2021 - 5:00pm)**: Added clarifying note for Q18.
  * **(10/24/2021 - 4:15pm)**: Reworded suggestions for how to solve Q12
+ * **(10/25/2021 - 2:30pm)**: Rewrote sample code for Q5 to clarify
 
 **Find any issues?** Report to us, 
 
@@ -143,16 +144,22 @@ We will now create a function `daily_vaccinations_on` to deal with the missing d
 Note that this function is a **requirement**, and you will **lose points** if you do not implement this function.
 
 ```python
-def daily_vaccinations_on(date):
-    '''return a dictionary mapping each country to the number of daily vaccinations on the given date; if data is missing, the value for that country is None'''
+def daily_vaccinations_on(given_date):
+    '''return a dictionary mapping each country to 
+    the number of daily vaccinations on the given date; 
+    if data is missing, the value for that country is None'''
     daily_vax_dict = ???
     for i in range(???):
-        country_i = ???
-        date_i = ???
-        daily_vax_i = ???
-        if ???: # TODO: check if date_i is the correct date 
-            # TODO: map the country to the number of daily vaccinations on that day
-    return ???
+        date = ???
+	# if date equals given_date
+	    country =  ???
+            daily_vax =  ???
+	    # print(date, country, daily_vax)  # use this for debugging
+            # if daily_vax is the empty string: 
+	        # see docstring above
+	    # else:
+	    
+    return ??? 
 ```
 
 ### #Q5: How many vaccinations are estimated to have been done for each country  on '10/13/2021'?
