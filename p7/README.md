@@ -5,7 +5,7 @@
  * **(10/20/2021 - 10:30am)**: Q17 and Q18 reworded. References to 'single dose' replaced with the term 'partly vaccinated'.
  * **(10/23/2021 - 5:00pm)**: Added clarifying note for Q18.
  * **(10/24/2021 - 4:15pm)**: Reworded suggestions for how to solve Q12
- * **(10/25/2021 - 2:30pm)**: Rewrote sample code for Q5 to clarify
+ * **(10/25/2021 - 2:50pm)**: Rewrote sample code for Q5 to clarify, added hints to Q6
 
 **Find any issues?** Report to us, 
 
@@ -158,7 +158,7 @@ def daily_vaccinations_on(given_date):
             # if daily_vax is the empty string: 
 	        # see docstring above
 	    # else:
-	    
+	        # convert to an int and add this value to the dictionary
     return ??? 
 ```
 
@@ -167,9 +167,14 @@ def daily_vaccinations_on(given_date):
 **Note:** Your answer should be a **dict** mapping each country to the number of vaccinations done on that date in the country. If no data is available for a country on that date, the value should be `None`.
 
 
-### #Q6: How many vaccinations are estimated to have been done for each country across the dates mentioned in the dataset?
+### #Q6: How many vaccinations are estimated to have been done for each country?
 
-**Note:** Your answer should be a **dict** mapping each country to the number of vaccinations done that week in that country. If we have data from that country for only a few days of the week, then you need to use the available data. If no data is available for a country, the value should be `None`.
+**Note:** Your answer should be a **dict** mapping each country name to the sum of the daily vaccinations done in that country. If on some days no vaccinations were reported, you need to skip that data. If no data is available for a country, the value should be `None`. 
+
+**Hint:** Your code will be somewhat like that in `daily_vaccinations` but the conditions you are checking have different actions.  
+- If the country is not in the dictionary, add it as a key with the value of None. 
+- If `daily_vax` is the empty string, skip this data. Otherwise, convert it to an int. 
+- If the current entry in the dictionary is None, store this int in the dictionary.  Otherwise, add this int to the value already in the dictionary. 
 
 
 ### #Q7: Which country is estimated to have completed the most number of vaccinations across the dates mentioned in the dataset?
