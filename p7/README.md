@@ -171,10 +171,10 @@ def daily_vaccinations_on(given_date):
 
 **Note:** Your answer should be a **dict** mapping each country name to the sum of the daily vaccinations done in that country. If on some days no vaccinations were reported, you need to skip that data. If no data is available for a country, the value should be `None`. 
 
-**Hint:** Your code will be somewhat like that in `daily_vaccinations` but the conditions you are checking have different actions.  
+**Hint:** Your code will be somewhat like that in `daily_vaccinations_on` but the conditions you are checking have different actions.  
 - If the country is not in the dictionary, add it as a key with the value of None. 
 - If `daily_vax` is the empty string, skip this data. Otherwise, convert it to an int. 
-- If the current entry in the dictionary is None, store this int in the dictionary.  Otherwise, add this int to the value already in the dictionary. 
+- If the current entry in the dictionary is None, store this int in the dictionary.  Otherwise, add this int to the value previously in the dictionary. 
 
 
 ### #Q7: Which country is estimated to have completed the most number of vaccinations across the dates mentioned in the dataset?
