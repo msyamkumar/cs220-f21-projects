@@ -17,7 +17,7 @@ In this project, you will demonstrate how to:
 
 ## Coding Style Requirements
 
-Remember that coding style matters! **We may deduct points for bad coding style.** In addition to the [requirements from p7](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p7), here are several other common bad coding habits to avoid:
+Remember that coding style matters! **We may deduct points for bad coding style.** In addition to the [requirements from p7](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p7#coding-style-requirements), here are several other common bad coding habits to avoid:
 
 - Do not use meaningless names for variables or functions (e.g. uuu = "my name").
 - Do not write the exact same code in multiple places. Instead, wrap this code into a function and call that function whenever the code should be used.
@@ -31,7 +31,7 @@ Remember that coding style matters! **We may deduct points for bad coding style.
 
 In this project and the next, we will be working on the [IMDb Movies Dataset](https://www.imdb.com/interfaces/). We will use Python  to discover some cool facts about our favorite movies, actors, and directors.
 
-In this project, you will combine the data from the movie and mapping files into a more useful format. As usual, hand in the `main.ipynb` file (use the `#qN` format).  Start by downloading the following files: [`test.py`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p8/test.py), [`small_mapping.csv`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p8/small_mapping.csv), [`small_movies.csv`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p8/small_movies.csv), [`mapping.csv`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p8/mapping.csv), and [`movies.csv`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p8/movies.csv).
+In this project, you will combine the data from the movie and mapping files into a more useful format. As usual, hand in the `main.ipynb` file (use the `#qN` format).  Start by downloading the following files: [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/test.py), [`small_mapping.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/small_mapping.csv), [`small_movies.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/small_movies.csv), [`mapping.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/mapping.csv), and [`movies.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/movies.csv).
 
 ## The Data
 
@@ -119,19 +119,19 @@ otherwise specified.
 
 ---
 
-#### \#Q1: What is returned by your `get_mapping("small_mapping.csv")` function?
+### \#Q1: What is returned by your `get_mapping("small_mapping.csv")` function?
 
-You shouldn't be surprised to see the results are exactly the dictionary shown above if your function works correctly. Please (1) store the result in a variable for use in subsequent questions, and (2) display the result in the Out [N] area so the grading script can find your answer. By storing the result in a variable, you can avoid having to call this time-consuming function in the future.
+You shouldn't be surprised to see the results are exactly the dictionary shown above if your function works correctly. Please (1) store the result in a variable for use in subsequent questions, and (2) display the result in the output area so the grading script can find your answer. By storing the result in a variable, you can avoid having to call this time-consuming function in the future.
 
-#### \#Q2: What is the value associated with the key "nm0000288"?
+### #Q2: What is the value associated with the key "nm0000288"?
 
 Hint: Use the dictionary returned earlier.
 
-#### \#Q3: What are the values in the mapping (dictionary) associated with keys that begin with "nm"?
+### #Q3: What are the values in the mapping (dictionary) associated with keys that begin with "nm"?
 
 The answer should be a Python list. The order does not matter.
 
-#### \#Q4: List the keys of all the people in the above mapping, whose last name is "Pike".
+### #Q4: List the keys of all the people in the above mapping, whose last name is "Pike".
 
 The answer should be a Python list. The order does not matter.
 
@@ -166,7 +166,7 @@ are always of type \<list\>, even if some lists might only contain a single item
 
 ---
 
-#### \#Q5: What does `get_raw_movies("small_movies.csv")` return?
+### #Q5: What does `get_raw_movies("small_movies.csv")` return?
 
 The result should be this (the order of the movies *does* matter):
 ```python
@@ -191,11 +191,11 @@ As with `get_mapping`, keep the result returned by `get_raw_movies` in a variabl
 
 
 
-#### \#Q6: How many actors does the movie at index 1 have?
+### #Q6: How many actors does the movie at index 1 have?
 
 Hint: Use the dictionary from Q5.
 
-#### \#Q7: What is the ID of the first actor listed for the movie at index 0?
+### #Q7: What is the ID of the first actor listed for the movie at index 0?
 
 Hint: use the dictionary from Q5.
 
@@ -230,7 +230,7 @@ After you implement your function, call it and store the result as a variable na
 small_data = get_movies("small_movies.csv", "small_mapping.csv")
 ```
 
-#### \#Q8: What is `small_data`?
+### #Q8: What is `small_data`?
 
 The result should look something like this :
 
@@ -251,15 +251,15 @@ The result should look something like this :
   'rating': 8.1}]
 ```
 
-#### \#Q9: What is `small_data[1]["title"]`?
+### #Q9: What is `small_data[1]["title"]`?
 
 Just paste `small_data[1]["title"]` into a cell and run it.  We're doing
 this to check that the structures in `small_data` (as returned by
 `get_movies` above) contain the correct data.
 
-#### \#Q10: What is `small_data[0]["actors"]`?
+### #Q10: What is `small_data[0]["actors"]`?
 
-#### \#Q11: What is `small_data[-1]["directors"]`?
+### #Q11: What is `small_data[-1]["directors"]`?
 
 ---
 
@@ -276,7 +276,7 @@ instead, which is more efficient. Otherwise, we will deduct points for bad codin
 
 ---
 
-#### \#Q12: What are the 2017th to 2019th (inclusive) rows in movies?
+### #Q12: What are the 2017th to 2019th (inclusive) rows in movies?
 
 Please return a list of dictionaries whose **format** is like this:
 
@@ -311,11 +311,8 @@ Please return a list of dictionaries whose **format** is like this:
   'rating': 6.5}]
 ```
 
-------
 
-
-
-#### \#Q13: What are the last 2 rows in movies?
+### #Q13: What are the last 2 rows in movies?
 
 Please return a list of dictionaries whose **format** is like this:
 
@@ -367,15 +364,13 @@ The function returns the movies in `movies` that contains `keyword` in either it
 
 ------
 
-####
-
-#### \#Q14: List all the movies in the dataset, that contain "Harry Potter" in the title.
+### #Q14: List all the movies in the dataset, that contain "Harry Potter" in the title.
 
 Note that the `search_bar` function has an **undesirable** side effect that we will fix in q15 and you may need restart the kernel and run all. For this problem you are required to follow these requirements:
 1. Answer using `search_bar`
 2. Do **not** call `get_movies` on "movies.csv" more than once in your notebook
 
-#### \#Q15: Which genres of movies did the actor Paul Walker ever play in?
+### #Q15: Which genres of movies did the actor Paul Walker ever play in?
 
 **Hint:** we've set you up a bit to encounter a bug.  Review the copy functions in the `copy` module and see if you can use one of them to overcome the shortcomings of the `search_bar` function we're forcing you to use. You can call one of the copy functions outside of the  `search_bar` function to copy the dataset. You might need to go back and tweak your q14 answer and potentially do a "Restart & Run All" on your notebook after you've fixed the bug. Remember that you need to follow the requirements below:
 1. Answer using `search_bar`
@@ -396,7 +391,7 @@ it will not be efficient to go through the dataset every time. Since there are s
 in the spirit of optimizing code, it makes sense to just make a list of movies for each genre and
 store it in a variable. Then we can simply look up this variable instead of calling `search_bar` each time.
 
-#### Function Suggestion:
+### Function Suggestion:
 We suggest you complete a function like the following to answer the next several questions (this is a requirement, and you will **lose points** if you do not implement this function).
 
 This function should return a dictionary that maps each genre to a list of all movies with that genre. For instance:
@@ -441,20 +436,20 @@ For now, let us see what we can do with `genre_search_bar`.
 
 ---
 
-#### \#Q16: List the unique genres in our dataset.
+### #Q16: List the unique genres in our dataset.
 
 **Note**: Make sure you return a list
 
-#### \#Q17: How many Action movies do we have the dataset?
+### #Q17: How many Action movies do we have the dataset?
 
-#### \#Q18: What is the average rating of Comedy movies?
+### #Q18: What is the average rating of Comedy movies?
 
-#### \#Q19: List all the genres of movies that Christopher Nolan has ever acted/directed in.
+### #Q19: List all the genres of movies that Christopher Nolan has ever acted/directed in.
 
 **Hint**: Notice that this question is nearly identical to q15. However, using `genre_search_bar` 
 together with `search_bar`, you can solve this question much quicker now. We expect that you will answer this question **without any explicit control strucures (loops, if statements)**
 
-#### \#Q20: Which movie genre does the actress Kristen Stewart play the most?
+### #Q20: Which movie genre does the actress Kristen Stewart play the most?
 
 Your answer should be a single genre.  This code will need a control stucture that finds a maximum.
 
@@ -475,4 +470,4 @@ Good luck!
 ### Before turning in:
 Be sure to run test.py and make sure there are no errors. If you turn in a version of your code which fails on test.py (i.e. you can't see which questions you got right or not), **we will deduct 5 points** from p8 onwards. If the autograder is failing but you still want to turn in, you can see which question it is failing on and comment out the code for that question, essentially leaving it out. 
 
-After you add your name and the name of your partner to the notebook, please remember to **Kernel->Restart and Run All** to check for errors then run the test.py script one more time before submission.  To keep your code concise, please **remove your own testing code that does not influence the correctness of answers.** 
+After you add your name and the name of your partner to the notebook, please remember to **Kernel->Restart and Run All** to check for errors then run the test.py script one more time before submission.  To keep your code concise, please **remove your own testing code that does not influence the correctness of answers.** In particular, **remove any code that displays large lists such as `movies`**.
