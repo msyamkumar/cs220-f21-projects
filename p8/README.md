@@ -2,7 +2,7 @@
 
 ## Clarifications/Corrections
 
-None yet.
+ * **(10/27/2021 - 2:00 pm)**: Q12 rephrased
 
 **Find any issues?** Report to us:  
 - Dyah Adila [adila@wisc.edu](mailto:adila@wisc.edu)
@@ -276,7 +276,7 @@ instead, which is more efficient. Otherwise, we will deduct points for bad codin
 
 ---
 
-### #Q12: What are the 2017th to 2019th (inclusive) rows in movies?
+### #Q12: What are the movies between the indices 2017 and 2019 (inclusive) in movies?
 
 Please return a list of dictionaries whose **format** is like this:
 
