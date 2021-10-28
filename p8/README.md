@@ -3,6 +3,7 @@
 ## Clarifications/Corrections
 
  * **(10/27/2021 - 2:00 pm)**: Q12 rephrased
+ * **(10/28/2021 - 1:15 pm)**: Reminder that extra import statements are not allowed
 
 **Find any issues?** Report to us:  
 - Dyah Adila [adila@wisc.edu](mailto:adila@wisc.edu)
@@ -25,7 +26,7 @@ Remember that coding style matters! **We may deduct points for bad coding style.
 - Avoid calling slow functions multiple times within a loop.
 - Avoid calling functions that iterate over the entire dataset within a loop; instead, call the function before the loop and store the result in a variable.
 
-**Warning:** Please do not use the method `csv.DictReader` for p8. Although the required output can be obtained using this method, one of the learning outcomes of this project is to demonstrate your ability to build dictionaries with your own code.
+**Warning:** Do not use the method `csv.DictReader` for p8. Although the required output can be obtained using this method, one of the learning outcomes of this project is to demonstrate your ability to build dictionaries with your own code.  Also, remember that additoinal import statements beyond those that are stated in the directions are not allowed. For this project, we allow you to use `import csv` and `import copy`.
 
 ## Introduction
 
