@@ -4,6 +4,7 @@
 
  * **(10/27/2021 - 2:00 pm)**: Q12 rephrased
  * **(10/28/2021 - 1:15 pm)**: Reminder that extra import statements are not allowed
+ * **(10/31/2021 - 4:10 pm)**: Clarification on Q19 requirement
 
 **Find any issues?** Report to us:  
 - Dyah Adila [adila@wisc.edu](mailto:adila@wisc.edu)
@@ -448,7 +449,7 @@ For now, let us see what we can do with `genre_search_bar`.
 ### #Q19: List all the genres of movies that Christopher Nolan has ever acted/directed in.
 
 **Hint**: Notice that this question is nearly identical to q15. However, using `genre_search_bar` 
-together with `search_bar`, you can solve this question much quicker now. We expect that you will answer this question **without any explicit control strucures (loops, if statements)**
+together with `search_bar`, you can solve this question much quicker now. We require that you answer this question **without any explicit control strucures (loops, if statements)** or you will lose points.
 
 ### #Q20: Which movie genre does the actress Kristen Stewart play the most?
 
