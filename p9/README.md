@@ -167,7 +167,7 @@ def bucketize(movie_list, category):
 **Hint:** You are allowed use a dictionary comprehension but it is not required. 
 
 
-### #Q8: Plot the number of genres in each genre as a bar graph.
+### #Q8: Plot the number of movies in each genre as a bar graph.
 
 **Note:** For all plotting questions, if either the horizontal axis or vertical axis for your graphs aren't labelled, you will **lose points**.
 
