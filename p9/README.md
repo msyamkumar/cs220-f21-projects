@@ -25,7 +25,7 @@ Remember that coding style matters! **We will deduct points for bad coding style
 
 **Warning**: Please do not use the method `csv.DictReader` for p9. Although the required output can be obtained using this method, one of the learning outcomes of this project is to demonstrate your ability to build dictionaries with your own code.
 
-**Warning**: Although you will need to import `numpy` and `pandas` to make plots, you may not use these modules for any other purposes.  Instead, you will build custom lists and dictionaries through algorithms, and sort them using the skills you learned in lecture and in lab-p9. 
+**Warning**: Although you will need to import `numpy` and `pandas` to make plots, you may not use these modules for any other purposes.  Instead, you will build custom lists and dictionaries through algorithms, and sort them using the skills you learned in lecture and in lab-p9.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ did in p8 to load the movie data and analyze the data.
 
 **Warning**: For the questions asking you to plot, our `test.py` is unable to check whether your plot is correct. As long as you have any output for these questions, you will pass the tests. So make sure you **manually compare** your plots with the expected plots before submitting your notebook.
 
-As usual, hand in the `main.ipynb` file (use the `#qN` format).  Start by downloading the following files: [`test.py`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p9/test.py), [`mapping.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/mapping.csv), and [`movies.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/movies.csv). We are using the same `mapping.csv` and the same `movies.csv` as we did in [p8](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p8). 
+As usual, hand in the `main.ipynb` file (use the `#qN` format).  Start by downloading the following files: [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p9/test.py), [`mapping.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/mapping.csv), and [`movies.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/movies.csv). Note that we are using the same `mapping.csv` and the same `movies.csv` as we did in [p8](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p8). 
 
 In `main.ipynb`, make sure to include a new cell with the following code:
 
@@ -52,9 +52,9 @@ def plot_dict(d, label="Please Label Me!!!"):
     ax.set_ylabel(label, fontsize=16)
 ```
 
-[**lab-p9**](https://github.com/msyamkumar/cs220-s21-projects/tree/main/lab-p9) goes over the installation and the basic usage of **matplotlib** and **pandas**. Please make sure to go over the lab before dive into the project. 
+[**lab-p9**](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p9) goes over the installation and the basic usage of **matplotlib** and **pandas**. Please make sure to go over the lab before dive into the project. 
 
-Finally, copy the functions you wrote from p8 to `main.ipynb`. As a reminder, the functions you should include are `get_mapping`, `get_raw_movies`, `get_movies`, along with any helper functions you used to write these. We recommend that you also copy the function `search_bar` over to p9, but `genre_search_bar` will not be necessary. We will be creating a much more improved version of that function in p9!
+Finally, copy the functions you wrote from p8 to `main.ipynb`. As a reminder, the functions you should include are `get_mapping`, `get_raw_movies`, `get_movies`, along with any helper functions you used to write these. We recommend that you also copy the function `search_bar` over to p9, but `genre_search_bar` will not be necessary. We will be creating an improved version of that function in p9!
 
 If you are ready, let's get started!
 
@@ -87,15 +87,17 @@ a dictionary that looks like this:
 The first few questions can be answered using functions from p8. They should help you familiarize yourself with the data
 and understand how to traverse it with loops.
 
-### #Q1: What is the average rating of the 'Lord of the Rings' trilogy, which was directed by Peter Jackson?
+### #Q1: What is the average rating of the 'Lord of the Rings' trilogy, which was directed by 'Peter Jackson'?
 
-**Hint:** Call the search_bar function from p8 with one search term, store the resulting list, and then call it again on that list for the second search term. Finally write a loop to calculate the average rating of the movies in the remaining list. 
+**Hint:** You can find the list of movies from the trilogy with multiple calls to the `search_bar` function from p8. 
 
 **Warning:** Be sure that you do not modify the original movies list. 
 
 ### #Q2: What is the median rating of all 'Mission: Impossible' movies?
 
-**Hint:** Use the search_bar function to find these movies, then generate a list of their ratings. You wrote a median function in lab-p9.  **DO NOT** use the numpy module to find the median. 
+**Hint:** You can once again use the `search_bar` function to find these movies. Recall that you wrote a median function in lab-p9. 
+
+**Warning:** **DO NOT** use the numpy module to find the median. 
 
 
 *What is your favorite movie series? Try to find its median rating if you can.*
@@ -105,9 +107,9 @@ and understand how to traverse it with loops.
 
 **Note:** There are several movies tied in the dataset with the least rating. Your output should be a **list** containing all of these movies.
 
-**Hint:** Iterate through movies, finding the minimum rating.  Then iterate through movies again and find all movies that have that rating. 
+**Hint:** Iterate through movies, finding the minimum rating. Then iterate through movies again and find all movies that have that rating. 
 
-**Challenge:** This is not required, but there is a way to do this with only one loop through movies.  If you want, you can attempt this. 
+**Challenge:** This is not required, but there is a way to do this with only one loop through movies. If you feel brave, attempt to find it!
 
 
 ### #Q4: Find the highest rated 'Toy Story' movies.
@@ -118,13 +120,13 @@ and understand how to traverse it with loops.
 
 ---
 
-Now that we are acquainted with the dataset, we can start with our first interesting function from p9.
+Now that we are acquainted with the dataset, we can start with our first new function from p9.
 
 ### Function suggestion:
 
 In p8, we created a function `genre_search_bar` that *bucketized* the list of movies by their genre.  Take a moment to find that function, it will help you here.  Also, take a moment to look at the buckets you made in lab-p9.  
 
-Now, we will create a functionthat is broader in scope. This function should take in the list of movies as well as a category (i.e. `'title'`, `'year'`, `'duration'`, `'actors'`, `'directors'`, or `'genres'`), and bucketize the list of movies by this category. Here is a code snippet you can start with:
+Now, we will create a function that is broader in scope. This function should take in the list of movies as well as a category (i.e. `'title'`, `'year'`, `'duration'`, `'actors'`, `'directors'`, or `'genres'`), and bucketize the list of movies by this category. Here is a code snippet you can start with:
 
 ``` python
 def bucketize(movie_list, category):
@@ -152,15 +154,17 @@ def bucketize(movie_list, category):
 
 ### #Q6: Find the list of movies 'Emma Stone' acted in.
 
-**Note:** You should NOT call bucketize, but instead access the dictionary you made to answer Q5. You will lose points if you call bucketize here.
+**Warning:** You should **NOT** call `bucketize` once again. Use your call to `bucketize` from Q5 to answer this. You will **lose points** if you call `bucketize` here.
 
 ---
 
 ### #Q7: Find the number of movies in each genre.
 
-**Note:** Your output should be a **dict** mapping each genre to the number of movies in that genre. 
-**Hint:** You should call bucketize here and store the result in a dictionary.  You will lose points if you **do not** call bucketize here. 
-Then make another dictionary with a keys being the genre and the value being the length of the value.  You are allowed use a dictionary comprehension but it is not required. 
+**Note:** Your output should be a **dict** mapping each genre to the number of movies in that genre.
+
+**Warning:** You should call `bucketize` here and store the result in a dictionary. You will lose points if you **do not** call `bucketize` here. 
+
+**Hint:** You are allowed use a dictionary comprehension but it is not required. 
 
 
 ### #Q8: Plot the number of genres in each genre as a bar graph.
@@ -171,7 +175,7 @@ Then make another dictionary with a keys being the genre and the value being the
 
 Your image should look like this:
 
-<img src="images/Q8.PNG" width="400">
+<img src="images/Q8.png" width="400">
 
 *Some of the genres appear to have no bars in this plot. Can you figure out why that is the case?*
 
@@ -179,7 +183,9 @@ Your image should look like this:
 
 ### #Q9: Find the number of movies released in each decade.
 
-**Note:** Your output should be a **dict** mapping each decade to the number of movies in that decade.  You may use the function you wrote in lab-p9 to create the keys for this dictionary. 
+**Note:** Your output should be a **dict** mapping each decade to the number of movies in that decade.
+
+**Hint:** You may use the function you wrote in lab-p9 to create the keys for this dictionary. 
 
 Your output should look like this:
 
@@ -205,9 +211,9 @@ Your output should look like this:
 
 Your image should look like this:
 
-<img src="images/Q10.PNG" width="400">
+<img src="images/Q10.png" width="400">
 
-*Can you explain the peculiar shape of this plot? Why is the number of movies in each decade not steadily increasing?*
+*Can you explain the peculiar shape of this plot? Why is the number of movies in each decade **not** steadily increasing?*
 
 ---
 
@@ -215,8 +221,6 @@ Your image should look like this:
 ### #Q11: Find the highest rated movies for each genre.
 
 **Note:** Your output should be a **dict** mapping each genre to a **list** of movies from that genre with the highest rating. Note that within each genre, there can be ties. In that case, your list should contain all movies in that genre tied with the highest rating.
-
-**Hint:** Use the bucket_by_genre dictionary that you made earlier.  Iterate through this dictionary by keys.  In each iteration, get the list of movies for this key, use the code you wrote earlier in this project to find the movies with the max rating, then use this list as the value for the new dictionary you are building. 
 
 For example, the key `'Sport'` should have the following value:
 
@@ -244,6 +248,8 @@ For example, the key `'Sport'` should have the following value:
   'rating': 8.2}]
 ```
 
+**Hint:** This problem is similar to Q4. Now would be a great time to go back and create a function that can take in a list of movies and return a list of the movies with the maximum rating (if you don't already have such a function). You can solve this problem very efficiently using the buckets of genres that you made earlier.
+
 ---
 
 ### #Q12: Find the median rating of movies from each genre.
@@ -259,7 +265,7 @@ For example, the key `'Sport'` should have the following value:
 
 Your image should look like this:
 
-<img src="images/Q13.PNG" width="400">
+<img src="images/Q13.png" width="400">
 
 *Are you surprised by any of the median ratings here? Can you explain why Documentaries and Reality-TV are such outliers?*
 
@@ -285,7 +291,7 @@ The visualization in Q13 immediately tells us that Adventure movies are rated hi
 
 ### #Q16: Find a list of all movies that are both acted and directed by 'Clint Eastwood'.
 
-**Hint:** You may have found the `search_bar` function useful for some of the earlier questions, but it will not be of much use here. However, if you make clever calls to some of the functions we have already defined, you can solve this with a single line of code!   However, you may solve this any way you prefer, as long as your code does not time out. 
+**Hint:** You may have found the `search_bar` function useful for some of the earlier questions, but it will not be of much use here. However, if you make clever calls to some of the functions we have already defined, you can solve this with a single line of code! Of course, you may solve this any way you prefer.
 
 
 ### #Q17: Sort the titles of the movies that are both acted and directed by 'Clint Eastwood'.
@@ -318,7 +324,7 @@ Finally, let us end this project with a more challenging question. Let us try to
   'rating': 9.7}]
 ```
 
-So, if we wanted to find the best actors, it would make sense to limit ourselves to those actors who have acted in a fair number of movies.
+So, if we truly wanted to find the best actors, it would make sense to limit ourselves to those actors who have acted in a fair number of movies.
 
 
 ### #Q20: Find the top 25 actors with the highest median rating among those actors who have acted in at least 15 movies.
