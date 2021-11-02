@@ -9,7 +9,7 @@ For this lab, you'll need to use two new packages: `matplotlib` and
 `pandas`.  We'll eventually learn a lot about these, but for now you
 just need to call some functions we provide.
 
-**Note:** You can skip the rest of this section, if you installed Anaconda as recommended 
+**Note:** You can **skip the rest of this section, if you installed Anaconda** as recommended 
 in this class. However, if you did not follow those instructions, you will need to install
 these packages now.
 
@@ -84,7 +84,7 @@ plot_dict(goals)
 
 You should see something like the following:
 
-<img src="images/bar.PNG" width="400">
+<img src="images/bar.png" width="400">
 
 Notice that the y-axis is missing a label; that can be specified with
 an optional second argument.  Try specifying something descriptive,
@@ -99,7 +99,7 @@ Now try writing a couple lines of code to produce a plot using
 `plot_dict` that looks roughly like the following (feel free to use
 different numbers to reflect your personal preferences):
 
-<img src="images/football.PNG" width="400">
+<img src="images/football.png" width="400">
 
 ## Creating a Dictionary with Custom Keys
 
@@ -191,7 +191,6 @@ In lecture we learned how to do this with a lambda function:
 dict(sorted(decade_dict.items(), key=lambda d:d[1]))
 ```
 Refer to your Nov 01 lecture notes for more explanation of how lambda functions work. 
-
 
 
 
