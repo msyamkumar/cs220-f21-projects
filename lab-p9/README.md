@@ -159,8 +159,7 @@ In lecture we learned how to do this with a lambda function:
 ```python
 dict(sorted(decade_dict.items(), key=lambda d:d[1]))
 ```
-Refer to your Nov 01 lecture notes for more explanation of how lambda functions work. 
-
+Refer to your Function References (or Iterators) lecture notes for more explanation of how lambda functions work. 
 
 
 ## Sorting a List of Dictionaries by any category
