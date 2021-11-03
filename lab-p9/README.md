@@ -295,12 +295,12 @@ First, complete this median function, and be sure the test code runs correctly.
 def median(items):
     items.sort() 
     if len(items) % 2 == 1:
-        return 0 #change this
+        return 0 # change this
     else:
         first_middle = items[(len(items) // 2) - 1]
         second_middle = items[len(items) // 2]
-        median = 0
-        return median #change this
+        median = 0 # change this
+        return median 
     
 print(median([44, 40, 45, 38, 42]))
 print(median([17, 18, 20, 19]))
