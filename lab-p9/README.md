@@ -194,14 +194,14 @@ We can sort them by any dictionary key.
 Here, we sort by jersey:
 
 ```python
-player_dicts_by_jersey = sorted(players, key = lambda p: p['jersey'])
-player_dicts_by_jersey
+players_by_jersey = sorted(players, key = lambda p: p['jersey'])
+players_by_jersey
 ```
 
 Change the 'None' in the code below to sort list based on descending order of 'goals'.
 ```python
-player_dicts_by_goals = None
-player_dicts_by_goals
+players_by_goals = None
+players_by_goals
 ```
 
 ## Bucketizing Players
