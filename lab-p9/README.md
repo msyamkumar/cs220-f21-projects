@@ -297,8 +297,8 @@ def median(items):
     if len(items) % 2 == 1:
         return 0 #change this
     else:
-        firstMiddle = items[(len(items) // 2) - 1]
-        secondMiddle = items[len(items) // 2]
+        first_middle = items[(len(items) // 2) - 1]
+        second_middle = items[len(items) // 2]
         median = 0
         return median #change this
     
@@ -312,7 +312,7 @@ Paste the following code into a new cell and run it:
 
 ```python
 # make a list of just the medians using list comprehension
-med_list = [median(v) for (k,v) in heart_rates.items()]
+med_list = [median(v) for (k, v) in heart_rates.items()]
 med_list
 ```
 The [] tells Python that we want to make a list
@@ -327,7 +327,7 @@ Another way to make a comprehension is to make a dictionary.  Given the dictiona
 heart_rates, let's make a new dictionary that looks like this:
 
 ```python
-{'Andy': 75.5, 'Meena': 73, 'Peyman': 70}
+{'Alice': 75.5, 'Bob': 73, 'Jana': 70}
 ```
 
 The keys are the same as in heart_rates but the value associated with each key is the median.
@@ -337,7 +337,7 @@ but we need to use slightly different syntax to make a dictionary.
 Try out this code in a new cell. 
 
 ```python
-med_hr_dict = {k:median(v) for (k,v) in heart_rates.items()}
+med_hr_dict = {k: median(v) for (k, v) in heart_rates.items()}
 med_hr_dict
 ```
 
