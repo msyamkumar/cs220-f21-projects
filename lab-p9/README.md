@@ -43,6 +43,8 @@ You should see something like the following:
 
 <img src="images/bar.png" width="400">
 
+---
+
 **Note:** If you don't see the plot, it is likely that you don't have the correct `python3` version.
 In earlier verions, it was required to add the below code in a separate cell before importing `matplotlib`.
 
@@ -51,10 +53,9 @@ Insert a cell above the previous two cells and add the below content. Make sure 
 ```python
 %matplotlib inline # Allows you to render plots in the same jupyter notebook
 ```
+---
 
-In second cell:
-
-Notice that the y-axis is missing a label; that can be specified with
+Notice that in the above plot, the y-axis is missing a label; that can be specified with
 an optional second argument.  Try specifying something descriptive,
 like this, and observe the result:
 
