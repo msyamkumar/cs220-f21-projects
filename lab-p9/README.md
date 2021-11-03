@@ -12,7 +12,7 @@ just need to call some functions we provide.
 **Note:** if you installed Anaconda** as recommended 
 at the beginning of this class, these modules must have already been installed on your laptop. 
 However, if you did not follow those instructions, you will need to install
-these packages now. [Go to Package Installation (Optional) section](#package-installation).
+these packages now. [Go to Package Installation section](#package-installation).
 
 
 ## Plotting Dictionaries
