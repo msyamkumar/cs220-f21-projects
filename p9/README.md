@@ -21,7 +21,7 @@ In this project, you will demonstrate your ability to:
 
 Remember that coding style matters! **We will deduct points for bad coding style.** Please refer to [requirements in p8](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p8#coding-style-requirements). 
 
-**Allowed**: You are allowed to use comprehensions, since we covered them in the Nov 03 lecture. 
+**Allowed**: You are allowed to use comprehensions, since we covered them in the Iterators and comprehensions lecture. 
 
 **Warning**: Please do not use the method `csv.DictReader` for p9. Although the required output can be obtained using this method, one of the learning outcomes of this project is to demonstrate your ability to build dictionaries with your own code.
 
