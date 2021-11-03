@@ -157,14 +157,13 @@ If you want to sort by values, use a keyword argument to identify a function ref
 In lecture we learned how to do this with a lambda function:
 
 ```python
-dict(sorted(decade_dict.items(), key=lambda d:d[1]))
+dict(sorted(decade_dict.items(), key = lambda d: d[1]))
 ```
 Refer to your Function References (or Iterators) lecture notes for more explanation of how lambda functions work. 
 
 
-## Sorting a List of Dictionaries by any category
+## Sorting a List of Dictionaries by any key
 
-When we have a list of dictionaries, we can sort the list by any dictionary category. 
 Given this list of dictionaries,
 
 ```python
@@ -197,11 +196,11 @@ We can sort them by any dictionary key.
 Here, we sort by jersey:
 
 ```python
-player_dicts_by_jersey = sorted(players, key=lambda p:p['jersey'])
+player_dicts_by_jersey = sorted(players, key = lambda p: p['jersey'])
 player_dicts_by_jersey
 ```
 
-Change the 'None' in the code below to sort by 'goals' , reversed.
+Change the 'None' in the code below to sort list based on descending order of 'goals'.
 ```python
 player_dicts_by_goals = None
 player_dicts_by_goals
@@ -210,8 +209,8 @@ player_dicts_by_goals
 ## Bucketizing Players
 
 You have learned in previous lectures how to bucketize data, which makes a dictionary of lists. 
-Let's try this with players.  In particular, let's make a bucketized dictionary of players
-by position.  The dictionary will look like this:
+Let's try this with players. In particular, let's make a bucketized dictionary of players
+by position. The dictionary will look like this:
 
 ```python
 {'Defender': [{'first': 'Ada',
@@ -282,7 +281,7 @@ buckets
 
 ## Comprehensions
 
-In the Nov 03 lecture you will learn about comprehensions.  
+In the Iterators lecture you will learn about comprehensions.  
 We can write comprehensions on dictionaries to form lists or to form new dictionaries.
 Let's look at the following dictionary of heart rates samples:
 ```python
