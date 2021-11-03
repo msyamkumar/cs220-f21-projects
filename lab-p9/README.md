@@ -315,13 +315,12 @@ Paste the following code into a new cell and run it:
 med_list = [median(v) for (k, v) in heart_rates.items()]
 med_list
 ```
-The [] tells Python that we want to make a list
-heart_rates.items() is a list of tuples made from the key/value pairs
-the for (k,v) tells Python to iterate through teach tuple,  
-call the first item k, and call the 2nd item v
+The [] tells Python that we want to make a list.
+heart_rates.items() is a list of tuples made from the key / value pairs.
+The for clause, that is, for (k, v) in heart_rates.items(), tells Python to iterate through each tuple,  
+call the first item k (that is the original dictionary's key), and call the 2nd item v (that is the original dictionary's value)
 
-The median(v) tells Python to fill the list with the result of a call to median on v
-
+The median(v) tells Python to add items to the list with the result of a call to median on v.
 
 Another way to make a comprehension is to make a dictionary.  Given the dictionary
 heart_rates, let's make a new dictionary that looks like this:
@@ -351,7 +350,7 @@ Try out these other comprehensions. Each can be done in one line of code.
 ## Project Hints
 
 * You'll be creating a few plots for p9, so consider copying the `plot_dict` function
-* You'll need to answer a few questions such as "Which actors are featured in the most movies?" The easiest way to approach such questions is with a custom sort with a lambda function.
+* You'll need to answer a few questions such as "Which actors are featured in the most movies?" The easiest way to approach such questions is with a custom sort with a lambda function / an extract function. Please refer Function References lecture for examples.
 * You are allowed to use comphrehensions when building lists or dictionaries.
 
 Good luck!
