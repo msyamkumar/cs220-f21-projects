@@ -133,11 +133,9 @@ decade_dict
 
 Your dictionary should be the following:
 ```python
-{'1991 to 1999': 3,
- '2011 to 2019': 3,
- '2001 to 2009': 3,
- '1991 to 2000': 1,
- '2001 to 2010': 1}
+{'1991 to 2000': 4, 
+ '2011 to 2020': 3, 
+ '2001 to 2010': 4}
 ```
 
 ## Sorting a Dictionary
