@@ -198,7 +198,7 @@ players_by_jersey = sorted(players, key = lambda p: p['jersey'])
 players_by_jersey
 ```
 
-Change the 'None' in the code below to sort list based on descending order of 'goals'.
+Change the 'None' in the code below to sort list based on descending (reverse) order of 'goals'.
 ```python
 players_by_goals = None
 players_by_goals
@@ -343,8 +343,8 @@ med_hr_dict
 Try out these other comprehensions. Each can be done in one line of code.
 
 1. Make a list of all countries in players
-2. Make a dictionary of position, number of players at this position
-3. Make a dictionary of first, goals and order it by goals
+2. Make a dictionary of position, number of players at this position (Remember you created buckets)
+3. Make a dictionary of first, goals and order it by descending (reverse) goals (Remember you already solved the sorting) 
 
 
 ## Project Hints
