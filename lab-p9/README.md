@@ -21,17 +21,11 @@ Creating a dictionary will often be the first step towards creating a
 bar plot in Python. In particular, each dictionary key might
 correspond to a category (along the x-axis), and each value might
 correspond to an amount (along the y-axis). To setup plotting in
-Python, paste following into two separate cells (with no other code
-added):
+Python, paste following in a cell:
 
 ```python
-%matplotlib inline # Allows you to render plots in the same jupyter notebook
-```
-
-And in a second cell:
-
-```python
-import matplotlib, pandas
+import matplotlib
+import pandas
 
 def plot_dict(d, label="Please Label Me!!!"):
     ax = pandas.Series(d).sort_index().plot.bar(color="black", fontsize=16)
@@ -48,6 +42,17 @@ plot_dict(goals)
 You should see something like the following:
 
 <img src="images/bar.png" width="400">
+
+**Note:** If you don't see the plot, it is likely that you don't have the correct `python3` version.
+In earlier verions, it was required to add the below code in a separate cell before importing `matplotlib`.
+
+Insert a cell above the previous two cells and add the below content. Make sure to do Kernel Restart & Run All.
+
+```python
+%matplotlib inline # Allows you to render plots in the same jupyter notebook
+```
+
+In second cell:
 
 Notice that the y-axis is missing a label; that can be specified with
 an optional second argument.  Try specifying something descriptive,
