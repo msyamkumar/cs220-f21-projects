@@ -356,7 +356,7 @@ Good luck!
 
 ## Package Installation
 
-**Note:** if you were able to successfully import `matplotlib` and `pandas` modules, you can **skip this optional section**
+**Note:** if you were able to successfully import `matplotlib` and `pandas` modules, you can **skip this optional section**.
 
 `matplotlib`, `pandas` and many other Python packages are available on 
 the [PyPI site](https://pypi.org/). 
