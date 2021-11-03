@@ -206,7 +206,7 @@ players_by_goals
 
 ## Bucketizing Players
 
-You have learned in previous lectures how to bucketize data, which makes a dictionary of lists. 
+You learnt in the Dictionaries 2 how to bucketize data, which makes a dictionary of lists. 
 Let's try this with players. In particular, let's make a bucketized dictionary of players
 by position. The dictionary will look like this:
 
