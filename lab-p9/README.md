@@ -3,53 +3,16 @@
 In this lab, you'll learn to create simple plots, decode a secret
 message, and take your sorting to the next level.  Have fun!
 
-## Package Installation
+## New packages
 
 For this lab, you'll need to use two new packages: `matplotlib` and
 `pandas`.  We'll eventually learn a lot about these, but for now you
 just need to call some functions we provide.
 
-**Note:** You can **skip the rest of this section, if you installed Anaconda** as recommended 
-in this class. However, if you did not follow those instructions, you will need to install
-these packages now.
-
-`matplotlib`, `pandas` and many other Python packages are available on 
-the [PyPI site](https://pypi.org/). 
-`pip install` takes care of the details of going to PyPI and installing these 
-packages for you.
-
-Once you know the name of a Python package, installing it is easy.  You just
-run the following in the terminal, substituting in the package name:
-
-```
-pip install ????
-```
-
-So in this case, you should run the following (in either the Mac
-Terminal or Windows PowerShell):
-
-```
-pip install matplotlib
-pip install pandas
-```
-
-You may see "Requirement already satisfied" messages (e.g., if you
-already installed these by following the setup videos we provided at
-the beginning of the semester), so don't be surprised if your output
-looks something like this:
-
-```
-Requirement already satisfied: pandas in c:\users\ms\anaconda3\lib\site-packages (1.2.4)
-Requirement already satisfied: pytz>=2017.3 in c:\users\ms\anaconda3\lib\site-packages (from pandas) (2021.1)
-Requirement already satisfied: python-dateutil>=2.7.3 in c:\users\ms\anaconda3\lib\site-packages (from pandas) (2.8.1)
-Requirement already satisfied: numpy>=1.16.5 in c:\users\ms\anaconda3\lib\site-packages (from pandas) (1.20.1)
-Requirement already satisfied: six>=1.5 in c:\users\ms\anaconda3\lib\site-packages (from python-dateutil>=2.7.3->pandas) (1.15.0)
-```
-
-Common issues:
-* If you have both Python 2 and 3 installed, you may need to replace `pip` with `pip3`.
-* If neither pip command is found, you may need to replace `pip` with `python -m pip` or `python3 -m pip`.  This just means pip, although installed, is not on the PATH (i.e., your computer doesn't know where to find it).
-* If you run into any other error post a screenshot of the error on Piazza.
+**Note:** if you installed Anaconda** as recommended 
+at the beginning of this class, these modules must have already been installed on your laptop. 
+However, if you did not follow those instructions, you will need to install
+these packages now. [Go to Package Installation (Optional) section](##package-installation-(optional))
 
 
 ## Plotting Dictionaries
@@ -390,3 +353,44 @@ Try out these other comprehensions. Each can be done in one line of code.
 * You are allowed to use comphrehensions when building lists or dictionaries.
 
 Good luck!
+
+##Package Installation (Optional)
+
+`matplotlib`, `pandas` and many other Python packages are available on 
+the [PyPI site](https://pypi.org/). 
+`pip install` takes care of the details of going to PyPI and installing these 
+packages for you.
+
+Once you know the name of a Python package, installing it is easy.  You just
+run the following in the terminal, substituting in the package name:
+
+```
+pip install ????
+```
+
+So in this case, you should run the following (in either the Mac
+Terminal or Windows PowerShell):
+
+```
+pip install matplotlib
+pip install pandas
+```
+
+You may see "Requirement already satisfied" messages (e.g., if you
+already installed these by following the setup videos we provided at
+the beginning of the semester), so don't be surprised if your output
+looks something like this:
+
+```
+Requirement already satisfied: pandas in c:\users\ms\anaconda3\lib\site-packages (1.2.4)
+Requirement already satisfied: pytz>=2017.3 in c:\users\ms\anaconda3\lib\site-packages (from pandas) (2021.1)
+Requirement already satisfied: python-dateutil>=2.7.3 in c:\users\ms\anaconda3\lib\site-packages (from pandas) (2.8.1)
+Requirement already satisfied: numpy>=1.16.5 in c:\users\ms\anaconda3\lib\site-packages (from pandas) (1.20.1)
+Requirement already satisfied: six>=1.5 in c:\users\ms\anaconda3\lib\site-packages (from python-dateutil>=2.7.3->pandas) (1.15.0)
+```
+
+Common issues:
+* If you have both Python 2 and 3 installed, you may need to replace `pip` with `pip3`.
+* If neither pip command is found, you may need to replace `pip` with `python -m pip` or `python3 -m pip`.  This just means pip, although installed, is not on the PATH (i.e., your computer doesn't know where to find it).
+* If you run into any other error post a screenshot of the error on Piazza.
+
