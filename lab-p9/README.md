@@ -279,13 +279,13 @@ buckets
 
 ## Comprehensions
 
-In the Iterators lecture you will learn about comprehensions.  
+In the Iterators lecture, you will learn about comprehensions.  
 We can write comprehensions on dictionaries to form lists or to form new dictionaries.
 Let's look at the following dictionary of heart rates samples:
 ```python
-heart_rates = {"Andy": [67, 59, 84, 88],
-         "Meena": [59, 73, 67, 80, 79],
-         "Peyman": [67, 84, 71, 68 , 70]}
+heart_rates = {"Alice": [67, 59, 84, 88],
+         "Bob": [59, 73, 67, 80, 79],
+         "Jana": [67, 84, 71, 68 , 70]}
 ```
 
 We would like to report the median heart rate for each person.  
