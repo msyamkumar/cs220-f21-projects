@@ -157,7 +157,7 @@ In lecture we learned how to do this with a lambda function:
 ```python
 dict(sorted(decade_dict.items(), key = lambda d: d[1]))
 ```
-Refer to your Function References (or Iterators) lecture notes for more explanation of how lambda functions work. 
+Refer to your Function References (or Iterators and comprehensions) lecture notes for more explanation of how lambda functions work. 
 
 
 ## Sorting a List of Dictionaries by any key
@@ -279,7 +279,7 @@ buckets
 
 ## Comprehensions
 
-In the Iterators lecture, you will learn about comprehensions.  
+In the Iterators and comprehensions lecture, you will learn about comprehensions.  
 We can write comprehensions on dictionaries to form lists or to form new dictionaries.
 Let's look at the following dictionary of heart rates samples:
 ```python
