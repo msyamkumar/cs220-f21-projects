@@ -25,7 +25,7 @@ Remember that coding style matters! **We will deduct points for bad coding style
 
 **Warning**: Please do not use the method `csv.DictReader` for p9. Although the required output can be obtained using this method, one of the learning outcomes of this project is to demonstrate your ability to build dictionaries with your own code.
 
-**Warning**: Although you will need to import `numpy` and `pandas` to make plots, you may not use these modules for any other purposes.  Instead, you will build custom lists and dictionaries through algorithms, and sort them using the skills you learned in lecture and in lab-p9.
+**Warning**: Although you will need to import `numpy` and `pandas` to make plots, you may not use these modules for any other purposes.  Instead, you will build custom lists and dictionaries through algorithms, and sort them using the skills you learned in lecture and in lab-p9. 
 
 ## Introduction
 
@@ -36,7 +36,7 @@ did in p8 to load the movie data and analyze the data.
 
 As usual, hand in the `main.ipynb` file (use the `#qN` format).  Start by downloading the following files: [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p9/test.py), [`mapping.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/mapping.csv), and [`movies.csv`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p8/movies.csv). Note that we are using the same `mapping.csv` and the same `movies.csv` as we did in [p8](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p8). 
 
-In `main.ipynb`, make sure to include a new cell with the following code:
+In `main.ipynb`, make sure to include a new cell with the following code.  These are the **only** import statements you are allowed to use on this project.
 
 ```python
 import csv
