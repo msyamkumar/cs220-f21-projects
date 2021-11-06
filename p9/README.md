@@ -2,7 +2,7 @@
 
 ## Clarifications/Corrections
 
-None yet.
+ * **(11/6/2021) - 4:20 pm**: Updated Coding Style Requirements - `numpy` is not allowed to be imported, `matplotlib` is.
 
 **Find any issues?** Report to us:  
 
@@ -25,7 +25,7 @@ Remember that coding style matters! **We will deduct points for bad coding style
 
 **Warning**: Please do not use the method `csv.DictReader` for p9. Although the required output can be obtained using this method, one of the learning outcomes of this project is to demonstrate your ability to build dictionaries with your own code.
 
-**Warning**: Although you will need to import `numpy` and `pandas` to make plots, you may not use these modules for any other purposes.  Instead, you will build custom lists and dictionaries through algorithms, and sort them using the skills you learned in lecture and in lab-p9. 
+**Warning**: Although you will need to import `matplotlib` and `pandas` to make plots, you may not use these modules for any other purposes.  Instead, you will build custom lists and dictionaries through algorithms, and sort them using the skills you learned in lecture and in lab-p9. 
 
 ## Introduction
 
