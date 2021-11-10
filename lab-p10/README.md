@@ -40,7 +40,9 @@ Create a new directory named `lab-p10` and create a `main.ipynb` file there.
 Let's start by doing some imports we'll need:
 
 ```python
-import os, json, csv
+import os
+import json
+import csv
 ```
 
 ### Files and Directories
@@ -241,38 +243,15 @@ f.write("orange\n")
 f.close()
 ```
 
-There are different ways to read CSV files.  Perhaps one of the
-easiest is with a `csv.DictReader` object.  From p10, you are allowed to use `csv.DictReader`. A DictReader is created
-based on a file object.  A DictReader is an iterator object; it
-produces a dictionary for each row of a CSV file, automatically using
-the header of the CSV to determine the keys for the dicts.
+You already know how to read CSV files into a list of lists data structure, using `process_csv` function.
+Recall that in dictionaries 2 lecture, you learnt how to convert this list of lists data structure into list of dictionaries,
+where each row is represented using a dictionary.
 
-Try it:
+Using `process_csv` and list of lists to list of dictionaries transformation, create a list of dictionary representation for
+"good.csv". 
 
-```python
-f = open(os.path.join("fruit", "good.csv"), encoding="utf-8")
-reader = csv.DictReader(f)
-for row in reader:
-    print(row)
-f.close()
-```
-
-You will find the row is dictionary.
-
-Try looking specific cells and printing them:
-
-```python
-f = open(os.path.join("fruit", "good.csv"), encoding="utf-8")
-reader = csv.DictReader(f)
-for row in reader:
-    print(row["fruit"], row["count"])
-f.close()
-```
-
-Try changing the above code to read "rotten.csv" instead of
-"good.csv".  In "rotten.csv", there is a missing value for the count
-in the orange row.  How does `DictReader` handle this?  For the
-project, you'll need to write some code to skip CSV rows with missing
+Repeat the same process for "rotten.csv". In "rotten.csv", there is a missing value for the count
+in the orange row. For the project, you'll need to write some code to skip CSV rows with missing
 values.
 
 ### Project Hints
