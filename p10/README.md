@@ -258,6 +258,7 @@ Be sure to produce a **list of paths** (even if it's just 1 path)
 #### #Q20: What are the first 20 tweets present in all the files in the `full_data` directory and the `sample_data` directory, sorted by num_liked?
 
 Produce a single **list of Tweets** of length 20 containing the first 20 tweets sorted in **descending order by num_liked**.
+Recall that you learnt how to sort various nested data structures in "Function References" and "Iterators and comprehensions" lectures. 
 
 The first 5 tweets of the expected output are:
 
