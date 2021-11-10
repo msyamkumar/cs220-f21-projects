@@ -40,7 +40,9 @@ Create a new directory named `lab-p10` and create a `main.ipynb` file there.
 Let's start by doing some imports we'll need:
 
 ```python
-import os, json, csv
+import os
+import json
+import csv
 ```
 
 ### Files and Directories
