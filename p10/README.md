@@ -37,9 +37,9 @@ Remember that coding style matters! **We might deduct points for bad coding styl
 
 ## Setup
 
-**Step 1:** Download [`tweets.zip`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p10/tweets.zip ) and extract it to a directory on your computer (using [Mac directions](http://osxdaily.com/2017/11/05/how-open-zip-file-mac/) or [Windows directions](https://support.microsoft.com/en-us/help/4028088/windows-zip-and-unzip-files)). After extracting, you will find the following directories - `full_data`, `play`, `sample_data`.
+**Step 1:** Download [`tweets.zip`](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p10/tweets.zip ) and extract it to a directory on your computer (using [Mac directions](http://osxdaily.com/2017/11/05/how-open-zip-file-mac/) or [Windows directions](https://support.microsoft.com/en-us/help/4028088/windows-zip-and-unzip-files)). After extracting, you will find the following directories - `full_data`, `play`, `sample_data`.
 
-**Step 2:** Download [`test.py`](https://github.com/msyamkumar/cs220-s21-projects/tree/main/p10/test.py)  to a directory that contains the uncompressed directories from Step 1 (`test.py` should be in the same directory as `full_data`,`play`, `sample_data`).
+**Step 2:** Download [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/tree/main/p10/test.py)  to a directory that contains the uncompressed directories from Step 1 (`test.py` should be in the same directory as `full_data`,`play`, `sample_data`).
 
 **Step 3:** Create a `main.ipynb` in the same location, which contains your P10 solutions.
 
@@ -61,7 +61,7 @@ This data is messy!  You'll face the following challenges:
 
 In p10, you'll write code to cleanup the data, representing everything as Tweet objects (you'll create a new type for these).  In p11, you'll analyze your clean data.
 
-For this project, you'll create a new `main.ipynb` and answer questions in the usual format. **Please go through the [lab-p10](https://github.com/msyamkumar/cs220-s21-projects/tree/main/lab-p10) before working on this project.** In the lab, you will make helper functions and learn some useful techniques related to this project.
+For this project, you'll create a new `main.ipynb` and answer questions in the usual format. **Please go through the [lab-p10](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p10) before working on this project.** In the lab, you will make helper functions and learn some useful techniques related to this project.
 
 ## Questions
 
