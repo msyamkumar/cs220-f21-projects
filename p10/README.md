@@ -1,6 +1,9 @@
 # Project 10: Twitter Data
 
 <h2> Corrections/Clarifications
+
+
+ **(11/10/2021) - 4:20 pm**: Warning to not use DictReader, due to autograder errors.
 </h2>
 
 None yet.
@@ -34,6 +37,10 @@ Remember that coding style matters! **We might deduct points for bad coding styl
 - Put all `import` commands together at the second cell of `main.ipynb`, the first cell should be submission information (netid and etc).
 - Think twice before creating a function without any parameters. Defining a new functions is unnecessary sometimes. The advantage of writing functions is that we can reuse the same code. If we only use this function once, there is no need to create a new function.
 - Don't use absolute path such as `C://Desktop//220`. **You may only use relative path**. When we test your work on a different operating system, all of the test will fail and you will get a 0. Don't panic when you see this, please fix the error and resubmit your assignment.
+
+**Warning:** Do **not** use `csv.DictReader` to read the csv files. It may cause errors with the autograder
+due to version compatibility issues. It would be safest for you to use a function like `process_csv` that we
+have been working with in the past, to parse csv files.
 
 ## Setup
 
