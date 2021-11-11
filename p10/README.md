@@ -31,7 +31,7 @@ Remember that coding style matters! **We might deduct points for bad coding styl
 - Avoid inappropriate use of data structures. A bad example: use for loop to search for a corresponding value in a dictionary with a given key instead of use `dictname[key]` directly.
 - Don't name variables or functions as python keywords or built-in functions. Bad example: str = "23".
 - Don't define multiple functions with the same name or define multiple versions of one function with different names. Just keep the best version.
-- Put all `import` commands together at the second cell of `main.ipynb`, the first cell should be submission information (netid and etc).
+- Put all `import` commands together at the second cell of `main.ipynb`, the first cell should be submission information (netid and etc). Only use `import` commands that are expressly allowed in the instructions.
 - Think twice before creating a function without any parameters. Defining a new functions is unnecessary sometimes. The advantage of writing functions is that we can reuse the same code. If we only use this function once, there is no need to create a new function.
 - Don't use absolute path such as `C://Desktop//220`. **You may only use relative path**. When we test your work on a different operating system, all of the test will fail and you will get a 0. Don't panic when you see this, please fix the error and resubmit your assignment.
 
