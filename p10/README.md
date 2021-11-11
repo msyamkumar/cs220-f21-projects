@@ -1,12 +1,9 @@
 # Project 10: Twitter Data
 
 <h2> Corrections/Clarifications
-
-
- **(11/10/2021) - 4:20 pm**: Warning to not use DictReader, due to autograder errors.
 </h2>
 
-None yet.
+ **(11/10/2021) - 4:20 pm**: Warning to not use DictReader, due to autograder errors.
 
 **Find any issues?** Report to us:
 
