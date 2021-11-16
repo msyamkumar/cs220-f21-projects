@@ -5,15 +5,6 @@ writing recursive code, and learn techniques about default dictionaries.
 Start by creating a
 notebook for this lab.
 
-<h2> Corrections/Clarifications
-</h2>
-
-None yet.
-
-**Find any issues?** Report to us:
-
-- Yiwu Zhong <yzhong52@wisc.edu>
-- Sayali Alatkar <alatkar@wisc.edu>
 
 
 ## Scatter
@@ -59,7 +50,7 @@ scatter([0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 8.0, 8.0, 8
 
 Your scatter plot should look like the following:
 
-<img src="test1.png" width="400">
+<img src="images/test1.png" width="400">
 
 
 Now let's try to plot 2 dictionaries:
@@ -72,7 +63,7 @@ scatter(dict_x_axis, dict_y_axis, xlabel="ice cream scoops eaten", ylabel="happi
 ```
 Your scatter plot should look like the following:
 
-<img src="test2.png" width="400">
+<img src="images/test2.png" width="400">
 
 
 ## Recursion
