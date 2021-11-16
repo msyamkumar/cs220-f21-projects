@@ -33,19 +33,19 @@ Remember that coding style matters! **We might deduct points for bad coding styl
 - Don't name the variables and functions as python keywords or built-in functions. Bad example: str = "23".
 - Don't define multiple functions with the same name or define multiple versions of one function with different names. Just keep the best version.
 - Put all import commands together in the second cell of main.ipynb, the first cell should be submission information (netid and etc). No extra import statements!
-- Don't use absolute paths such as `C://Desktop//220`. **You may only use relative paths**. When we test your work on a different operating system, all of the tests will fail and you will get a 0. If you turn in a version that causes an error in the autograder due to absolute paths, you may fix the error and resubmit the assignment. However, **we will impose a 5% penalty**.
+- Don't use absolute paths such as `C://ms//CS220//p11`. **You may only use relative paths**. When we test your work on a different operating system, all of the tests will fail and you will get a 0. If you turn in a version that causes an error in the autograder due to absolute paths, you may fix the error and resubmit the assignment. However, **we will impose a 5% penalty**.
 
 ## Setup
 
-**Step 1:** Download [`tweets.zip`](https://github.com/msyamkumar/cs220-s21-projects/blob/main/p11/tweets.zip) and [`recursive.zip`](https://github.com/msyamkumar/cs220-s21-projects/blob/main/p11/recursive.zip) and extract them to a directory on your computer (using [Mac directions](http://osxdaily.com/2017/11/05/how-open-zip-file-mac/) or [Windows directions](https://support.microsoft.com/en-us/help/4028088/windows-zip-and-unzip-files)). After extracting, you will find the following directories - `full_data`, `play`, `sample_data` and `recursive`.
+**Step 1:** Download [`tweets.zip`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p11/tweets.zip) and [`recursive.zip`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p11/recursive.zip) and extract them to a directory on your computer (using [Mac directions](http://osxdaily.com/2017/11/05/how-open-zip-file-mac/) or [Windows directions](https://support.microsoft.com/en-us/help/4028088/windows-zip-and-unzip-files)). After extracting, you will find the following directories - `full_data`, `play`, `sample_data` and `recursive`.
 
-**Step 2:** Download [`test.py`](https://github.com/msyamkumar/cs220-s21-projects/blob/main/p11/test.py) to the directory from step 1 (`test.py` should be in the same directory as all of the directories needed in this assignment)
+**Step 2:** Download [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p11/test.py) to the directory from step 1 (`test.py` should be in the same directory as all of the directories needed in this assignment)
 
 **Step 3:** Create a `main.ipynb` in the same location, as the above files.
 
 ## **Notes**:
 
- **Make sure `full_data`, `sample_data`, `play`, `recursive`, `main.ipynb` and `test.py` are in same directory**.
+ **Make sure `full_data`, `sample_data`, `play`, `recursive`, `main.ipynb` and `test.py` are in same directory**. `test.py` will also now check to see if the files are in the correct directories. So, you can verify with it.
 
 **Make sure your answers ignore files that begins with a "." . This is especially important on a Mac which might create a file called .DS_Store. You are expected to explicitly check and disregard files beginning with a "." in your answers.**
 
@@ -60,9 +60,9 @@ In this project, you'll be analyzing the clean data from p10.
 
 Note that unlike p10, the .csv and .json files in this assignment have been cleaned and do not have any errors.
 
-Please feel free to copy and re-use your functions from p10. But the files you uncompressed in Setup (`tweets.zip` and `recursive.zip`) are slightly different from the ones you used in P10. Currently, there are more redundant files (eg. files with extension `.info`) or more corner cases you should handle in your code. Please make sure your code from P10 can work well in P11. Lastly, since you are only allowed to submit a single jupyter notebook, please **do not** directly `import` your functions from p10 but copy them from p10 instead.
+Please feel free to copy and re-use your functions from p10. But the files you uncompressed in Setup (`tweets.zip` and `recursive.zip`) are slightly different from the ones you used in p10. Currently, there are more redundant files (eg. files with extension `.info`) or more corner cases you should handle in your code. Please make sure your code from p10 can work well in p11. Lastly, since you are only allowed to submit a single jupyter notebook, please **do not** directly `import` your functions from p10 but copy them from p10 instead.
 
-For this project, you'll create a new `main.ipynb` and answer questions in the usual format. **Please go through the [lab-p11](https://github.com/msyamkumar/cs220-s21-projects/blob/main/lab-p11) before working on this project.** The lab introduces some useful techniques (e.g., making scatter plots, writing recursive functions) related to this project. So please be sure to complete all of lab-p11 before starting this project.
+For this project, you'll create a new `main.ipynb` and answer questions in the usual format. **Please go through the [lab-p11](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p11) before working on this project.** The lab introduces some useful techniques (e.g., making scatter plots, writing recursive functions) related to this project. So please be sure to complete all of lab-p11 before starting this project.
 
 ## Questions
 
@@ -70,7 +70,7 @@ Until question 13, everything is about the data in `full_data`. Use your code fr
 
 For questions where you need to make scatter plots, **do not** simply copy the dictionaries provided below the plots. Instead, use them to verify with the dictionaries you created. For these questions (Q6, Q7, Q8, Q12 and Q13), we will manually verify the correctness of the code you wrote and the plots you created.
 
-Finally, as a reminder, you should bin/bucketize the data by creating dictionaries to group similar items wherever neccessary (hint: you did this in [Lab-p9](https://github.com/msyamkumar/cs220-s21-projects/tree/main/lab-p9)). For example, in question 3, you may bucketize the tweets by their usernames. Using this approach will strengthen your understanding of dictionaries and allows you to solve the questions using minimal lines of code.
+Finally, as a reminder, you should bin/bucketize the data by creating dictionaries to group similar items wherever neccessary (hint: you did this in [lab-p9](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p11)). For example, in question 3, you may bucketize the tweets by their usernames. Using this approach will strengthen your understanding of dictionaries and allows you to solve the questions using minimal lines of code.
 
 ### #Q1: How many unique tweet lengths are present in the dataset?
 
