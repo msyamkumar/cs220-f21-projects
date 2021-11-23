@@ -192,30 +192,45 @@ institution with the least value under the `“Quality of Education Rank”` col
 
 ---
 
-### Data Structure Suggestion
+**Optional Challenge section:** For Q11 and the DataFrame that we will generate using Q11, there is a simpler (but challenging) solution. Please see the Optional **Optional Challenge:** section, for details about this.
 
 For the next few questions, we will be analyzing how the rankings of the institutions *change* across the three years in the dataset. As you might have already noticed, the list of institutions in each year's rankings are different. As a result, for several institutions in the dataset, we do not have the rankings for all three years. It will be hard to analyze such institutions, so we will just skip them.
 
-To make things a little simpler, you are going to create a new **DataFrame** with a unique list of institutions which have featured in all the three year's rankings, along with their World Ranking across the three years. Specifically, the **DataFrame** would have the following four columns - "Institution", "2019_ranking", "2020_ranking" and "2021_ranking". To get started up, you can use the following code snippet :
+### #Q11: How many institutions have rankings for all three years?
+
+To get started, you can use the following code snippet:
 
 ```python
 year_2019_ranking_df = rankings[rankings["Year"] == "2019-2020"]
 year_2020_ranking_df = ???
 year_2021_ranking_df = ???
 
-institution_2019_2020_2021 = ??? # TODO: find a list of all institutions which appear in all three DataFrames
+institution_2019_2020_2021 = ??? # TODO: find a list of all institutions which appear in all three DataFrames. See below Note.
+```
+
+**Note:** 
+- For the above TODO, make *sets* of the institutions that appear in each DataFrame, and find their intersection. Look up how to find the intersection of two or more sets in Python, on the internet! 
+- Convert the intersected set back to a list
+- Your output should be an **int** represeting the number of *institutions* which have data for all three years.
+
+### Data Structure Suggestion
+
+You are now going to create a new **DataFrame** with a unique list of institutions which have featured in all the three year's rankings, along with their World Ranking across the three years. Specifically, the **DataFrame** would have the following four columns - "Institution", "2019_ranking", "2020_ranking" and "2021_ranking". To get started up, you can use the following code snippet :
+
+```python
 
 institutions = []
 
-for institution in institution_2019_2020_2021:
-    year_2019_ranking =  ???
-    year_2020_ranking =  ???
-    year_2021_ranking =  ???
+for institution in institution_2019_2020_2021: # use your output list from Q11 here
+    year_2019_ranking =  # TODO: use boolean indexing to find the "World Rank" for current institution in the year 2019
+    year_2020_ranking =  # TODO: use boolean indexing to find the "World Rank" for current institution in the year 2020
+    year_2021_ranking =  # TODO: use boolean indexing to find the "World Rank" for current institution in the year 2021
+    # now let's create a dictionary representation of the institution
+    # each key corresponds to the column of the DataFrame we want to build
     institutions.append({'Institution': ???, '2019_ranking': ???, '2020_ranking': ???, '2021_ranking': ???})
     
 institutions_df = pd.DataFrame(institutions)
 ```
-**Hint:** You can find the list of all institutions which appear in all three DataFrames by creating a list of institutions from all three years and finding institutions that appear in all three years. However, a faster and easier way to do this would be to make *sets* of the institutions that appear in each DataFrame, and find their intersection. Look up how to find the intersection of two or more sets in Python, on the internet! 
 
 **Optional Challenge:** A simpler solution can be using pandas `DataFrame.merge()` method which, when called with argument `how = "inner"`, merges two dataframes based on a particular column considering only the intersection of row values in the two dataframes. For example, to merge the dataframes containing rankings of the year 2019-2020 and 2021-2022 based on the column "Institution" (i.e., for unique institutions) you can use merge method as follows:
 
