@@ -155,7 +155,7 @@ or loops here.
 
 **Hint:** You can start with the DataFrame you found in the previous question, and apply Boolean indexing on *that DataFrame* to find the data for the year `"2021-2022"`. You may then extract the `"National Rank"` using `iloc`.
 
-### #Q5: What is the average score of the "University of Wisconsin–Madison" in these three years?
+### #Q5: What is the average score of the "University of Wisconsin–Madison"?
 
 **Note:** Your output should be a **float**.
 
@@ -164,7 +164,7 @@ or loops here.
 
 **Hint:** You need to extract the "National Rank" column of your DataFrame from Q4 as a Series. You can average all the scores in a Series with the `Series.mean()` method.
 
-### #Q6: What is the average score for all the institutions in the Switzerland for these three years?
+### #Q6: What is the average score for all the institutions in the Switzerland?
 
 **Note:** Your output should be a **float**.
 
