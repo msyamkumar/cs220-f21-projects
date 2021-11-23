@@ -64,7 +64,7 @@ if necessary).  Consider why the linter is complaining, then write a
 better version of the function to make the linter happy. Recall that any word with green syntax highlighting in jupyter notebook is a Python keyword. You should not be using such words as variable names or function names.
 
 You can find extensive documentation for the file `lint.py`
-[here](https://github.com/tylerharter/cs301-projects/tree/master/linter). If you find the linter confusing, 
+[here](https://github.com/msyamkumar/cs220-f21-projects/tree/main/linter). If you find the linter confusing, 
 please read the full documentation there!
 
 ## Timing
