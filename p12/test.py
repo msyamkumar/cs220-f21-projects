@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@msyamkumar 
-msyamkumar
-/
-cs220-f21-projects
-Public
-4
-418
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-cs220-f21-projects/p12/test.py /
-
-Meenakshi Syamkumar Updating test.py
-Latest commit b69d534 7 minutes ago
- History
- 1 contributor
-764 lines (685 sloc)  29.1 KB
-   
 #!/usr/bin/python
 
 import ast, os, sys, subprocess, json, re, collections, math, warnings
@@ -110,11 +78,11 @@ questions = [
     Question(number=4, weight=1, format=TEXT_FORMAT),
     Question(number=5, weight=1, format=TEXT_FORMAT),
     Question(number=6, weight=1, format=TEXT_FORMAT),
-    Question(number=7, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
+    Question(number=7, weight=1, format=HTML_FORMAT),
     Question(number=8, weight=1, format=TEXT_FORMAT),
-    Question(number=9, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
-    Question(number=10, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
-    Question(number=11, weight=1, format=TEXT_FORMAT),
+    Question(number=9, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
+    Question(number=10, weight=1, format=TEXT_FORMAT),
+    Question(number=11, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
     Question(number=12, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
     Question(number=13, weight=1, format=TEXT_FORMAT),
     Question(number=14, weight=1, format=TEXT_FORMAT),
@@ -133,8 +101,9 @@ expected_json = {
     "2": ['Harvard University', 'Harvard University', 'Harvard University'],
     "4": 19,
     "5": 87.26666666666667,
-    "7": 'Ludwig Maximilian University of Munich',
-    "8": ['Harvard University',
+    "6": 77.975,
+    "8": 'Ludwig Maximilian University of Munich',
+    "9": ['Harvard University',
             'Massachusetts Institute of Technology',
             'Stanford University',
             'Columbia University',
@@ -168,13 +137,12 @@ expected_json = {
             'Rutgers University–New Brunswick',
             'Dartmouth College',
             'University of California, Davis'],
-    "9": 'Fudan University',
-    "10": ['Indian Institute of Science',
+    "10": 'Fudan University',
+    "11": ['Indian Institute of Science',
              'Tata Institute of Fundamental Research',
              'Indian Institute of Technology Bombay',
              'University of Delhi',
              'Indian Institute of Technology Madras'],
-    "11": 1856,
     "12": ['Academy of Scientific & Innovative Research',
             'International Institute for Management Development',
             'Tôn Đức Thắng University',
