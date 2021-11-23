@@ -2,12 +2,7 @@
 
 ## Clarifications/Corrections
 
-* Nov 20: Please re-download latest lint.py as there was an issue with jupyter 
-magics such as (%matplotlib inline).
-* Nov 23: Fixed a small bug that created unnecessary "Statement seems to have 
-no effect" errors.
-* Nov 25: Filtered out "Statement seems to have no effect" errors that were 
-generated from notebooks.
+* None yet.
 
 ## Introduction
 
@@ -42,7 +37,7 @@ a standard for CLIs is to accept the `-h` or `--help` to display information abo
 Let's try it:
 
 ```
-python3 lint.py -h
+python lint.py -h
 ```
 
 This will display the following:
@@ -50,7 +45,7 @@ This will display the following:
 ```
 usage: lint.py [-h] [-v] path
 
-Linter for CS301
+Linter for CS220
 
 positional arguments:
     path           path of file to lint (.ipynb or .py)
@@ -96,8 +91,8 @@ for i in range(10):
 
 And then run 
 
-```python
-python3 lint.py badcode.py
+```
+python lint.py badcode.py
 ```
 
 We get the following output 
@@ -174,7 +169,7 @@ print(found)
 
 Running this we see that the output is:
 
-```
+```python
 0
 False
 ```
