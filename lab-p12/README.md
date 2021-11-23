@@ -48,7 +48,8 @@ In a new notebook (e.g., named `lint_nb.ipynb`), paste the following code:
 
 ```python
 def abs(list):
-    # Objective: return a new list, which contains absolute values of items from the original list
+    # Objective: return a new list, which contains absolute values of 
+    #            items from the original list
     list = list[:] # copy it
     for i in range(len(list)):
         if list[i] < 0:
