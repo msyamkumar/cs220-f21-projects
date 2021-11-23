@@ -244,9 +244,10 @@ DataFrame([[1, 2], [3, 4]])
 ```
 
 In options 2 and 3, we have a mix of lists and dicts.  The important
-thing to remember is this: **regardless of whether the dicts are the
-inner or outer structures, the dict keys will translate to DataFrame
-column names.**
+thing to remember is this: **when the outer data structure is a list, inner
+data structures represent rows (similar to CSVs); when the outer data structure 
+is a dict, inner data structures represent columns.** Depending on whether the inner
+data structures represent rows or not, you will get row index and column name information accordingly.
 
 This means both of these give us the same:
 
@@ -264,14 +265,21 @@ DataFrame([{"x" : 1, "y" : 2},
            {"x" : 3, "y" : 4}])
 ```
 
-Finally, we have a dict of dicts.  In this case, keys of the
-outer dict will be the columns of the DataFrame, and the keys of the
-inner dicts will be the index of the DataFrame.  Try it!
+Then, we have a dict of dicts.  In this case, keys of the
+outer dict will be the column names of the DataFrame, and the keys of the
+inner dicts will be the row index of the DataFrame.  Try it!
 
 ```python
 # option 4
 DataFrame({"x" : {"A" : 1, "B" : 3},
            "y" : {"A" : 2, "B" : 4}})
+```
+
+Finally, here is how you can configure row indices and column names:
+
+```python
+# option 1
+DataFrame([[1, 2], [3, 4]], columns = ["x", "y"], index = ["A", "B"])
 ```
 
 *Try changing values and visualizing the changes to the DataFrames.*
