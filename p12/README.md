@@ -186,7 +186,7 @@ rankings[(rankings["Quality of Education Rank"] <= 10) & (rankings["Quality of F
 **Note:** Your output should be a **str** representing the **name** of this institution. By the *highest-ranked* institution, we refer to the
 institution with the least value under the `“Quality of Education Rank”` column.
 
-**Hint:** You can find minimum value in a Series with the Series.min() method.
+**Hint:** You can find minimum value in a Series with the `Series.min()` method. You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.min.html).
 
 ### #Q11: What are the top five highest-ranked institutions based on "Research Performance Rank" in India for the year 2020-2021?
 
