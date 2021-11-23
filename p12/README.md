@@ -234,7 +234,8 @@ For more details, please have a look at the documentation of the merge method [h
 
 ### #Q12: Between the years 2019-2020 and 2021-2022, list the institutions which have seen an improvement in their "World Rank" by more than 500 ranks.
 
-**Note** : Your output should be a **list** of institutions. The order does not matter.
+**Note** : Your output should be a **list** of institutions. The order does not matter. 
+**Note** : You should only compute the difference between 2019 and 2021 ranking columns.
 
 **Hint:** In pandas, subtraction of two columns can be simply done using subtraction(-) operator:
 
@@ -261,9 +262,9 @@ will create a *new column* `"difference"` with the difference of the values from
 
 **Optional Hint:** Given two *sets* `A` and `B`, you can find the elements which are in `A` but not in `B` using `A - B`. In pythonic language: 
 ```python
-set_A = {10,20,30,40,50}
-set_B = {20,40,70}
-set_A - set_B == {10,30,50} #Elements which are in set_A but not in set_B
+set_A = {10, 20, 30, 40, 50}
+set_B = {20, 40, 70}
+set_A - set_B == {10, 30, 50} #Elements which are in set_A but not in set_B
 ```
 
 ### #Q16: List the universities which ranked in the top 100 of world rankings in the year 2019-2020 but failed to do so in rankings of year 2021-2022.
