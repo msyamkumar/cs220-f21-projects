@@ -192,7 +192,7 @@ institution with the least value under the `“Quality of Education Rank”` col
 
 **Note:** Your output should be a **list** of institutions sorted in increasing order of their "Research Performance Rank".
 
-**Hint:** For sorting a DataFrame based on the values of a particular column, you can use the **DataFrame.sort_values(by="column_name")** method (where "column_name" is the column on basis of which you want to sort). You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html).
+**Hint:** For sorting a DataFrame based on the values of a particular column, you can use the `DataFrame.sort_values(by="column_name")` method (where "column_name" is the column on basis of which you want to sort). You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html).
 
 ---
 
@@ -236,9 +236,6 @@ For more details, please have a look at the documentation of the merge method [h
 
 **Note** : Your output should be a **list** of institutions. The order does not matter.
 
-**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 **Hint:** In pandas, subtraction of two columns can be simply done using subtraction(-) operator:
 
 ```python
@@ -250,26 +247,17 @@ will create a *new column* `"difference"` with the difference of the values from
 
 **Note** : Your output should be a **str** representing the name of the institution with the greatest absolute difference between its "World Rank" in 2019-2020 and 2021-2022.
 
-**Warning:** You must use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 **Hint:** You can add an extra column to the DataFrame with the absolute difference between the `"2019_ranking"` and `"2021_ranking"`, and sort your DataFrame by this new column.
 
 ### #Q14: For all the three years, find the number of institutions which have a continuous improvement in their "World Rank".
 
 **Note** : Your output should be an **int** representing the number of institutions whose `"World Ranking"` has continuously kept **improving**.
 
-**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 ---
 
 ### #Q15: In the year 2020-2021, list the institutions which are within the top 10 in the world based on "Alumni Employment Rank" but do not feature in the top 10 of the world ranking.
 
 **Note:** Your output should be a **list** of institutions. The order does not matter.
-
-**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
 
 **Optional Hint:** Given two *sets* `A` and `B`, you can find the elements which are in `A` but not in `B` using `A - B`. In pythonic language: 
 ```python
@@ -282,15 +270,9 @@ set_A - set_B == {10,30,50} #Elements which are in set_A but not in set_B
 
 **Note:** Your output should be a **list** of institutions. To keep it simple, you need look only for institutions which appear in the rankings of both years. If a institution was ranked in top 100 of world rankings in year 2019-2020 but does not feature in the 2021-2022 year ranking at all, you still want to include it in your list. The order does not matter.
 
-**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 ### #Q17: List the countries which have at least 10 institutions featuring in the top 100 of world rankings in the year 2020-2021.
 
 **Note:** Your output should be in the form of python **list**.
-
-**Warning:** Use Boolean indexing of your DataFrame/Series to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
 
 **Hint:** In a DataFrame, to find the number of times each unique value in a column repeats, you can use the **DataFrame.value_counts** method. For example,
 
