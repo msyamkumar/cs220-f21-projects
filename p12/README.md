@@ -125,7 +125,7 @@ displays the following:
 
 ## Questions
 
-### WARNING: Use Boolean indexing of appropriate DataFrame to answer questions in this project. You will **lose points** during code review if you use conditional statements or loops.
+## WARNING: Use Boolean indexing of appropriate DataFrame to answer questions in this project. You will **lose points** during code review if you use conditional statements or loops.
 
 ### #Q1: How many countries do we have in our dataset?
 
@@ -383,6 +383,7 @@ convert `2019-2020.html` into a **list of dicts**, it does not matter how you do
 
 **Extra Hint:** If you haven't already done this, you could go back and create a function to parse html files. Then, you could use that function to solve Q19 and Q20.
 
+## WARNING: Verify that you have used Boolean indexing of appropriate DataFrame to answer questions in this project. You will **lose points** during code review if you use conditional statements or loops.
 
 ### Before turning in
 Be sure to **delete** all the downloaded (and created) files (`rankings.json`, `2019-2020.html`, `2020-2021.html` and `2021-2022.html`, `my_rankings.json`), run `test.py` again, and make sure there are no errors. If you do not delete the files before testing, your code may pass `test.py` even if your `download` function does not work. In that case, your code will pass `test.py` on your computer but fail on the autograder. If you turn in a version of your code which fails on the autograder, **we will deduct 5 points**.
