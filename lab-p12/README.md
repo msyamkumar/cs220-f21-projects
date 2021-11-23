@@ -134,8 +134,14 @@ one second on your computer?
 
 ### Measuring Web Requests and File Usage
 
+import `requests` module in the same cell that you used to import `time` module:
+
+```python
+import requests
+```
+
 Copy the following code snippet and paste it three times, in three
-separate cells (be sure to import `requests` in an earlier cell):
+separate cells:
 
 ```python
 t1 = time.time()
@@ -150,10 +156,6 @@ print("ms:", milliseconds)
 
 In each cell, replace `# code to measure` with one of the following
 (in this order):
-
-```python
-import requests
-```
 
 ```python
 r = requests.get("https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/main/lab-p12/hello.txt")
