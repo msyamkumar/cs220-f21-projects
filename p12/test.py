@@ -1,3 +1,35 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@msyamkumar 
+msyamkumar
+/
+cs220-f21-projects
+Public
+4
+418
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+cs220-f21-projects/p12/test.py /
+
+Meenakshi Syamkumar Updating test.py
+Latest commit b69d534 7 minutes ago
+ History
+ 1 contributor
+764 lines (685 sloc)  29.1 KB
+   
 #!/usr/bin/python
 
 import ast, os, sys, subprocess, json, re, collections, math, warnings
@@ -77,11 +109,11 @@ questions = [
     Question(number=3, weight=1, format=HTML_FORMAT),
     Question(number=4, weight=1, format=TEXT_FORMAT),
     Question(number=5, weight=1, format=TEXT_FORMAT),
-    Question(number=6, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
-    Question(number=7, weight=1, format=TEXT_FORMAT),
-    Question(number=8, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
+    Question(number=6, weight=1, format=TEXT_FORMAT),
+    Question(number=7, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
+    Question(number=8, weight=1, format=TEXT_FORMAT),
     Question(number=9, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
-    Question(number=10, weight=1, format=TEXT_FORMAT),
+    Question(number=10, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
     Question(number=11, weight=1, format=TEXT_FORMAT),
     Question(number=12, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
     Question(number=13, weight=1, format=TEXT_FORMAT),
