@@ -125,7 +125,7 @@ displays the following:
 
 ## Questions
 
-## WARNING: Use Boolean indexing of appropriate DataFrame to answer questions in this project. You will **lose points** during code review if you use conditional statements or loops. You are allowed to use .iloc for lookups. Using .loc is considered hard-coding and you will **lose points**. 
+## WARNING: Use Boolean indexing of appropriate DataFrame to answer questions in this project. You will **lose points** during code review if you use conditional statements or loops. You are allowed to use .iloc for lookups. Using .loc is considered hardcoding and you will **lose points**. 
 
 ### #Q1: How many countries do we have in our dataset?
 
