@@ -125,6 +125,7 @@ displays the following:
 
 ## Questions
 
+### WARNING: Use Boolean indexing of appropriate DataFrame to answer questions in this project. You will **lose points** during code review if you use conditional statements or loops.
 
 ### #Q1: How many countries do we have in our dataset?
 
@@ -135,23 +136,14 @@ displays the following:
 **Note:** Your output should be a pandas **DataFrame** with 3 rows and 10 columns, and should look like this:
 <img src="images/Q2.png" width="1200">
 
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 ### #Q3: Generate a pandas DataFrame containing all the statistics of "University of Wisconsin–Madison".
 
 **Note:** Your output should be a pandas **DataFrame** with 3 rows and 10 columns, and should look like this:
 <img src="images/Q3.png" width="1200">
 
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 ### #Q4: What is the "National Rank" of the "University of Wisconsin–Madison" in the year 2021-2022?
 
 **Note:** Your output should be an **int**.
-
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
 
 **Hint:** You can start with the DataFrame you found in the previous question, and apply Boolean indexing on *that DataFrame* to find the data for the year `"2021-2022"`. You may then extract the `"National Rank"` using `iloc`.
 
@@ -159,26 +151,17 @@ or loops here.
 
 **Note:** Your output should be a **float**.
 
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 **Hint:** You need to extract the "National Rank" column of your DataFrame from Q4 as a Series. You can average all the scores in a Series with the `Series.mean()` method.
 
 ### #Q6: What is the average score for all the institutions in the Switzerland?
 
 **Note:** Your output should be a **float**.
 
-**Warning:** Use Boolean indexing of a DataFrame to answer this. You will **lose points** during code review if you use conditional statements or loops here.
-
-
 ### #Q7: Generate a pandas dataframe containing all the statistics of universities from Singapore in the year 2020-2021.
 
 **Note:** Your output should be a pandas **DataFrame** with 4 rows and 10 columns, and should look like this:
 
 <img src="images/Q7.png" width="1200">
-
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
 
 **Hint:** When there are multiple conditions to filter a Dataframe, you can combine all the conditions with `&` as a logical operator between them. For example, you can extract the data for all the institutions with `Quality of Education Rank <= 10` and `Quality of Faculty Rank <= 10` with (usage of parenthesis is required):
 
@@ -190,16 +173,11 @@ rankings[(rankings["Quality of Education Rank"] <= 10) & (rankings["Quality of F
 
 **Note:** Your output should be a **str** representing the **name** of this institution.
 
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
-or loops here.
-
 **Hint:** The highest-ranked institution in Germany is the institution from Germany with `National Rank` of 1.
 
 ### #Q9: In the year 2019-2020, list all the institutions in the USA ranked better than the highest-ranked institution in Germany.
 
 **Note:** Your output should be an **list** containing all institutions in USA which are ranked better than the best ranking institution in Germany for the year 2019-2020. By *better ranked*, we refer to institutions with a lower value under the `“World Rank”` column.
-
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements or loops here.
 
 **Hint:** You can use your answer from Q8 here. You then need to make a list of all the institutions from USA with a better `World Rank` than that institution in the year 2019-2020.
 
@@ -208,15 +186,11 @@ or loops here.
 **Note:** Your output should be a **str** representing the **name** of this institution. By the *highest-ranked* institution, we refer to the
 institution with the least value under the `“Quality of Education Rank”` column.
 
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements or loops here.
-
 **Hint:** You can find minimum value in a Series with the Series.min() method.
 
 ### #Q11: What are the top five highest-ranked institutions based on "Research Performance Rank" in India for the year 2020-2021?
 
 **Note:** Your output should be a **list** of institutions sorted in increasing order of their "Research Performance Rank".
-
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements or loops here.
 
 **Hint:** For sorting a DataFrame based on the values of a particular column, you can use the **DataFrame.sort_values(by="column_name")** method (where "column_name" is the column on basis of which you want to sort). You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html).
 
