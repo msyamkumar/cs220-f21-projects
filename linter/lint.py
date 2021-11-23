@@ -206,7 +206,7 @@ def lint(path, *args, show=True, debug=False, **kwargs):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Linter for CS301')
+    parser = argparse.ArgumentParser(description='Linter for CS220')
     parser.add_argument('-d', '--debug', action='store_true',
                         help='Extra information about the linting message')
     parser.add_argument('path', type=str, help='path of file to lint (.ipynb or .py)')
