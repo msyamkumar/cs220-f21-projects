@@ -40,11 +40,11 @@ For this project, you're going to analyze the world university rankings!
 
 Specifically, you're going to use Pandas to analyze various statistics of the top ranked universities across the world, over the last three years.
 
-To start, download [`test.py`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p12/test.py) and [`expected.html`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p12/expected.html).  You'll also need to
-download [`lint.py`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p12/lint.py) (see linter documentation under "Testing" below). You'll do all your work in `main.ipynb`.
+To start, download [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/test.py) and [`expected.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/expected.html).  You'll also need to
+download [`lint.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/lint.py) (see linter documentation under "Testing" below). You'll do all your work in `main.ipynb`.
 
 **Warning:** Do not download any of the other files manually (you must write Python code to
-download these automatically, as in lab-p12). When we run the autograder, the other files such as [`rankings.json`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p12/rankings.json), [`2019-2020.html`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p12/2019-2020.html), [`2020-2021.html`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p12/2020-2021.html), [`2021-2022.html`](https://github.com/msyamkumar/cs220-s21-projects/blob/master/p12/2021-2022.html) will not be in the directory. So, if your code does not download these files, you will get a **zero score** on the project. More details can be found in the Setup section of the project.
+download these automatically, as in lab-p12). When we run the autograder, the other files such as [`rankings.json`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/rankings.json), [`2019-2020.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/2019-2020.html), [`2020-2021.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/2020-2021.html), [`2021-2022.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/2021-2022.html) will not be in the directory. So, unless your `main.ipynb` downloads these files, you will get a **zero score** on the project. More details can be found in the Setup section of the project.
 
 
 # Data
@@ -52,23 +52,23 @@ download these automatically, as in lab-p12). When we run the autograder, the ot
 For this project, we will be analyzing statistics about world university rankings adapted from
 [here](https://cwur.org/). These are the specific webpages that we extracted the data from:
 
-* https://cwur.org/2021-22.php
-* https://cwur.org/2020-21.php
 * https://cwur.org/2019-20.php
+* https://cwur.org/2020-21.php
+* https://cwur.org/2021-22.php
 
 Later in the project, you will be scraping these webpages and extracting the data yourself. Since we
 don't want all of you bombarding these webpages with requests, we have made *snapshots* of these
 webpages, and hosted them on GitHub. You can find the snapshots here:
 
-* https://raw.githubusercontent.com/msyamkumar/cs220-f21-projectDesign/master/p12/2019-2020.html
-* https://raw.githubusercontent.com/msyamkumar/cs220-f21-projectDesign/master/p12/2020-2021.html
-* https://raw.githubusercontent.com/msyamkumar/cs220-f21-projectDesign/master/p12/2021-2022.html
+* https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/2019-2020.html
+* https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/2020-2021.html
+* https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/2021-2022.html
 
 We will be extracting the data from these three html pages and analyzing them. However, to make it
 a little easier for you to start, we have already done that for you! We have gathered the data from
 these html files, and collected them in a single json file, which can be found here:
 
-* https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/master/p12/rankings.json
+* https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/rankings.json
 
 You will work with this json file for most of this project. However, at the end, you will 
 generate an identical json file by parsing the html files yourself.
@@ -77,7 +77,7 @@ generate an identical json file by parsing the html files yourself.
 # Testing
 
 For answers involving a DataFrame, `test.py` compares your tables to
-those in `expected.html`, so take a moment to open that file from Explorer or Finder.
+those in `expected.html`, so take a moment to open that file on a web browser (from Finder/Explorer).
 
 `test.py` doesn't care if you have extra rows or columns, and it
 doesn't care about the order of the rows or columns.  However, you
@@ -101,11 +101,11 @@ Linting Summary:
 In this case, `test.py` will deduct 1 point per linter message because of
 bad style, and at most deduct 10 points. For more information about the linter
 as well as how to run the full linter to see all of the automatically generated
-advice and feedback, please check out the [linting README](https://github.com/tylerharter/cs301-projects/tree/master/linter).
+advice and feedback, please check out [lab-p12](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p12#lint).
 
 # Setup
 
-Use the `download` function from lab-p12 to pull the data from here (**do not manually download**): https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/master/p12/rankings.json
+Use the `download` function from lab-p12 to pull the data from here (**do not manually download**): https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/main/p12/rankings.json
 and store it in `rankings.json`. Once you have created the file, create a Dataframe `rankings` from this file.
 
 **Warning**: Make sure your `download` function does not download the file if it already exists. The TAs will manually deduct points otherwise. Make sure you use `download` function to pull the data instead of manually download. Otherwise you will get a zero. 
@@ -121,7 +121,7 @@ rankings.head()
 ```
 displays the following:
 
-<img src="imgs/setup.PNG" width="1200">
+<img src="images/setup.png" width="1200">
 
 ## Questions
 
@@ -133,7 +133,7 @@ displays the following:
 ### #Q2: Generate a pandas DataFrame containing all the statistics of the highest-ranked institution based on "World Rank" in these three years.
 
 **Note:** Your output should be a pandas **DataFrame** with 3 rows and 10 columns, and should look like this:
-<img src="imgs/Q2.PNG" width="1200">
+<img src="images/Q2.png" width="1200">
 
 **Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
@@ -141,7 +141,7 @@ or loops here.
 ### #Q3: Generate a pandas DataFrame containing all the statistics of "University of Wisconsin–Madison" ranking in these three years.
 
 **Note:** Your output should be a pandas **DataFrame** with 3 rows and 10 columns, and should look like this:
-<img src="imgs/Q3.PNG" width="1200">
+<img src="images/Q3.png" width="1200">
 
 **Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
@@ -175,7 +175,7 @@ or loops here.
 
 **Note:** Your output should be a pandas **DataFrame** with 4 rows and 10 columns, and should look like this:
 
-<img src="imgs/Q7.PNG" width="1200">
+<img src="images/Q7.png" width="1200">
 
 **Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
@@ -260,7 +260,7 @@ For more details, please have a look at the documentation of the merge method [h
 
 **Note** : Your output should be a **list** of institutions. The order does not matter.
 
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
+**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
 **Hint:** In pandas, subtraction of two columns can be simply done using subtraction(-) operator:
@@ -274,7 +274,7 @@ will create a *new column* `"difference"` with the difference of the values from
 
 **Note** : Your output should be a **str** representing the name of the institution with the greatest absolute difference between its "World Rank" in 2019-2020 and 2021-2022.
 
-**Warning:** You must use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
+**Warning:** You must use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
 **Hint:** You can add an extra column to the DataFrame with the absolute difference between the `"2019_ranking"` and `"2021_ranking"`, and sort your DataFrame by this new column.
@@ -283,7 +283,7 @@ or loops here.
 
 **Note** : Your output should be an **int** representing the number of institutions whose `"World Ranking"` has continuously kept **improving**.
 
-**Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
+**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
 ---
@@ -292,7 +292,7 @@ or loops here.
 
 **Note:** Your output should be a **list** of institutions. The order does not matter.
 
-**Warning:** You must use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
+**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
 **Optional Hint:** Given two *sets* `A` and `B`, you can find the elements which are in `A` but not in `B` using `A - B`. In pythonic language: 
@@ -306,14 +306,14 @@ set_A - set_B == {10,30,50} #Elements which are in set_A but not in set_B
 
 **Note:** Your output should be a **list** of institutions. To keep it simple, you need look only for institutions which appear in the rankings of both years. If a institution was ranked in top 100 of world rankings in year 2019-2020 but does not feature in the 2021-2022 year ranking at all, you still want to include it in your list. The order does not matter.
 
-**Warning:** You must use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
+**Warning:** Use Boolean indexing of your DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
 ### #Q17: List the countries which have at least 10 institutions featuring in the top 100 of world rankings in the year 2020-2021.
 
 **Note:** Your output should be in the form of python **list**.
 
-**Warning:** You must use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
+**Warning:** Use Boolean indexing of your DataFrame/Series to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
 **Hint:** In a DataFrame, to find the number of times each unique value in a column repeats, you can use the **DataFrame.value_counts** method. For example,
@@ -330,20 +330,22 @@ would output a pandas **Series** with the indexes being the country names and va
 Very often, you don't have data in nice json format like `rankings.json`. Instead data needs to be scraped from multiple webpages and requires some cleanup.
 
 
-This is a long but fun exercise where we will do the same by scraping these webpages: 
+This is a long but fun exercise where we will do the same by scraping these webpages:
+
 * https://cwur.org/2021-22.php
 * https://cwur.org/2020-21.php
 * https://cwur.org/2019-20.php
+
 Our `rankings.json` file was created using data from precisely these webpages.
 For the rest of this project, you will write the code to recreate `rankings.json` file from the tables in these html pages yourself!
-Start by installing BeautifulSoup using pip, as discussed in class (learn how to install from **[lecture slides](https://www.msyamkumar.com/cs220/f20/materials/lec_32_F20.pdf))**.
-Then call `download('https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/master/p12/2019-2020.html', '2019-2020.html')`
+Start by installing BeautifulSoup using pip, as discussed in class (learn how to install from **[lecture slides](https://www.msyamkumar.com/cs220/f21/materials/lec_33_F20.pdf))**.
+Then call `download('https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/main/p12/2019-2020.html', '2019-2020.html')`
 to download the webpage. Also download `'2020-2021.html'` and `'2021-2022.html'` webpages using the `download` function.
 
 **Note:** This code is not downloading from the original webpage, but a *snapshot* of it (this is to avoid creating
 excessive load on their servers).  You can open `2019-2020.html` and make sure that this page looks fine. It should look like this:
 
-<img src="imgs/html_page.png" width="1000">
+<img src="images/html_page.png" width="1000">
 
 **Warning:** If you do not use the `download` function to download these files, but instead download them manually, your code will crash on the autograder, and
 you will get a zero score. So make sure you use your `download` function here.
