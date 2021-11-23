@@ -130,7 +130,7 @@ displays the following:
 
 **Note:** Your output should be an **int** represeting the number of *unique* countries in the dataset.
 
-### #Q2: Generate a pandas DataFrame containing all the statistics of the highest-ranked institution based on "World Rank" in these three years.
+### #Q2: Generate a pandas DataFrame containing all the statistics of the highest-ranked institution based on "World Rank" (Note: highest rank is 1).
 
 **Note:** Your output should be a pandas **DataFrame** with 3 rows and 10 columns, and should look like this:
 <img src="images/Q2.png" width="1200">
