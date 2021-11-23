@@ -119,7 +119,7 @@ for i in range(limit):
 t2 = time.time()
 
 print("SUM:", sum)
-milliseconds = (t2-t1) * 1000
+milliseconds = (t2 - t1) * 1000
 print("ms:", milliseconds)
 ```
 
@@ -240,7 +240,7 @@ Try it!
 
 ```python
 # option 1
-DataFrame([[1,2], [3,4]])
+DataFrame([[1, 2], [3, 4]])
 ```
 
 In options 2 and 3, we have a mix of lists and dicts.  The important
@@ -252,16 +252,16 @@ This means both of these give us the same:
 
 ```python
 # option 2
-DataFrame({"x":[1,3],
-           "y":[2,4]})
+DataFrame({"x" : [1, 3],
+           "y" : [2, 4]})
 ```
 
 and
 
 ```python
 # option 3
-DataFrame([{"x":1, "y":2},
-           {"x":3, "y":4}])
+DataFrame([{"x" : 1, "y" : 2},
+           {"x" : 3, "y" : 4}])
 ```
 
 Finally, we have a dict of dicts.  In this case, keys of the
@@ -270,8 +270,8 @@ inner dicts will be the index of the DataFrame.  Try it!
 
 ```python
 # option 4
-DataFrame({"x":{"A":1,"B":3},
-           "y":{"A":2,"B":4}})
+DataFrame({"x" : {"A" : 1, "B" : 3},
+           "y" : {"A" : 2, "B" : 4}})
 ```
 
 *Try changing values and visualizing the changes to the DataFrames.*
