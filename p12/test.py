@@ -81,8 +81,8 @@ questions = [
     Question(number=7, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
     Question(number=8, weight=1, format=TEXT_FORMAT),
     Question(number=9, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
-    Question(number=10, weight=1, format=TEXT_FORMAT_ORDERED_LIST)
-    Question(number=11, weight=1, format=TEXT_FORMAT)
+    Question(number=10, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
+    Question(number=11, weight=1, format=TEXT_FORMAT),
     Question(number=12, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
     Question(number=13, weight=1, format=TEXT_FORMAT),
     Question(number=14, weight=1, format=TEXT_FORMAT),
