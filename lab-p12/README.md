@@ -191,7 +191,7 @@ re-fetching the original.  This technique is called **caching**.
 
 ## Implementing Caching
 
-We will now implement a `download` function with caching.
+We will now implement a `download` function with caching. Make sure to move import `os` to the cell with import statements.
 ```python
 import os
 
