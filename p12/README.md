@@ -138,7 +138,7 @@ displays the following:
 **Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
-### #Q3: Generate a pandas DataFrame containing all the statistics of "University of Wisconsin–Madison" ranking in these three years.
+### #Q3: Generate a pandas DataFrame containing all the statistics of "University of Wisconsin–Madison".
 
 **Note:** Your output should be a pandas **DataFrame** with 3 rows and 10 columns, and should look like this:
 <img src="images/Q3.png" width="1200">
