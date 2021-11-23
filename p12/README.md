@@ -226,16 +226,15 @@ institutions_df = pd.DataFrame(institutions)
 ```python
 year_2019_ranking = rankings[rankings["Year"] == "2019-2020"][["World Rank", "Institution"]]
 year_2021_ranking = rankings[rankings["Year"] == "2021-2022"][["World Rank", "Institution"]]
-merged_ranking_df = year_2021_ranking.merge(year_2019_ranking, how = 'inner', on = 'Institution') 
+institutions_df = year_2021_ranking.merge(year_2019_ranking, how = 'inner', on = 'Institution') 
 ```
-For more details, please have a look at the documentation of the merge method [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html).
+For more details, please have a look at the documentation of the `DataFrame.merge()` method [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html). After merging the DataFrames, you will also have to rename the columns to match the required answer. You can find the documentation for the `DataFrame.rename()` method [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rename.html).
 
 **Warning:** You may create the DataFrame `institutions_df` however you like. However, if you do not create a DataFrame, you will **lose points** during code review.
 
 ### #Q12: Between the years 2019-2020 and 2021-2022, list the institutions which have seen an improvement in their "World Rank" by more than 500 ranks.
 
-**Note** : Your output should be a **list** of institutions. The order does not matter. 
-**Note** : You should only compute the difference between 2019 and 2021 ranking columns.
+**Note** : Your output should be a **list** of institutions. The order does not matter. You should only compute the difference between the 2019 and 2021 ranking columns.
 
 **Hint:** In pandas, subtraction of two columns can be simply done using subtraction(-) operator:
 
