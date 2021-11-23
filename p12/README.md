@@ -210,13 +210,15 @@ institution with the least value under the `“Quality of Education Rank”` col
 
 **Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements or loops here.
 
-**Hint:** For sorting a DataFrame based on the values of a particular column, you can use the **DataFrame.sort_values(by="column_name")** method (where "column_name" is the column on basis of which you want to sort). You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html).
+**Hint:** You can find minimum value in a Series with the Series.min() method.
 
 ### #Q11: What are the top five highest-ranked institutions based on "Research Performance Rank" in India for the year 2020-2021?
 
 **Note:** Your output should be a **list** of institutions sorted in increasing order of their "Research Performance Rank".
 
 **Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements or loops here.
+
+**Hint:** For sorting a DataFrame based on the values of a particular column, you can use the **DataFrame.sort_values(by="column_name")** method (where "column_name" is the column on basis of which you want to sort). You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html).
 
 ---
 
