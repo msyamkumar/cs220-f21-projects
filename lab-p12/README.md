@@ -202,6 +202,7 @@ def download(filename, url):
 
     # TODO: Write the code to download the file from URL
     # and save it in `filename`
+    # Make sure to call the function that checks for 200 status_code
 
     return (str(filename) + " created!")
 ```
