@@ -225,8 +225,11 @@ institutions_df = pd.DataFrame(institutions)
 
 ```python
 year_2019_ranking = rankings[rankings["Year"] == "2019-2020"][["World Rank", "Institution"]]
-year_2021_ranking = rankings[rankings["Year"] == "2021-2022"][["World Rank", "Institution"]]
-institutions_df = year_2021_ranking.merge(year_2019_ranking, how = 'inner', on = 'Institution') 
+year_2020_ranking = rankings[rankings["Year"] == "2020-2021"][["World Rank", "Institution"]]
+year_2021_ranking = pass # TODO: complete this
+institutions_df = year_2020_ranking.merge(year_2019_ranking, how = 'inner', on = 'Institution') 
+# TODO: merge institutions_df with year_2021_ranking
+# TODO: use rename function to rename columns
 ```
 For more details, please have a look at the documentation of the `DataFrame.merge()` method [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html). After merging the DataFrames, you will also have to rename the columns to match the required answer. You can find the documentation for the `DataFrame.rename()` method [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rename.html).
 
