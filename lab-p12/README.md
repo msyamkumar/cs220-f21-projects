@@ -278,7 +278,7 @@ DataFrame({"x" : {"A" : 1, "B" : 3},
 Finally, here is how you can configure row indices and column names:
 
 ```python
-# option 1
+# revised option 1
 DataFrame([[1, 2], [3, 4]], columns = ["x", "y"], index = ["A", "B"])
 ```
 
