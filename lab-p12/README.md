@@ -59,7 +59,7 @@ abs([-1, -3, 5, -4, 8])
 
 Now open your terminal (Windows: PowerShell, Mac: Terminal), navigate to the directory you are currently working on (the folder which contains the `lint_nb.ipynb` and `lint.py`), and run the linter: `python lint.py -v lint_nb.ipynb` (change the name
 if necessary).  Consider why the linter is complaining, then write a
-better version of the function to make the linter happy.
+better version of the function to make the linter happy. Recall that any word with green syntax highlighting in jupyter notebook is a Python keyword. You should not be using such words as variable names or function names.
 
 You can find extensive documentation for the file `lint.py`
 [here](https://github.com/tylerharter/cs301-projects/tree/master/linter). If you find the linter confusing, 
