@@ -333,12 +333,12 @@ extract the header in the table of `2019-2020.html`, it does not matter how you 
 
 ### #Q19: Parse the contents of the table you found in `2019-2020.html` and represent it as a list of dicts. What are the first 5 dictionaries in the list?
 
-**Note:** 
 - Consider writing a function that accepts html file name as argument, parses the file contents and returns a **list of dictionaries**.
 - You should add an extra key `"Year"` to each of the **dicts** with the value `"2019-2020"`. You can extract this information from the file name (passed as argument to the function)
 - Some of the data is missing in the html table. The missing data is represented with a `"-"` symbol in the table. When you come across a cell in this table with that value, you need to replace it with `None` in your dict.
 - Dictionary values should have appropriate types. Recall that you used to write cell functions to perform similar type conversions. 
 - Do not hardcode the headers aka keys in your dictionary. In Q18, you should have written code to extract header as a list. Use that list while reading the remaining table rows data.
+- Reminder to use print function calls to incrementally test your function. Please make sure to remove these print function calls, once you code the entire function.
 - Our expected output is:
 
 ```python
