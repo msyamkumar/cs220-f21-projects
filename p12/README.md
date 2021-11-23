@@ -180,7 +180,7 @@ or loops here.
 **Warning:** Use Boolean indexing of your `rankings` DataFrame to answer this. You will **lose points** during code review if you use conditional statements
 or loops here.
 
-**Hint:** When there are multiple conditions to filter a Dataframe, you can combine all the conditions with `&` as a logical operator between them. For example, you can extract the data for all the institutions with `Quality of Education Rank <= 10` and `Quality of Faculty Rank <= 10` with
+**Hint:** When there are multiple conditions to filter a Dataframe, you can combine all the conditions with `&` as a logical operator between them. For example, you can extract the data for all the institutions with `Quality of Education Rank <= 10` and `Quality of Faculty Rank <= 10` with (usage of parenthesis is required):
 
 ```python
 rankings[(rankings["Quality of Education Rank"] <= 10) & (rankings["Quality of Faculty Rank"] <= 10)]
