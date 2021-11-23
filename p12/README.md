@@ -322,7 +322,7 @@ you will get a zero score. So make sure you use your `download` function here.
 **Hint:** You can start with
 ```python
 f = open("2019-2020.html", encoding='utf-8')
-rank19 = BeautifulSoup(f.read(), 'html.parser')
+rank19_doc = BeautifulSoup(f.read(), 'html.parser')
 f.close()
 ```
 Make sure you have imported `BeautifulSoup` before. Then, use the  `.find()` or `.find_all()` methods to identify the table and its header.
