@@ -333,7 +333,13 @@ extract the header in the table of `2019-2020.html`, it does not matter how you 
 
 ### #Q19: Parse the contents of the table you found in `2019-2020.html` and represent it as a list of dicts. What are the first 5 dictionaries in the list?
 
-**Note:** You should also add in an extra key `"Year"` to each of the **dicts** with the value `"2019-2020"`. Our expected output is:
+**Note:** 
+- Consider writing a function that accepts html file name as argument, parses the file contents and returns a **list of dictionaries**.
+- You should add an extra key `"Year"` to each of the **dicts** with the value `"2019-2020"`. You can extract this information from the file name (passed as argument to the function)
+- Some of the data is missing in the html table. The missing data is represented with a `"-"` symbol in the table. When you come across a cell in this table with that value, you need to replace it with `None` in your dict.
+- Dictionary values should have appropriate types. Recall that you used to write cell functions to perform similar type conversions. 
+- Do not hardcode the headers aka keys in your dictionary. In Q18, you should have written code to extract header as a list. Use that list while reading the remaining table rows data.
+- Our expected output is:
 
 ```python
 [{'Year': '2019-2020',
@@ -359,10 +365,7 @@ extract the header in the table of `2019-2020.html`, it does not matter how you 
 ...]
 ```
 
-**Warning:** Note the data types of the values in the dicts! Also, some of the data is missing in the html table. The missing data is represented with a `"-"` symbol in the table. When you come across a cell in this table with that value, you need to replace it with `None` in your dict.
-
-**Note:** Since you are parsing a given html page, there are no restrictions on 'hardcoding' indices or html tags. As long as you can
-convert `2019-2020.html` into a **list of dicts**, it does not matter how you do it.
+**Note:** There are no restrictions on 'hardcoding' html tags. 
 
 ### #Q20: Parse the contents of `2019-2020.html`, `2020-2021.html`, and `2021-2022.html` and combine them to create a file titled `my_rankings.json`.
 
