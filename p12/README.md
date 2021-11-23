@@ -302,7 +302,7 @@ This is a long but fun exercise where we will do the same by scraping these webp
 Our `rankings.json` file was created using data from precisely these webpages.
 For the rest of this project, you will write the code to recreate `rankings.json` file from the tables in these html pages yourself!
 Anaconda installation of Python, installs BeautifulSoup module. If for some reason, you didn't use Anaconda to install python, you should run
-`pip install beautifulsoup4`. command on terminal or powershell.
+`pip install beautifulsoup4` command on terminal or powershell.
 
 Call `download('https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/main/p12/2019-2020.html', '2019-2020.html')`
 to download the webpage. Also download `'2020-2021.html'` and `'2021-2022.html'` webpages using the `download` function.
