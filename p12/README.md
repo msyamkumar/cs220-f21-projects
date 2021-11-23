@@ -221,12 +221,12 @@ institutions_df = pd.DataFrame(institutions)
 ```
 **Hint:** You can find the list of all institutions which appear in all three DataFrames by creating a list of institutions from all three years and finding institutions that appear in all three years. However, a faster and easier way to do this would be to make *sets* of the institutions that appear in each DataFrame, and find their intersection. Look up how to find the intersection of two or more sets in Python, on the internet! 
 
-**Optional Challenge:** A simpler solution can be using pandas `DataFrame.merge()` method which, when called with argument `how="inner"`, merges two dataframes based on a particular column considering only the intersection of row values in the two dataframes. For example, to merge the dataframes containing rankings of the year 2019-2020 and 2021-2022 based on the column "Institution" (i.e., for unique institutions) you can use merge method as follows:
+**Optional Challenge:** A simpler solution can be using pandas `DataFrame.merge()` method which, when called with argument `how = "inner"`, merges two dataframes based on a particular column considering only the intersection of row values in the two dataframes. For example, to merge the dataframes containing rankings of the year 2019-2020 and 2021-2022 based on the column "Institution" (i.e., for unique institutions) you can use merge method as follows:
 
 ```python
 year_2019_ranking = rankings[rankings["Year"] == "2019-2020"][["World Rank", "Institution"]]
 year_2021_ranking = rankings[rankings["Year"] == "2021-2022"][["World Rank", "Institution"]]
-merged_ranking_df = year_2021_ranking.merge(year_2019_ranking, how='inner', on='Institution') 
+merged_ranking_df = year_2021_ranking.merge(year_2019_ranking, how = 'inner', on = 'Institution') 
 ```
 For more details, please have a look at the documentation of the merge method [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html).
 
