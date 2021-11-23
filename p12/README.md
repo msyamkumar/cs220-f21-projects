@@ -250,7 +250,7 @@ will create a *new column* `"difference"` with the difference of the values from
 
 **Note** : Your output should be a **str** representing the name of the institution with the greatest absolute difference between its "World Rank" in 2019-2020 and 2021-2022.
 
-**Hint:** You can add an extra column to the DataFrame with the absolute difference between the `"2019_ranking"` and `"2021_ranking"`, and sort your DataFrame by this new column.
+**Hint:** You can find maximum value in a Series with the `Series.max()` method. You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.max.html).
 
 ### #Q14: For all the three years, find the number of institutions which have a continuous improvement in their "World Rank".
 
@@ -262,6 +262,7 @@ will create a *new column* `"difference"` with the difference of the values from
 
 **Note:** Your output should be a **list** of institutions. The order does not matter.
 
+**Hint:** Recall that in Q11, you learnt about `sort_values`.
 **Optional Hint:** Given two *sets* `A` and `B`, you can find the elements which are in `A` but not in `B` using `A - B`. In pythonic language: 
 ```python
 set_A = {10, 20, 30, 40, 50}
@@ -282,8 +283,9 @@ set_A - set_B == {10, 30, 50} #Elements which are in set_A but not in set_B
 ```python
 rankings["Country"].value_counts()
 ```
-would output a pandas **Series** with the indexes being the country names and value being the number of times each country has featured in the `rankings` DataFrame. You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.value_counts.html). You can adapt this code to find the number of institutions from each country that features in the year 2020-2021.
+would output a pandas **Series** with the indexes being the country names and value being the number of times each country has featured in the `rankings` DataFrame. You can find the documentation [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.value_counts.html). You can adapt this code to find the number of institutions from each country that features in the year 2020-2021. 
 
+**Hint:** You can extract indices of a Series s, by specifying s.index
 
 ---
 ### BeautifulSoup
