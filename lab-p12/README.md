@@ -26,14 +26,23 @@ coding style often leads to bugs).  A linter helps warn you about
 common issues. If you are interested in finding out about the origins
 of this term, check out the [Wikipedia page](https://en.wikipedia.org/wiki/Lint_(software)).
 
-For project P12, we're adding a linter as part of `test.py`.
+For project p12, we're adding a linter as part of `test.py`.
 It will notify you of code that is bad style, deducting 1% per issue
 (for a max of a 10% penalty).  You can also run the linter yourself,
 apart from the tests.  Let's do that now.
 
-Using the directions and documentation
-[here](https://github.com/tylerharter/cs301-projects/tree/master/linter),
-install pylint and click to download [`lint.py`](https://github.com/msyamkumar/cs220-s21-projects/tree/master/lab-p12/lint.py) from the same repository.
+You should first install the `pylint` module. You can do that with the command
+```
+pip install pylint
+```
+
+from your Terminal/PowerShell window.
+
+**Reminder:** Based on your Python setup, you might need to use `pip3` instead of `pip`.
+
+After downloading the module `pylint`, you need to download the file
+[`lint.py`](https://github.com/msyamkumar/cs220-f21-projects/tree/master/lab-p12/lint.py)
+from this repository.
 
 In a new notebook (e.g., named `lint_nb.ipynb`), paste the following code:
 
@@ -52,6 +61,9 @@ Now open your terminal (Windows: PowerShell, Mac: Terminal), navigate to the dir
 if necessary).  Consider why the linter is complaining, then write a
 better version of the function to make the linter happy.
 
+You can find extensive documentation for the file `lint.py`
+[here](https://github.com/tylerharter/cs301-projects/tree/master/linter). If you find the linter confusing, 
+please read the full documentation there!
 
 ## Timing
 
@@ -139,7 +151,10 @@ In each cell, replace `# code to measure` with one of the following
 
 ```python
 import requests
-r = requests.get("https://raw.githubusercontent.com/msyamkumar/cs220-s21-projects/tree/main/lab-p12/hello.txt")
+```
+
+```python
+r = requests.get("https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/main/lab-p12/hello.txt")
 r.raise_for_status()
 data = r.text
 ```
@@ -159,7 +174,7 @@ f.close()
 How long did the code that does a GET request using the `requests`
 module take compared to the cells accessing a file on your own
 computer?  It's quite likely that fetching data from the Internet took
-100x longer.
+10x longer.
 
 ### Relevance to p12
 
@@ -187,7 +202,7 @@ def download(filename, url):
     return (str(filename) + " created!")
 ```
 
-Now call `download("hello.html", "https://raw.githubusercontent.com/msyamkumar/cs220-s21-projects/tree/main/lab-p12/hello.html")`.
+Now call `download("hello.html", "https://raw.githubusercontent.com/msyamkumar/cs220-f21-projects/main/lab-p12/hello.html")`.
 You should be able to see `hello.html` in your Explorer/Finder.
 
 
@@ -280,8 +295,6 @@ Notice that the `\` character at the end of a line allows you to wrap a line of 
 Experiment with moving the `\` character.  Remove it, place it somewhere else, then try to extend the code to 3 lines.
 
 You will be writing long lines of code in p12, and this will help make your code easier to read.
-
-
 
 
 **Note:** Run `lint.py` once again, and clear the all warnings from the linter. This will be good practice for p12.
