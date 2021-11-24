@@ -284,6 +284,17 @@ DataFrame([[1, 2], [3, 4]], columns = ["x", "y"], index = ["A", "B"])
 
 *Try changing values and visualizing the changes to the DataFrames.*
 
+## Boolean Indexing
+
+Download [`cs220_survey_data.csv`](https://github.com/msyamkumar/cs220-f21-projects/tree/master/lab-p12/cs220_survey_data.csv).
+The following code enables us to read the contents of `cs220_survey_data.csv` into a DataFrame. Paste the code into a new cell:
+
+```python
+survey_data = pd.read_csv("cs220_survey_data.csv")
+```
+
+Let's go through examples to recall the concept of Boolean indexing
+
 ## Wrapping Lines in Python
 
 Sometimes in Python you may need to write a very long line of code.  
