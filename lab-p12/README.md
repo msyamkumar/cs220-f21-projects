@@ -317,7 +317,7 @@ You will be writing long lines of code in p12, and this will help make your code
 * In p12, you will need to use the `download` function as described already. Make sure that your function does **not** download files that have already been downloaded.
 * Using Pandas for this project, you can solve most of the questions in this project very efficiently (i.e. with a couple of lines of code). 
 * You should use Boolean indexing of appropriate DataFrame to answer questions in this project. You will lose points during code review if you use conditional statements or loops.
-* You might want to rewatch the lectures on Pandas (specifically boolean indexing).
+* You might want to review the code from Pandas lectures or rewatch the lectures on Pandas (specifically boolean indexing).
 * Note: sometimes you will be using lists and other data structures to manipulate the Series / DataFrame to answer questions. You may use for loops when the question description or code specifies you to use for loops. Both of these scenarios would be considered acceptable.
 
 **Good luck!**
