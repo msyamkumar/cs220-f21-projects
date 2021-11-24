@@ -83,6 +83,7 @@ questions = [
     Question(number=9, weight=1, format=TEXT_FORMAT),
     Question(number=10, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
     Question(number=11, weight=1, format=TEXT_FORMAT),
+    Question(number=11.5, weight=1, format=FILE_JSON_FORMAT),
     Question(number=12, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
     Question(number=13, weight=1, format=TEXT_FORMAT),
     Question(number=14, weight=1, format=TEXT_FORMAT),
@@ -143,6 +144,7 @@ expected_json = {
              'University of Delhi',
              'Indian Institute of Technology Madras'],
     "11": 1856,
+    "11.5": {'institutions.json': 'my_institutions.json'},
     "12": ['Academy of Scientific & Innovative Research',
             'International Institute for Management Development',
             'Tôn Đức Thắng University',
@@ -268,6 +270,9 @@ def parse_df_html_table(html, question=None):
 def extract_question_num(cell):
     for line in cell.get('source', []):
         line = line.strip().replace(' ', '').lower()
+        m = re.match(r'\#q(\d+).(\d+)', line)
+        if m:
+            return float(m.group(1) + "." + m.group(2))
         m = re.match(r'\#q(\d+)', line)
         if m:
             return int(m.group(1))
@@ -316,6 +321,7 @@ def normalize_json(orig):
 
 def check_cell_text(qnum, cell, format):
     outputs = cell.get('outputs', [])
+    expected = expected_json[str(qnum)]
     if len(outputs) == 0:
         return 'no outputs in an Out[N] cell'
     actual_lines = None
@@ -340,27 +346,28 @@ def check_cell_text(qnum, cell, format):
             actual = ast.literal_eval(actual)
         except ValueError:
             pass
-    expected = expected_json[str(qnum)]
+        except IndentationError:
+            return "expected to find type %s but found a DataFrame" %(type(expected).__name__)
 
-    # try:
-    if format in [TEXT_FORMAT, TEXT_FORMAT_NAMEDTUPLE]:
-        return simple_compare(expected, actual)
-    elif format in [TEXT_FORMAT_ORDERED_LIST, TEXT_FORMAT_ORDERED_LIST_NAMEDTUPLE]:
-        return list_compare_ordered(expected, actual)
-    elif format == TEXT_FORMAT_UNORDERED_LIST:
-        return list_compare_unordered(expected, actual)
-    elif format == TEXT_FORMAT_SPECIAL_ORDERED_LIST:
-        return list_compare_special(expected, actual)
-    elif format == TEXT_FORMAT_DICT:
-        return dict_compare(expected, actual)
-    elif format == TEXT_FORMAT_LIST_DICTS_ORDERED:
-        return list_compare_ordered(expected, actual)
-    else:
+    try:
+        if format in [TEXT_FORMAT, TEXT_FORMAT_NAMEDTUPLE]:
+            return simple_compare(expected, actual)
+        elif format in [TEXT_FORMAT_ORDERED_LIST, TEXT_FORMAT_ORDERED_LIST_NAMEDTUPLE]:
+            return list_compare_ordered(expected, actual)
+        elif format == TEXT_FORMAT_UNORDERED_LIST:
+            return list_compare_unordered(expected, actual)
+        elif format == TEXT_FORMAT_SPECIAL_ORDERED_LIST:
+            return list_compare_special(expected, actual)
+        elif format == TEXT_FORMAT_DICT:
+            return dict_compare(expected, actual)
+        elif format == TEXT_FORMAT_LIST_DICTS_ORDERED:
+            return list_compare_ordered(expected, actual)
+        else:
+            if expected != actual:
+                return "found %s but expected %s" % (repr(actual), repr(expected))
+    except:
         if expected != actual:
-            return "found %s but expected %s" % (repr(actual), repr(expected))
-    # except:
-    #     if expected != actual:
-    #         return "expected %s" % (repr(expected))
+            return "expected %s" % (repr(expected))
     return PASS
 
 
@@ -545,7 +552,10 @@ def check_cell_png(qnum, cell):
 
 
 def check_cell(question, cell):
-    print('Checking question: %d' % question.number)
+    if int(question.number) == question.number:
+        print('Checking question: %d' % question.number)
+    else:
+        print('Checking question: %.1f' % question.number)
     if question.format.split()[0] == TEXT_FORMAT:
         return check_cell_text(question.number, cell, question.format)
     elif question.format == PNG_FORMAT:
@@ -564,13 +574,22 @@ def check_cell_file(question, format):
             return "file %s not found" % expected
         elif actual not in os.listdir("."):
             return "file %s not found" % actual
-        e = open(expected, encoding='utf-8')
-        expected_data = json.load(e)
-        e.close()
-        a = open(actual, encoding='utf-8')
-        actual_data = json.load(a)
-        a.close()
-        msg = list_compare_ordered(expected_data, actual_data, 'file ' + actual)
+        try:
+            e = open(expected, encoding='utf-8')
+            expected_data = json.load(e)
+            e.close()
+        except json.JSONDecodeError:
+            return "file %s is broken and cannot be parsed; please redownload the file" % expected
+        try:
+            a = open(actual, encoding='utf-8')
+            actual_data = json.load(a)
+            a.close()
+        except json.JSONDecodeError:
+            return "file %s is broken and cannot be parsed" % actual
+        if type(expected_data) == list:
+            msg = list_compare_ordered(expected_data, actual_data, 'file ' + actual)
+        elif type(expected_data) == dict:
+            msg = dict_compare(expected_data, actual_data)
     return msg
 
 def check_files(files=REQUIRED_FILES):
@@ -729,8 +748,8 @@ def main():
 
     # do grading on extracted answers and produce results.json
     results = grade_answers(answer_cells)
-    passing = sum(t['weight'] for t in results['tests'] if t['result'] == PASS)
-    total = sum(t['weight'] for t in results['tests'])
+    passing = sum(t['weight'] for t in results['tests'] if t['result'] == PASS and int(t['test']) == t['test'])
+    total = sum(t['weight'] for t in results['tests'] if int(t['test']) == t['test'])
 
     lint_msgs = lint(orig_notebook, verbose=1, show=False)
     lint_msgs = filter(lambda msg: msg.msg_id in ALLOWED_LINT_ERRS, lint_msgs)
@@ -743,7 +762,10 @@ def main():
 
     print("\nSummary:")
     for test in results["tests"]:
-        print("  Test %d: %s" % (test["test"], test["result"]))
+        if int(test['test']) == test['test']:
+            print("  Test %d: %s" % (test["test"], test["result"]))
+        else:
+            print("  Test %.1f: %s" % (test["test"], test["result"]))
 
     if len(lint_msgs) > 0:
         msg_types = defaultdict(list)
