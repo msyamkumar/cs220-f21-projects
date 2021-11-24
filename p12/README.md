@@ -173,7 +173,7 @@ rankings[(rankings["Quality of Education Rank"] <= 10) & (rankings["Quality of F
 
 **Note:** Your output should be an **list** containing all institutions in USA which are ranked better than the best ranking institution in Germany for the year 2019-2020. By *better ranked*, we refer to institutions with a lower value under the `“World Rank”` column.
 
-**Hint:** You can use your answer from Q8 here. You then need to make a list of all the institutions from USA with a better `World Rank` than that institution in the year 2019-2020.
+**Hint:** You can use your answer from Q7 here. You then need to make a list of all the institutions from USA with a better `World Rank` than that institution in the year 2019-2020.
 
 ### #Q9: What is the highest-ranked institution based on “Quality of Education Rank” in China for the year 2021-2022?
 
