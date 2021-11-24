@@ -248,6 +248,8 @@ For more details, please have a look at the documentation of the `DataFrame.merg
 
 ```python
 #Q11.5
+# set_index function enables us to set any column in the DataFrame as row indices
+# to_json function enables us to convert the DataFrame into a JSON data structure
 institutions_df.set_index('Institution').to_json('my_institutions.json')
 ```
 
