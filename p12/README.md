@@ -2,8 +2,6 @@
 
 ## Clarifications/Corrections
 
- * **(11/23/2021 9:30pm):** `test.py` updated to include #Q11.5
-
 **Find any issues?** Report to us: 
 
 - Brian Huang <thuang273@wisc.edu>

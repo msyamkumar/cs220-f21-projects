@@ -765,7 +765,7 @@ def main():
         if int(test['test']) == test['test']:
             print("  Test %d: %s" % (test["test"], test["result"]))
         else:
-            print("  Test %.1f: %s" % (test["test"], test["result"]))
+            print("  Test %.1f (Optional): %s" % (test["test"], test["result"]))
 
     if len(lint_msgs) > 0:
         msg_types = defaultdict(list)
