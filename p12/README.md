@@ -2,7 +2,7 @@
 
 ## Clarifications/Corrections
 
-None yet.
+ * **(11/23/2021 9:30pm):** `test.py` updated to include #Q11.5
 
 **Find any issues?** Report to us: 
 
@@ -40,7 +40,7 @@ For this project, you're going to analyze the world university rankings!
 
 Specifically, you're going to use Pandas to analyze various statistics of the top ranked universities across the world, over the last three years.
 
-To start, download [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/test.py) and [`expected.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/expected.html).  You'll also need to
+To start, download [`test.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/test.py), [`expected.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/expected.html) and [`institutions.json`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/institutions.json).  You'll also need to
 download [`lint.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/lint.py) (see linter documentation under "Testing" below). You'll do all your work in `main.ipynb`.
 
 **Warning:** Do not download any of the other files manually (you must write Python code to
@@ -246,25 +246,14 @@ For more details, please have a look at the documentation of the `DataFrame.merg
 
 **Warning:** You may create the DataFrame `institutions_df` however you like. However, if you do not create a DataFrame, you will **lose points** during code review.
 
-**Optional test:** If you want to verify your `institutions_df`, download [`test_institution_df.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/test_institution_df.py) and [`institution_expected.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/institution_expected.html). Then in a new cell paste the below code
+**Optional test:** If you want to verify your `institutions_df`, download [`institutions.json`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/institutions.json). Then in a new cell paste the below code
 
 ```python
-#Q21
-from IPython.display import display
-
-institutions_df.sort_values(by = "Institution", inplace = True) # sorts the DataFrame based on "Institution" column
-institutions_df.reset_index(drop = True, inplace = True) # sets new row index, starting at 0
-# these ensure the entire DataFrame can be displayed
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', None)
-pd.set_option('display.max_colwidth', None)
-institutions_df
+#Q11.5
+institutions_df.set_index('Institution').to_json('my_institutions.json')
 ```
 
-Then run `python test_institution_df.py` to verify `institutions_df`. Once you verify your test result match, remove or comment out the code in this cell.
-
-## WARNING: You will not be able to upload your notebook without removing / commenting the code that you pasted to verify institution_df. So make sure to do that.
+Then run `python test.py` to verify `institutions_df`.
 
 ### #Q12: Between the years 2019-2020 and 2021-2022, list the institutions which have seen an improvement in their "World Rank" by more than 500 ranks.
 
@@ -408,7 +397,6 @@ extract the header in the table of `2019-2020.html`, it does not matter how you 
 
 ## WARNING: Verify that you have used Boolean indexing of appropriate DataFrame to answer questions in this project. Verify that you have only used .iloc for lookups. You will **lose points** during code review if you use conditional statements or loops or .loc.
 
-## WARNING: You will not be able to upload your notebook without removing / commenting the code that you pasted to verify institution_df. So make sure to do that.
 
 ### Before turning in
 Be sure to **delete** all the downloaded (and created) files (`rankings.json`, `2019-2020.html`, `2020-2021.html` and `2021-2022.html`, `my_rankings.json`), run `test.py` again, and make sure there are no errors. If you do not delete the files before testing, your code may pass `test.py` even if your `download` function does not work. In that case, your code will pass `test.py` on your computer but fail on the autograder. If you turn in a version of your code which fails on the autograder, **we will deduct 5 points**.
