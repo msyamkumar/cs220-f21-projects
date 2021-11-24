@@ -83,7 +83,7 @@ questions = [
     Question(number=9, weight=1, format=TEXT_FORMAT),
     Question(number=10, weight=1, format=TEXT_FORMAT_ORDERED_LIST),
     Question(number=11, weight=1, format=TEXT_FORMAT),
-    Question(number=11.5, weight=1, format=FILE_JSON_FORMAT),
+    Question(number=11.5, weight=1, format=FILE_JSON_FORMAT), #fractional questions are optional - they do not count towards the final score
     Question(number=12, weight=1, format=TEXT_FORMAT_UNORDERED_LIST),
     Question(number=13, weight=1, format=TEXT_FORMAT),
     Question(number=14, weight=1, format=TEXT_FORMAT),
