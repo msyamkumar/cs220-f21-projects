@@ -292,8 +292,69 @@ The following code enables us to read the contents of `cs220_survey_data.csv` in
 ```python
 survey_data = pd.read_csv("cs220_survey_data.csv")
 ```
+Take a peek at the first and last ten rows of the DataFrame. Recall that `head` and `tail` functions enable you to do that.
+Paste the below code snippets into two cells and complete them.
 
-Let's go through examples to recall the concept of Boolean indexing
+```python
+survey_data.head(???)
+```
+
+```python
+survey_data.tail(???)
+```
+Let's go through examples to recall the concept of Boolean indexing.
+Recall that when you extract a column or a row in a DataFrame, you get a Series data structure.
+We can apply boolean expressions to Series data structure to easily answer questions about that Series.
+
+### How many students are in each lecture?
+To extract just the rows within survey_data DataFrame, where lecture column values are "LEC001", you must
+first retrieve lecture column Series.
+
+Complete the following code to retrive the `lecture` column Series.
+
+```python
+survey_data["???"]
+```
+Now let's write the boolean expression, for indexing.
+
+```python
+survey_data["???"] == "LEC001" # this would retrive a Boolean Series
+```
+
+We can apply the Boolean Series back to the original DataFrame, to retrieve a subset of the original
+DataFrame rows, which satisfy the above boolean condition.
+
+```python
+lec001_data = survey_data[ survey_data["???"] == "LEC001" ]
+print(len(lec001_data)) # gives number of students in LEC001
+```
+Write code to determine number of students in LEC002 through LEC005.
+
+### Generate a DataFrame of LEC003 who are majoring in "Data Science".
+
+You can use lec003_data subset DataFrame that you generated from the above steps to answer this question.
+
+```python
+lec003_DS_data = lec003_data[ lec003_data["???"] == "Data Science"]
+```
+
+### What is the average age of LEC003 students who are majoring in "Data Science"?
+
+Complete the following code:
+
+```python
+lec003_DS_data["???"].mean()
+```
+
+### Generate a DataFrame of LEC005 students who are younger than 22 and like "mushroom" Piazza topping.
+
+Recall that in pandas, we have to use & for boolean operator `and`. The parenthesis surrounding parts of
+the boolean expression is mandatory. Complete the following code:
+
+```python
+lec005_data[(lec005_data["???"] < ??) & (lec005_data["???"] == "???")]
+```
+You can come up with many such interesting questions on the Information Survey Data.
 
 ## Wrapping Lines in Python
 
