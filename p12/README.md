@@ -246,6 +246,26 @@ For more details, please have a look at the documentation of the `DataFrame.merg
 
 **Warning:** You may create the DataFrame `institutions_df` however you like. However, if you do not create a DataFrame, you will **lose points** during code review.
 
+**Optional test:** If you want to verify your `institutions_df`, download [`test_institution_df.py`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/test_institution_df.py) and [`institution_expected.html`](https://github.com/msyamkumar/cs220-f21-projects/blob/main/p12/institution_expected.html). Then in a new cell paste the below code
+
+```python
+#Q21
+from IPython.display import display
+
+institutions_df.sort_values(by = "Institution", inplace = True) # sorts the DataFrame based on "Institution" column
+institutions_df.reset_index(drop = True, inplace = True) # sets new row index, starting at 0
+# these ensure the entire DataFrame can be displayed
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', None)
+institutions_df
+```
+
+Then run `python test_institution_df.py` to verify `institutions_df`. Once you verify your test result match, remove or comment out the code in this cell.
+
+## WARNING: You will not be able to upload your notebook without removing / commenting the code that you pasted to verify institution_df. So make sure to do that.
+
 ### #Q12: Between the years 2019-2020 and 2021-2022, list the institutions which have seen an improvement in their "World Rank" by more than 500 ranks.
 
 **Note** : Your output should be a **list** of institutions. The order does not matter. You should only compute the difference between the 2019 and 2021 ranking columns.
@@ -387,6 +407,8 @@ extract the header in the table of `2019-2020.html`, it does not matter how you 
 **Extra Hint:** If you haven't already done this, you could go back and create a function to parse html files. Then, you could use that function to solve Q19 and Q20.
 
 ## WARNING: Verify that you have used Boolean indexing of appropriate DataFrame to answer questions in this project. Verify that you have only used .iloc for lookups. You will **lose points** during code review if you use conditional statements or loops or .loc.
+
+## WARNING: You will not be able to upload your notebook without removing / commenting the code that you pasted to verify institution_df. So make sure to do that.
 
 ### Before turning in
 Be sure to **delete** all the downloaded (and created) files (`rankings.json`, `2019-2020.html`, `2020-2021.html` and `2021-2022.html`, `my_rankings.json`), run `test.py` again, and make sure there are no errors. If you do not delete the files before testing, your code may pass `test.py` even if your `download` function does not work. In that case, your code will pass `test.py` on your computer but fail on the autograder. If you turn in a version of your code which fails on the autograder, **we will deduct 5 points**.
