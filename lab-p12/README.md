@@ -11,7 +11,7 @@ In this lab, you'll learn these things:
 <h2> Corrections/Clarifications
 </h2>
 
-- Fixing incorrect usage of sum --- replacing variable name as total (**11/25/2021**)
+* **(11/25/2021 - 10:00am)**: Fixing incorrect usage of sum --- replacing variable name as total.
 
 **Find any issues?** Report to us:
 
