@@ -10,8 +10,7 @@ In this lab, you'll learn these things:
 
 <h2> Corrections/Clarifications
 </h2>
-
-None yet.
+- Fixing incorrect usage of sum --- replacing variable name as total **11/25/2021**
 
 **Find any issues?** Report to us:
 
@@ -111,14 +110,14 @@ get milliseconds:
 ```python
 t1 = time.time()
 
-sum = 0
+total = 0
 limit = 10 # try changing this
 for i in range(limit):
-    sum += i
+    total += i
 
 t2 = time.time()
 
-print("SUM:", sum)
+print("SUM:", total)
 milliseconds = (t2 - t1) * 1000
 print("ms:", milliseconds)
 ```
