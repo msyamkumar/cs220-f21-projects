@@ -2,6 +2,8 @@
 
 ## Clarifications/Corrections
 
+* **(11/28/2021 - 4:30 pm)**: Typo in hint for Q5 fixed
+
 **Find any issues?** Report to us: 
 
 - Brian Huang <thuang273@wisc.edu>
@@ -149,7 +151,7 @@ displays the following:
 
 **Note:** Your output should be a **float**.
 
-**Hint:** You need to extract the "National Rank" column of your DataFrame from Q4 as a Series. You can average all the scores in a Series with the `Series.mean()` method.
+**Hint:** You need to extract the `"Score"` column of your DataFrame from Q4 as a Series. You can average all the scores in a Series with the `Series.mean()` method.
 
 ### #Q6: Generate a pandas dataframe containing all the statistics of universities from Singapore in the year 2020-2021.
 
