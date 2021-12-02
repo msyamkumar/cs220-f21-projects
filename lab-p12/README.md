@@ -12,6 +12,7 @@ In this lab, you'll learn these things:
 </h2>
 
 * **(11/25/2021 - 10:00am)**: Fixing incorrect usage of sum --- replacing variable name as total.
+* **(12/02/2021 - 2:50pm)**: Adding pd.DataFrame explicit type casting while using pd.read_csv. This eliminates the linting errors. 
 
 **Find any issues?** Report to us:
 
@@ -290,7 +291,7 @@ Download [`cs220_survey_data.csv`](https://github.com/msyamkumar/cs220-f21-proje
 The following code enables us to read the contents of `cs220_survey_data.csv` into a DataFrame. Paste the code into a new cell:
 
 ```python
-survey_data = pd.read_csv("cs220_survey_data.csv")
+survey_data = pd.DataFrame(pd.read_csv("cs220_survey_data.csv"))
 ```
 Take a peek at the first and last ten rows of the DataFrame. Recall that `head` and `tail` functions enable you to do that.
 Paste the below code snippets into two cells and complete them.
