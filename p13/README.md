@@ -238,7 +238,7 @@ Your image should look like this:
 
 Here are the top 5 rows of the SQL query's return value DataFrame, prior to invoking corr() function. You can use this to verify your intermediate answer to this question. Please note that `institution_name` name is displayed just for verification purposes; your select clause need not select that column.
 
-<img src="images/Q9.png" width= "400">
+<img src="images/Q9.png" width= "600">
 
 ### #Q10: In the year 2019, what is the relationship between `academic_reputation` and `employer_reputation` for institutions in United States?
 
