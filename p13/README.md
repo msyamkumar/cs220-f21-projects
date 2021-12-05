@@ -236,6 +236,10 @@ Your image should look like this:
 
 **Hint:** If you have a DataFrame `df`, then calling `df.corr()` will present a table showing the Pearson correlation between every pair of columns in df. A correlation value of 1 is the maximum (so, for example, every column is correlated perfectly with itself). A high correlation between columns X and Y means that large X values tend to coincide with large Y values and small X values tend to coincide with small Y values. In some of the questions, you'll observe negative correlations (-1 being the least possible). This means that large X values tend to coincide with small Y values and vice versa.
 
+Here are the top 5 rows of the SQL query's return value DataFrame, prior to invoking corr() function. You can use this to verify your intermediate answer to this question:
+
+<img src="images/Q9.png" width= "400">
+
 ### #Q10: In the year 2019, what is the relationship between `academic_reputation` and `employer_reputation` for institutions in United States?
 
 **Note** : Answer with a **scatter plot** where each **institution** is represented as a point with `academic_reputation` on the x-axis and `employer_reputation` on the y-axis. 
