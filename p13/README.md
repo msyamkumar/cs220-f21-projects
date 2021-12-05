@@ -244,8 +244,6 @@ Here are the top 5 rows of the SQL query's return value DataFrame, prior to invo
 
 **Note** : Answer with a **scatter plot** where each **institution** is represented as a point with `academic_reputation` on the x-axis and `employer_reputation` on the y-axis. 
 
-**Warning:** `test.py` can only detect if you have a plot here, not if it is correct. So compare your plot with the plot here, and ensure that it matches, so you don't lose points during code review.
-
 Your image should look like this:
 
 <img src="images/Q10.png" width="400">
@@ -255,10 +253,7 @@ Your image should look like this:
 
 **Note:** Answer with a **scatter plot** where each **country** is represented as a point with `international_students` on the x-axis and `faculty_student_score` on the y-axis. The **top** institution from each country is the institution with the least value of the `rank` column from that country. 
 
-
 **Hint:** You can use the `MIN()` function to return the least value of a selected column.
-
-**Warning:** `test.py` can only detect if you have a plot here, not if it is correct. So compare your plot with the plot here, and ensure that it matches, so you don't lose points during code review.
 
 Your image should look like this:
 
