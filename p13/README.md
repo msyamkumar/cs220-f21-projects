@@ -292,7 +292,7 @@ Your image should look like this:
 
 Your image should look like this:
 
-<img src="images/Q16.png" width="400">
+<img src="images/Q16.png" width="500">
 
 **Optional:** Finding a correct position for legend will take exploration for every plot. You can invoke `legend` function using AxesSubplot object instance. There are two configurable parameters: `loc` and `bbox_to_anchor`. You can read the [`legend()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html) documentation, to learn the details. In order to produce the above plot, we used the below settings:
 
