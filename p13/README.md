@@ -288,7 +288,11 @@ Your image should look like this:
 
 ### #Q16: In the year 2018, among the institutions ranked within the top 50, generate a barplot visualizing the average of `citations_per_faculty` and `international_faculty` for each country. (answer with a plot)
 
-**Note** : You need to answer with a **horizontal bar plot**. You should define columns `avg_citations` and `avg_int_faculty` representing the average value of `citations_per_faculty` and `international_faculty` for each country respectively. Put `country` on the x-axis and `avg_citations` and `avg_int_faculty` on the y-axis. Make sure the countries appear in *decreasing* order of the difference between `avg_citations` and `avg_int_faculty`. Make sure your plot has a legend, however the position of the legend doesn't matter (see below optional section note about legend position). The colors don't matter either.
+**Note** : 
+- You need to answer with a **horizontal bar plot**. 
+- You should define columns `avg_citations` and `avg_int_faculty` representing the average value of `citations_per_faculty` and `international_faculty` for each country respectively. 
+- Put `country` on the x-axis and `avg_citations` and `avg_int_faculty` on the y-axis. Make sure the countries appear in *decreasing* order of the difference between `avg_citations` and `avg_int_faculty`. 
+- Make sure your plot has a legend, however the position of the legend doesn't matter (see below optional section note about legend position). The colors don't matter either.
 
 Your image should look like this:
 
