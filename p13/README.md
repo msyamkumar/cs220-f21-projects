@@ -273,7 +273,7 @@ Your image should look like this:
 
 **Note** : Your output should be a **DataFrame** with the column `country` along with a *new column* `avg_citations` representing the average of (`citations_per_faculty` * `international_faculty`/ 100) for all institutions with `rank <= 300` from that country. You should display `country` and `avg_citations` only for those countries that have institutions ranked within top 300. These countries should be displayed in *descending* order of their `avg_citations`.
 
-**Hint:** You can find the average of a column by finding the `SUM()` and dividing by the `COUNT()`.
+**Hint:** You can find the average of a column by either finding the `SUM()` and dividing by the `COUNT()` or by using `AVG()`.
 
 
 ### #Q15: In the year 2020, for each country, find the institution with the highest value for `(citations_per_faculty * international_faculty) / 100`.
