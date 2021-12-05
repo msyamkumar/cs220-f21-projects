@@ -288,13 +288,17 @@ Your image should look like this:
 
 ### #Q16: In the year 2018, among the institutions ranked within the top 50, generate a barplot visualizing the average of `citations_per_faculty` and `international_faculty` for each country. (answer with a plot)
 
-**Note** : You need to answer with a **horizontal bar plot**. You should define columns `avg_citations` and `avg_int_faculty` representing the average value of `citations_per_faculty` and `international_faculty` for each country respectively. Put `country` on the x-axis and `avg_citations` and `avg_int_faculty` on the y-axis. Make sure your plot has a legend, however the position of the legend doesn't matter. Make sure the countries appear in *decreasing* order of the difference between `avg_citations` and `avg_int_faculty`. The colors don't matter either.
-
-**Warning:** `test.py` can only detect if you have a plot here, not if it is correct. So compare your plot with the plot here, and ensure that it matches, so you don't lose points during code review.
+**Note** : You need to answer with a **horizontal bar plot**. You should define columns `avg_citations` and `avg_int_faculty` representing the average value of `citations_per_faculty` and `international_faculty` for each country respectively. Put `country` on the x-axis and `avg_citations` and `avg_int_faculty` on the y-axis. Make sure the countries appear in *decreasing* order of the difference between `avg_citations` and `avg_int_faculty`. Make sure your plot has a legend, however the position of the legend doesn't matter (see below optional section note about legend position). The colors don't matter either.
 
 Your image should look like this:
 
 <img src="images/Q16.png" width="400">
+
+**Optional:** Finding a correct position for legend will take exploration for every plot. You can invoke `legend` function using AxesSubplot object instance. There are two configurable parameters: `loc` and `bbox_to_anchor`. You can read the [`legend()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html) documentation, to learn the details. In order to produce the above plot, we used the below settings:
+
+```python
+ax.legend(loc = 'center left', bbox_to_anchor = (1, 0.9))
+```
 
 ---
 ### Fitting a regression line.
@@ -330,8 +334,6 @@ df.plot.line(x='x', y='fit', c='red', ax=ax)
 
 **Hint:** You can adapt the above code so that it uses your DataFrame (instead of df) and replace `x` with `overall_score` and `y` with `rank`.
 
-**Warning:** `test.py` can only detect if you have a plot here, not if it is correct. So compare your plot with the plot here, and ensure that it matches, so you don't lose points during code review.
-
 Your image should look like this:
 
 <img src="images/Q17.png" width="400">
@@ -341,8 +343,6 @@ Your image should look like this:
 ### #Q18: For all the institutions in the year 2020, what is the relationship between  `1 / overall_score` and `rank`? (answer with a plot)
 
 **Note:** Your output should be a **scatter plot with a regression line** where each **institution** is represented as a point with with `inverse_overall_score` on the x-axis and `rank` on the y-axis.
-
-**Warning:** `test.py` can only detect if you have a plot here, not if it is correct. So compare your plot with the plot here, and ensure that it matches, so you don't lose points during code review.
 
 Your image should look like this:
 
@@ -365,8 +365,6 @@ Your image should look like this:
 **Note:** Your output should be a **pie chart**. The colors on the pie chart don't matter, but the chart should be titled `Number of institutions`, and should be labelled as in the sample output below. Make use of the output of Q3 here.
 
 **Hint:** Use [df.plot.pie](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.pie.html) to plot your graph.
-
-**Warning:** `test.py` can only detect if you have a plot here, not if it is correct. So compare your plot with the plot here, and ensure that it matches, so you don't lose points during code review.
 
 Your image should look like this:
 
