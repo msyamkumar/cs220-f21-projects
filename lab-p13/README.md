@@ -1,4 +1,4 @@
-# Lab 13: Fit Lines
+# Lab 13: Fit Lines (UNDER CONSTRUCTION - DO NOT START)
 
 In this lab, you'll learn three things:
 
@@ -293,7 +293,7 @@ trees.plot.line(ax = ax, x = "age", y = "height-fitted", color = "red")
 
 ## Project
 
-* In p13, you will need to construct several scatter plots using pandas, compute an appropriate fit using numpy, and draw a fit line on the same plot as the scatter plot.
+In p13, you will need to construct several scatter plots using pandas, compute an appropriate fit using numpy, and draw a fit line on the same plot as the scatter plot.
 
 **Good luck**
 
