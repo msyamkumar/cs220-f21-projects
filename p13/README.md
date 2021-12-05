@@ -278,11 +278,12 @@ Your image should look like this:
 
 ### #Q15: In the year 2020, for each country, find the institution with the highest value for `(citations_per_faculty * international_faculty) / 100`.
 
-**Note** : Your output should be a **DataFrame** with the columns `country`, `institution_name` along with a *new column* `max_int_citations` representing the maximum value of (`citations_per_faculty` * `international_faculty` / 100 ) for that country. The countries should be displayed in *descending* order of `max_int_citations`.
+**Note** : 
+- Your output should be a **DataFrame** with the columns `country`, `institution_name` along with a *new column* `max_int_citations` representing the maximum value of (`citations_per_faculty` * `international_faculty` / 100 ) for that country. The countries should be displayed in *descending* order of `max_int_citations`.
+- In the columns of `citations_per_faculty` and `international_faculty`, there are some missing values that are represented as `NaN` in the DataFrame. In general, SQL knows to skip these values, which is why you haven't had to deal with it so far. However, you are likely to notice some `NaN` values in your DataFrame. This happens when all of the institutions in a country have missing data. In that case, `MAX()` cannot be computed, and `NaN` is returned. To filter out those missing values, you need to add in a condition like `WHERE your_column IS NOT NULL` in your SQL query. You are **required** to filter out `NaN` values.
 
 **Hint:** You can use the MAX() function to return the largest value of a selected column.
 
-**Warning:** In the columns of `citations_per_faculty` and `international_faculty`, there are some missing values that are represented as `NaN` in the DataFrame. In general, SQL knows to skip these values, which is why you haven't had to deal with it so far. However, you are likely to notice some `NaN` values in your DataFrame. This happens when all of the institutions in a country have missing data. In that case, `MAX()` cannot be computed, and `NaN` is returned. To filter out those missing values, you need to add in a condition like `WHERE your_column IS NOT NULL` in your SQL query. You are **required** to filter out `NaN` values.
 
 
 ### #Q16: In the year 2018, among the institutions ranked within the top 50, generate a barplot visualizing the average of `citations_per_faculty` and `international_faculty` for each country. (answer with a plot)
