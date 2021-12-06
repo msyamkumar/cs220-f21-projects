@@ -316,13 +316,15 @@ import numpy as np
 ```
 
 ```python
+import numpy as np
+
 df = pd.DataFrame({
     "x": [1,2,3,4],
     "y": [2,5,6,5]
 })
 df["1"] = 1
 
-des = np.linalg.lstsq(df[["x", "1"]], df["y"], rcond=None)
+res = np.linalg.lstsq(df[["x", "1"]], df["y"], rcond=None)
 
 # res is a tuple: (COEFFICIENTS, VALUE, VALUE, VALUE)
 coefficients = res[0] # coefficients is (m,n)
