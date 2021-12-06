@@ -1,4 +1,4 @@
-# Project 13: Databases and Plotting (UNDER CONSTRUCTION - DO NOT START)
+# Project 13: Databases and Plotting 
 
 <h2>Corrections/Clarifications </h2>
 
