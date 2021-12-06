@@ -60,7 +60,7 @@ import matplotlib
 # tree scatter
 matplotlib.rcParams["font.size"] = ???? # TODO: the default font size is 10, set it to a higher value, say 13
 
-ax = trees.plot.????(x = "age", y = "height", c = ????, xlim = 0, ylim = 0)
+ax = trees.plot.????(x="age", y="height", c=????, xlim=0, ylim=0)
 ax.set_xlabel(????)
 ax.????("Height (feet)")
 ```
@@ -88,11 +88,11 @@ if height were always twice age, with no noise.  Let's plot the fit
 line on top of our scatter:
 
 ```python
-ax = trees.plot.????(x = "age", y = "height", c = ????, xlim = 0, ylim = 0)
+ax = trees.plot.????(x="age", y="height", c=????, xlim=0, ylim=0)
 ax.set_xlabel(????)
 ax.????("Height (feet)")
 
-trees.plot.line(ax = ax, x = "age", y = "height-fitted", color = "red")
+trees.plot.line(ax=ax, x="age", y="height-fitted", color="red")
 ```
 
 Note that the above cell is the same as the earlier example, with the
@@ -244,7 +244,7 @@ the list), so `inputs` will look something like this (`age` is the
 Ok, now we're ready to crunch some numbers:
 
 ```python
-result = np.linalg.lstsq(inputs, output, rcond = None)
+result = np.linalg.lstsq(inputs, output, rcond=None)
 result
 ```
 
@@ -282,11 +282,11 @@ trees.head()
 Let's conclude by re-plotting the scatter data and fit line:
 
 ```python
-ax = trees.plot.scatter(x = "age", y = "height", c = "black", xlim = 0, ylim = 0)
+ax = trees.plot.scatter(x="age", y="height", c="black", xlim=0, ylim=0)
 ax.set_xlabel("Age (years)")
 ax.set_ylabel("Height (feet)")
 
-trees.plot.line(ax = ax, x = "age", y = "height-fitted", color = "red")
+trees.plot.line(ax=ax, x="age", y="height-fitted", color="red")
 ```
 
 <img src="images/final.png">
