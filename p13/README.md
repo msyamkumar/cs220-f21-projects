@@ -314,6 +314,8 @@ For the regression line, first try copy/pasting this code into a notebook cell a
 ```python
 import numpy as np
 ```
+
+```python
 des = np.linalg.lstsq(df[["x", "1"]], df["y"], rcond=None)
 
 # res is a tuple: (COEFFICIENTS, VALUE, VALUE, VALUE)
