@@ -360,7 +360,7 @@ Your image should look like this:
 
 **Note:** Your output should be an **int**. If your estimate is a float, *round it up* using `math.ceil`.
 
-**Hint:** You should use the coefficients `m, n` you found in Q18 to answer this. Recall that the equation of a line is `y = m*x + n`. What are `x` and `y` here?
+**Hint:** You should use the coefficients `m, n` you found in Q18 to answer this. Recall that the equation of a line is `y = m * x + n`. What are `x` and `y` here?
 
 *Can you find out the* `overall_score` *of the university with this* `rank` *in the year 2020? Does it match your prediction?*
  
@@ -370,14 +370,19 @@ Your image should look like this:
 
 **Note:** Your output should be a **pie chart**. The colors on the pie chart don't matter, but the chart should be titled `Number of institutions`, and should be labelled as in the sample output below. Make use of the output of Q3 here.
 
-**Hint:** Use [df.plot.pie](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.pie.html) to plot your graph.
+**Hint:** Use either [df.plot.pie](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.pie.html) or [s.plot.pie](https://pandas.pydata.org/docs/reference/api/pandas.Series.plot.pie.html) to plot your graph.
 
 Your image should look like this:
 
 <img src="images/Q20.png" width="350">
 
 
-### WARNING: Close the database connection in the last cell. Not doing this will make autograder fail. Please do this right away and save your precious time.
+
+### WARNINGS: 
+### 1. **Close** the database connection in the last cell. Not doing this will make **autograder fail**. Please do this right away and save your precious time.
+### 2. make sure that you have written SQL queries to solve this project questions, you will not get any credit if you use the pandas DataFrame directly to answer questions!
+### 3. for plot questions,`test.py` can only detect if you have a plot, not if it is correct. So compare your plot with the plot shown below the question, and ensure that it matches, so you don't lose points during code review.
+### 4. Your plots should **exactly** match with the plots shown for the plotting questions. This includes the labels as well as the order in which the bars appear (in case of bar graphs).
 
 ---
 
