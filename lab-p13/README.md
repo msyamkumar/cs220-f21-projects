@@ -298,6 +298,7 @@ The following code enables us to establish connection to `survey.db` database. P
 
 ```python
 import sqlite3
+import pandas as pd
 ```
 
 ```python
