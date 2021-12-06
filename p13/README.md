@@ -337,8 +337,8 @@ df.plot.line(x='x', y='fit', c='red', ax=ax)
 ### #Q17: For all the institutions in the year 2020, what is the relationship between `overall_score` and `rank`? (answer with a plot)
 
 **Note:** Your output should be a **scatter plot with a regression line** where each **institution** is represented as a point with with `overall_score` on the x-axis and `rank` on the y-axis.
- a
-**Hint:** 	2`You can adapt the above code so that it uses your DataFrame (instead of df) and replace `x` with `overall_score` and `y` with `rank`.
+
+**Hint:** You can adapt the above code so that it uses your DataFrame (instead of df) and replace `x` with `overall_score` and `y` with `rank`.
 
 Your image should look like this:
 
