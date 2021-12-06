@@ -413,10 +413,12 @@ order by min_age ASC, lecture ASC
 ### What year where students born in?
 Recall that, in SQL `select` clause, you can specify computation. For example, complete the following code to compute `year_of_birth` from `age` and `curr_year` column values.
 
+```python
 pd.read_sql("""
 select *, ??? - ??? as year_of_birth
 from fall_2021
 """, conn)
+```
 
 ## Project
 
