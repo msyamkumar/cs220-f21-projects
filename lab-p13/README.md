@@ -291,6 +291,37 @@ trees.plot.line(ax=ax, x="age", y="height-fitted", color="red")
 
 <img src="images/final.png">
 
+## SQL practice
+
+Download [`survey.db`](https://github.com/msyamkumar/cs220-f21-projects/tree/master/lab-p13/survey.db).
+The following code enables us to establish connection to `survey.db` database. Paste the code into a new cell:
+
+```python
+import sqlite3
+```
+
+```python
+conn = sqlite3.connect('survey.db')
+# remember to do conn.close() at the end of your notebook!
+```
+
+Now, let's take a look at the details of the database. Paste the following code to your notebook:
+
+```python
+pd.read_sql("SELECT * FROM sqlite_master", conn)
+```
+
+What name do you see for the database table? Complete the following code to explore the first seven lines of the database table. 
+
+```python
+pd.read_sql(
+"""
+SELECT *
+FROM ???
+LIMIT ???
+""", conn)
+```
+
 ## Project
 
 In p13, you will need to construct several scatter plots using pandas, compute an appropriate fit using numpy, and draw a fit line on the same plot as the scatter plot.
