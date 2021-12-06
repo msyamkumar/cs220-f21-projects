@@ -316,8 +316,6 @@ import numpy as np
 ```
 
 ```python
-import numpy as np
-
 df = pd.DataFrame({
     "x": [1,2,3,4],
     "y": [2,5,6,5]
