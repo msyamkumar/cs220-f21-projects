@@ -1,4 +1,4 @@
-# Lab 13: Fit Lines (UNDER CONSTRUCTION - DO NOT START)
+# Lab 13: Fit Lines
 
 In this lab, you'll learn three things:
 
