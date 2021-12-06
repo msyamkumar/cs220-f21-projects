@@ -301,7 +301,7 @@ Your image should look like this:
 **Optional:** Finding a correct position for legend will take exploration for every plot. You can invoke `legend` function using AxesSubplot object instance. There are two configurable parameters: `loc` and `bbox_to_anchor`. You can read the [`legend()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html) documentation, to learn the details. In order to produce the above plot, we used the below settings:
 
 ```python
-ax.legend(loc = 'center left', bbox_to_anchor = (1, 0.9))
+ax.legend(loc='center left', bbox_to_anchor=(1, 0.9))
 ```
 
 ---
@@ -313,30 +313,24 @@ For the regression line, first try copy/pasting this code into a notebook cell a
 
 ```python
 import numpy as np
-
-df = pd.DataFrame({
-    "x": [1, 2, 3, 4],
-    "y": [2, 5, 6, 5]
-})
-df["1"] = 1
-
-res = np.linalg.lstsq(df[["x", "1"]], df["y"], rcond = None)
+```
+des = np.linalg.lstsq(df[["x", "1"]], df["y"], rcond=None)
 
 # res is a tuple: (COEFFICIENTS, VALUE, VALUE, VALUE)
 coefficients = res[0] # coefficients is (m,n)
 m = coefficients[0] # slope
 n = coefficients[1] # intercept
-ax = df.plot.scatter(x = 'x', y = 'y', color = 'black')
+ax = df.plot.scatter(x='x', y='y', color='black')
 
 df["fit"] = df["x"] * m + n
-df.plot.line(x = 'x', y = 'fit', c = 'red', ax = ax)
+df.plot.line(x='x', y='fit', c='red', ax=ax)
 ```
 
 ### #Q17: For all the institutions in the year 2020, what is the relationship between `overall_score` and `rank`? (answer with a plot)
 
 **Note:** Your output should be a **scatter plot with a regression line** where each **institution** is represented as a point with with `overall_score` on the x-axis and `rank` on the y-axis.
-
-**Hint:** You can adapt the above code so that it uses your DataFrame (instead of df) and replace `x` with `overall_score` and `y` with `rank`.
+ a
+**Hint:** 	2`You can adapt the above code so that it uses your DataFrame (instead of df) and replace `x` with `overall_score` and `y` with `rank`.
 
 Your image should look like this:
 
