@@ -291,6 +291,135 @@ trees.plot.line(ax=ax, x="age", y="height-fitted", color="red")
 
 <img src="images/final.png">
 
+## SQL practice
+
+Download [`survey.db`](https://github.com/msyamkumar/cs220-f21-projects/tree/master/lab-p13/survey.db).
+The following code enables us to establish connection to `survey.db` database. Paste the code into a new cell:
+
+```python
+import sqlite3
+import pandas as pd
+```
+
+```python
+conn = sqlite3.connect('survey.db')
+# remember to do conn.close() at the end of your notebook!
+```
+
+Now, let's take a look at the details of the database. Paste the following code to your notebook:
+
+```python
+pd.read_sql("SELECT * FROM sqlite_master", conn)
+```
+
+What name do you see for the database table? Complete the following code to explore the first seven lines of the database table. 
+
+```python
+pd.read_sql(
+"""
+SELECT *
+FROM ???
+LIMIT ???
+""", conn)
+```
+
+### How many students are in each lecture?
+Recall that, you can create groups based on unique values in a column, using `group by` SQL clause. `Group by` enables you to apply aggregation operations for every group. The `as` keyword enables you to rename the newly computed column, either using aggregation or by using computation. Complete the following query to answer this question:
+
+```python
+pd.read_sql(
+"""
+select ???(*) as student_count
+from fall_2021
+group by ???
+""", conn)
+```
+
+### How many students are in each lecture - visualize using barplot?
+X-axis should be `lecture` and Y-axis should be `student_count`. Capture the DataFrame from the above SQL query into a variable called `student_count_df` and complete the following code:
+
+```python
+count_series = student_count_df["student_count"]
+ax = count_series.plot.???()
+ax.set_ylabel("Count of students")
+None # helps you supress the output from the above function call
+```
+What went wrong? Can you identify where the x-axis labels are coming from? 
+Let's fix that by using `set_index` function on the pandas DataFrame.
+
+```python
+student_count_df = student_count_df.set_index("lecture")
+count_series = student_count_df["student_count"]
+ax = count_series.plot.???()
+ax.set_ylabel("Count of students")
+None # helps you supress the output from the above function call
+```
+The x-axis label is kind of redundant. Let's remove that. To the same cell where you typed the above code, type and run:
+
+```python
+ax.set_xlabel("Count of students")
+```
+What happened? Did you run into `KeyError: "None of ['lecture'] are in the columns"`. You cannot invoke set_index on the same DataFrame twice! If you really have to re-run that cell, you must do `Kernel Restart & Run All`. Once you do that, your x-axis label should disappear.
+
+### What are the top 5 popular majors?
+Recall that `order by` SQL clause enables you to perform sorting. The default ordering is ascending (`ASC`). You can specify descending ordering by mentioning `DESC` after the column name (based on whose ordering you want to sort your rows). Complete the following code:
+
+```python
+pd.read_sql("""
+select major, ???(*) as major_count
+from fall_2021
+group by ???
+order by ???
+LIMIT ???
+""", conn)
+```
+
+### What are the top 7 popular majors?
+Recall that `order by` SQL clause enables you to perform sorting. The default ordering is ascending (`ASC`). You can specify descending ordering by mentioning `DESC` after the column name (based on whose ordering you want to sort your rows). The `as` keyword enables you to rename the newly computed column, either using aggregation or by using computation. Complete the following code:
+
+```python
+pd.read_sql("""
+select ???, ???(*) as topping_count
+from fall_2021
+group by ???
+order by ??? ???
+LIMIT ???
+""", conn)
+```
+### How many Engineering majors like pepperoni piazza topping?
+In a `where` clause, you can use `and` to combine multiple conditions. Complete the following code:
+
+```python
+pd.read_sql(
+"""
+SELECT ???(*)
+FROM fall_2021
+WHERE ??? = "Engineering" and ??? = "pepperoni"
+""", conn)
+```
+
+### What is the minimum age for each lecture?
+The lecture and minimum age should be displayed in ascending order of minimum age. If the minimum ages are tied, then the lectures should be ordered in alphabetical order (ascending). You can achieve this, by specifying two column information for `group by` clause. Complete the following code:
+
+```python
+pd.read_sql("""
+select ???, ???(age) as min_age
+from fall_2021
+group by ???
+order by min_age ASC, lecture ASC
+""", conn)
+```
+
+### What year where students born in?
+Recall that, in SQL `select` clause, you can specify computation. For example, complete the following code to compute `year_of_birth` from `age` and `curr_year` column values.
+
+```python
+pd.read_sql("""
+select *, ??? - ??? as year_of_birth
+from fall_2021
+""", conn)
+```
+
 ## Project
 
 In p13, you will need to construct several scatter plots using pandas, compute an appropriate fit using numpy, and draw a fit line on the same plot as the scatter plot.
