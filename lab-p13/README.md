@@ -6,6 +6,11 @@ In this lab, you'll learn three things:
 2. what numpy is, and its relationship to pandas
 3. how to compute a fit line
 
+<h2> Corrections/Clarifications
+</h2>
+
+* **(12/07/2021 - 11:25am)**: Fixing typo in SQL question --- 7 popular pizza toppings (instead of majors) 
+
 ## Drawing a Fit
 
 Scatter plots are a good way to visualize correlations.  We'll
@@ -374,7 +379,7 @@ LIMIT ???
 """, conn)
 ```
 
-### What are the top 7 popular majors?
+### What are the top 7 popular pizza toppings?
 Recall that `order by` SQL clause enables you to perform sorting. The default ordering is ascending (`ASC`). You can specify descending ordering by mentioning `DESC` after the column name (based on whose ordering you want to sort your rows). The `as` keyword enables you to rename the newly computed column, either using aggregation or by using computation. Complete the following code:
 
 ```python
