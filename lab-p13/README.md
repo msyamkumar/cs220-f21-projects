@@ -7,7 +7,8 @@ In this lab, you'll learn three things:
 3. how to compute a fit line
 
 <h2> Corrections/Clarifications
-</h2>
+    **(12/8/2021 - 12:30pm)**: typos fixed in SQL practice section
+</h2> 
 
 * **(12/07/2021 - 11:25am)**: Fixing typo in SQL question --- 7 popular pizza toppings (instead of majors) 
 
@@ -334,7 +335,7 @@ Recall that, you can create groups based on unique values in a column, using `gr
 ```python
 pd.read_sql(
 """
-select ???(*) as student_count
+select ???, ???(*) as student_count
 from fall_2021
 group by ???
 """, conn)
@@ -404,7 +405,7 @@ WHERE ??? = "Engineering" and ??? = "pepperoni"
 ```
 
 ### What is the minimum age for each lecture?
-The lecture and minimum age should be displayed in ascending order of minimum age. If the minimum ages are tied, then the lectures should be ordered in alphabetical order (ascending). You can achieve this, by specifying two column information for `group by` clause. Complete the following code:
+The lecture and minimum age should be displayed in ascending order of minimum age. If the minimum ages are tied, then the lectures should be ordered in alphabetical order (ascending). You can achieve this, by specifying two column information for `order by` clause. Complete the following code:
 
 ```python
 pd.read_sql("""
