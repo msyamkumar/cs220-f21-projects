@@ -2,8 +2,7 @@
 
 <h2>Corrections/Clarifications </h2>
 
-None yet.
-
+* **(12/10/2021 - 4:12 pm)**: WARNING: do not use dark mode on your browser, that prevents you from seeing the plot labels 
 
 **Find any issues?** Report to us:  
 
