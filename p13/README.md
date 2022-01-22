@@ -1,5 +1,7 @@
 # Project 13: Databases and Plotting 
 
+# WARNING: Unless you took a time portal to become my student in the past, this is not the correct repository :) Please go to the correct github repository for the current semester. If you are a Fall'21 semester student though, you are in the right place.
+
 <h2>Corrections/Clarifications </h2>
 
 * **(12/10/2021 - 4:12 pm)**: WARNING: do not use dark mode on your browser, that prevents you from seeing the plot labels 
