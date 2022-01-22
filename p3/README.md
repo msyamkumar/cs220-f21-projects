@@ -1,5 +1,7 @@
 # Project 3: Renewable energy consumption by the US Electric Power Sector
 
+# WARNING: Unless you took a time portal to become my student in the past, this is not the correct repository :) Please go to the correct github repository for the current semester. If you are a Fall'21 semester student though, you are in the right place.
+
 ### Corrections/Clarifications
 
 1. **(9/23/2021 - 10:45am)** Q18 reworded for clarity.
