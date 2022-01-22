@@ -1,5 +1,7 @@
 # Lab 12: Lint, Time, Cashing and Creating DataFrames
 
+# WARNING: Unless you took a time portal to become my student in the past, this is not the correct repository :) Please go to the correct github repository for the current semester. If you are a Fall'21 semester student though, you are in the right place.
+
 In this lab, you'll learn these things:
 
 1. How to use a linter to make your code better.
