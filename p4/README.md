@@ -28,7 +28,7 @@ For this project, you'll be using the data from `pokemon_stats.csv` and `type_ef
 
 This project will focus on conditional statements. To start, download `project.py`, `test.py`, `type_effectiveness_stats.csv` and `pokemon_stats.csv`. You'll do your work in a Jupyter Notebook, producing a `main.ipynb` file. You'll test as usual by running `python test.py` to test your `main.ipynb` file.
 
-We won't explain how to use the project module here (the code in the `project.py` file). The lab this week is designed to teach you how it works. So, before starting p4, take a look at [lab-p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p4).
+We won't explain how to use the project module here (the code in the `project.py` file). The lab this week is designed to teach you how it works. So, before starting p4, take a look at [lab-p4](https://github.com/msyamkumar/cs220-f21-projects/tree/main/lab-p4). **Copy/paste all the helper functions you wrote in lab-p4 `practice.ipynb` to your `main.ipynb` for this project**. You must use these helper functions where relevant. Additional directions will be provided when you must invoke a function you defined in lab.
 
 This project consists of writing code to answer 20 questions. If you're answering a particular question in a cell in your notebook, you need to put a comment in the cell so we know what you're answering. For example, if you're answering question 13, the first line of your cell should start with `#q13` or `#Q13`.
 
@@ -199,13 +199,13 @@ We now write a function `effective_damage` to compute the actual damage that an 
 ```python3
 def effective_damage(attacker, defender):
     pass
-    #TODO: check if attacker has two types
+    #TODO: check if attacker has two types; you must invoke the relevant function you defined in lab-p4
     #TODO: compute the bonus of attacker's type(s) against defender
     #TODO: find the attack_type with the higher bonus
     #TODO: compute the damage caused by attack, considering the higher bonus and return it
 ```
 
-Use the `effective_damage` function to answer the next three questions.
+`effective_damage` function definition must invoke the appropriate function from lab-p4 for the first step. We'll manually deduct points if you don't invoke the relevant function. Use the `effective_damage` function to answer the next three questions.
 
 ### #Q5: How much damage does Mewtwo do to Gengar?
 
